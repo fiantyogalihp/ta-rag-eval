@@ -1,0 +1,962 @@
+{
+  "stage": "II",
+  "status": "DESCRIPTIVE_NO_SELECTION_NO_TEST",
+  "n_by_kind": {
+    "answerable": 16,
+    "not_in_corpus": 4
+  },
+  "retrieval_ok": {
+    "true": 13,
+    "false": 3,
+    "n/a": 4
+  },
+  "configs": {
+    "A": {
+      "params": {
+        "label": "A",
+        "config": "C",
+        "w_s": 0.0,
+        "accept": 0.75,
+        "hard_fail": false
+      },
+      "all": {
+        "n": 20,
+        "confusion": {
+          "LAYAK": {
+            "ACCEPT": 4,
+            "REVIEW": 8,
+            "REJECT": 5
+          },
+          "TIDAK_LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 0,
+            "REJECT": 3
+          }
+        },
+        "CAR": {
+          "k": 4,
+          "n": 17,
+          "point": 0.23529411764705882,
+          "lo": 0.06810774043735673,
+          "hi": 0.49899327320458,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "FAR": {
+          "k": 0,
+          "n": 3,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.7075982261787133,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "false_rejection": {
+          "k": 5,
+          "n": 17,
+          "point": 0.29411764705882354,
+          "lo": 0.10313551437031993,
+          "hi": 0.5595827187543372,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "review_rate": {
+          "k": 8,
+          "n": 20,
+          "point": 0.4,
+          "lo": 0.19119006072530725,
+          "hi": 0.6394574126925103,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "reject_rate": {
+          "k": 8,
+          "n": 20,
+          "point": 0.4,
+          "lo": 0.19119006072530725,
+          "hi": 0.6394574126925103,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        }
+      },
+      "answerable": {
+        "n": 16,
+        "confusion": {
+          "LAYAK": {
+            "ACCEPT": 4,
+            "REVIEW": 8,
+            "REJECT": 3
+          },
+          "TIDAK_LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 0,
+            "REJECT": 1
+          }
+        },
+        "CAR": {
+          "k": 4,
+          "n": 15,
+          "point": 0.26666666666666666,
+          "lo": 0.07787154629104359,
+          "hi": 0.551003241036971,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "FAR": {
+          "k": 0,
+          "n": 1,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.9749999999999999,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "false_rejection": {
+          "k": 3,
+          "n": 15,
+          "point": 0.2,
+          "lo": 0.043312005105836604,
+          "hi": 0.480891133806853,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "review_rate": {
+          "k": 8,
+          "n": 16,
+          "point": 0.5,
+          "lo": 0.24651011149057517,
+          "hi": 0.7534898885094246,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "reject_rate": {
+          "k": 4,
+          "n": 16,
+          "point": 0.25,
+          "lo": 0.07266203825288214,
+          "hi": 0.5237708198961275,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        }
+      },
+      "probe": {
+        "n": 4,
+        "confusion": {
+          "LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 0,
+            "REJECT": 2
+          },
+          "TIDAK_LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 0,
+            "REJECT": 2
+          }
+        },
+        "CAR": {
+          "k": 0,
+          "n": 2,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.841886116991581,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "FAR": {
+          "k": 0,
+          "n": 2,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.841886116991581,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "false_rejection": {
+          "k": 2,
+          "n": 2,
+          "point": 1.0,
+          "lo": 0.15811388300841894,
+          "hi": 1.0,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "review_rate": {
+          "k": 0,
+          "n": 4,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.6023646356164745,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "reject_rate": {
+          "k": 4,
+          "n": 4,
+          "point": 1.0,
+          "lo": 0.3976353643835252,
+          "hi": 1.0,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        }
+      }
+    },
+    "B": {
+      "params": {
+        "label": "B",
+        "config": "C",
+        "w_s": 1.0,
+        "accept": 0.85,
+        "hard_fail": false
+      },
+      "all": {
+        "n": 20,
+        "confusion": {
+          "LAYAK": {
+            "ACCEPT": 12,
+            "REVIEW": 5,
+            "REJECT": 0
+          },
+          "TIDAK_LAYAK": {
+            "ACCEPT": 1,
+            "REVIEW": 2,
+            "REJECT": 0
+          }
+        },
+        "CAR": {
+          "k": 12,
+          "n": 17,
+          "point": 0.7058823529411765,
+          "lo": 0.4404172812456627,
+          "hi": 0.8968644856296801,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "FAR": {
+          "k": 1,
+          "n": 3,
+          "point": 0.3333333333333333,
+          "lo": 0.00840375865961257,
+          "hi": 0.9057006759497539,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "false_rejection": {
+          "k": 0,
+          "n": 17,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.1950643229690932,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "review_rate": {
+          "k": 7,
+          "n": 20,
+          "point": 0.35,
+          "lo": 0.153909204784541,
+          "hi": 0.5921885345328282,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "reject_rate": {
+          "k": 0,
+          "n": 20,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.1684334709830853,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        }
+      },
+      "answerable": {
+        "n": 16,
+        "confusion": {
+          "LAYAK": {
+            "ACCEPT": 12,
+            "REVIEW": 3,
+            "REJECT": 0
+          },
+          "TIDAK_LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 1,
+            "REJECT": 0
+          }
+        },
+        "CAR": {
+          "k": 12,
+          "n": 15,
+          "point": 0.8,
+          "lo": 0.5191088661931469,
+          "hi": 0.9566879948941633,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "FAR": {
+          "k": 0,
+          "n": 1,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.9749999999999999,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "false_rejection": {
+          "k": 0,
+          "n": 15,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.21801936091053403,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "review_rate": {
+          "k": 4,
+          "n": 16,
+          "point": 0.25,
+          "lo": 0.07266203825288214,
+          "hi": 0.5237708198961275,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "reject_rate": {
+          "k": 0,
+          "n": 16,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.2059072142078227,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        }
+      },
+      "probe": {
+        "n": 4,
+        "confusion": {
+          "LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 2,
+            "REJECT": 0
+          },
+          "TIDAK_LAYAK": {
+            "ACCEPT": 1,
+            "REVIEW": 1,
+            "REJECT": 0
+          }
+        },
+        "CAR": {
+          "k": 0,
+          "n": 2,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.841886116991581,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "FAR": {
+          "k": 1,
+          "n": 2,
+          "point": 0.5,
+          "lo": 0.012579117093425018,
+          "hi": 0.9874208829065749,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "false_rejection": {
+          "k": 0,
+          "n": 2,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.841886116991581,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "review_rate": {
+          "k": 3,
+          "n": 4,
+          "point": 0.75,
+          "lo": 0.19412044968324332,
+          "hi": 0.9936905367902902,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "reject_rate": {
+          "k": 0,
+          "n": 4,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.6023646356164745,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        }
+      }
+    },
+    "C": {
+      "params": {
+        "label": "C",
+        "config": "C",
+        "w_s": 0.25,
+        "accept": 0.8,
+        "hard_fail": false
+      },
+      "all": {
+        "n": 20,
+        "confusion": {
+          "LAYAK": {
+            "ACCEPT": 4,
+            "REVIEW": 8,
+            "REJECT": 5
+          },
+          "TIDAK_LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 1,
+            "REJECT": 2
+          }
+        },
+        "CAR": {
+          "k": 4,
+          "n": 17,
+          "point": 0.23529411764705882,
+          "lo": 0.06810774043735673,
+          "hi": 0.49899327320458,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "FAR": {
+          "k": 0,
+          "n": 3,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.7075982261787133,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "false_rejection": {
+          "k": 5,
+          "n": 17,
+          "point": 0.29411764705882354,
+          "lo": 0.10313551437031993,
+          "hi": 0.5595827187543372,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "review_rate": {
+          "k": 9,
+          "n": 20,
+          "point": 0.45,
+          "lo": 0.23057789677592416,
+          "hi": 0.6847218669594515,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "reject_rate": {
+          "k": 7,
+          "n": 20,
+          "point": 0.35,
+          "lo": 0.153909204784541,
+          "hi": 0.5921885345328282,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        }
+      },
+      "answerable": {
+        "n": 16,
+        "confusion": {
+          "LAYAK": {
+            "ACCEPT": 4,
+            "REVIEW": 8,
+            "REJECT": 3
+          },
+          "TIDAK_LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 0,
+            "REJECT": 1
+          }
+        },
+        "CAR": {
+          "k": 4,
+          "n": 15,
+          "point": 0.26666666666666666,
+          "lo": 0.07787154629104359,
+          "hi": 0.551003241036971,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "FAR": {
+          "k": 0,
+          "n": 1,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.9749999999999999,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "false_rejection": {
+          "k": 3,
+          "n": 15,
+          "point": 0.2,
+          "lo": 0.043312005105836604,
+          "hi": 0.480891133806853,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "review_rate": {
+          "k": 8,
+          "n": 16,
+          "point": 0.5,
+          "lo": 0.24651011149057517,
+          "hi": 0.7534898885094246,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "reject_rate": {
+          "k": 4,
+          "n": 16,
+          "point": 0.25,
+          "lo": 0.07266203825288214,
+          "hi": 0.5237708198961275,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        }
+      },
+      "probe": {
+        "n": 4,
+        "confusion": {
+          "LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 0,
+            "REJECT": 2
+          },
+          "TIDAK_LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 1,
+            "REJECT": 1
+          }
+        },
+        "CAR": {
+          "k": 0,
+          "n": 2,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.841886116991581,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "FAR": {
+          "k": 0,
+          "n": 2,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.841886116991581,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "false_rejection": {
+          "k": 2,
+          "n": 2,
+          "point": 1.0,
+          "lo": 0.15811388300841894,
+          "hi": 1.0,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "review_rate": {
+          "k": 1,
+          "n": 4,
+          "point": 0.25,
+          "lo": 0.006309463209709876,
+          "hi": 0.8058795503167566,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "reject_rate": {
+          "k": 3,
+          "n": 4,
+          "point": 0.75,
+          "lo": 0.19412044968324332,
+          "hi": 0.9936905367902902,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        }
+      }
+    },
+    "D": {
+      "params": {
+        "label": "D",
+        "config": "D",
+        "w_s": 0.25,
+        "accept": 0.8,
+        "hard_fail": true
+      },
+      "all": {
+        "n": 20,
+        "confusion": {
+          "LAYAK": {
+            "ACCEPT": 4,
+            "REVIEW": 8,
+            "REJECT": 5
+          },
+          "TIDAK_LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 1,
+            "REJECT": 2
+          }
+        },
+        "CAR": {
+          "k": 4,
+          "n": 17,
+          "point": 0.23529411764705882,
+          "lo": 0.06810774043735673,
+          "hi": 0.49899327320458,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "FAR": {
+          "k": 0,
+          "n": 3,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.7075982261787133,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "false_rejection": {
+          "k": 5,
+          "n": 17,
+          "point": 0.29411764705882354,
+          "lo": 0.10313551437031993,
+          "hi": 0.5595827187543372,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "review_rate": {
+          "k": 9,
+          "n": 20,
+          "point": 0.45,
+          "lo": 0.23057789677592416,
+          "hi": 0.6847218669594515,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "reject_rate": {
+          "k": 7,
+          "n": 20,
+          "point": 0.35,
+          "lo": 0.153909204784541,
+          "hi": 0.5921885345328282,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        }
+      },
+      "answerable": {
+        "n": 16,
+        "confusion": {
+          "LAYAK": {
+            "ACCEPT": 4,
+            "REVIEW": 8,
+            "REJECT": 3
+          },
+          "TIDAK_LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 0,
+            "REJECT": 1
+          }
+        },
+        "CAR": {
+          "k": 4,
+          "n": 15,
+          "point": 0.26666666666666666,
+          "lo": 0.07787154629104359,
+          "hi": 0.551003241036971,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "FAR": {
+          "k": 0,
+          "n": 1,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.9749999999999999,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "false_rejection": {
+          "k": 3,
+          "n": 15,
+          "point": 0.2,
+          "lo": 0.043312005105836604,
+          "hi": 0.480891133806853,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "review_rate": {
+          "k": 8,
+          "n": 16,
+          "point": 0.5,
+          "lo": 0.24651011149057517,
+          "hi": 0.7534898885094246,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "reject_rate": {
+          "k": 4,
+          "n": 16,
+          "point": 0.25,
+          "lo": 0.07266203825288214,
+          "hi": 0.5237708198961275,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        }
+      },
+      "probe": {
+        "n": 4,
+        "confusion": {
+          "LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 0,
+            "REJECT": 2
+          },
+          "TIDAK_LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 1,
+            "REJECT": 1
+          }
+        },
+        "CAR": {
+          "k": 0,
+          "n": 2,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.841886116991581,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "FAR": {
+          "k": 0,
+          "n": 2,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.841886116991581,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "false_rejection": {
+          "k": 2,
+          "n": 2,
+          "point": 1.0,
+          "lo": 0.15811388300841894,
+          "hi": 1.0,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "review_rate": {
+          "k": 1,
+          "n": 4,
+          "point": 0.25,
+          "lo": 0.006309463209709876,
+          "hi": 0.8058795503167566,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "reject_rate": {
+          "k": 3,
+          "n": 4,
+          "point": 0.75,
+          "lo": 0.19412044968324332,
+          "hi": 0.9936905367902902,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        }
+      }
+    },
+    "D*": {
+      "params": {
+        "label": "D*",
+        "config": "D",
+        "w_s": 0.0,
+        "accept": 0.75,
+        "hard_fail": true
+      },
+      "all": {
+        "n": 20,
+        "confusion": {
+          "LAYAK": {
+            "ACCEPT": 4,
+            "REVIEW": 8,
+            "REJECT": 5
+          },
+          "TIDAK_LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 0,
+            "REJECT": 3
+          }
+        },
+        "CAR": {
+          "k": 4,
+          "n": 17,
+          "point": 0.23529411764705882,
+          "lo": 0.06810774043735673,
+          "hi": 0.49899327320458,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "FAR": {
+          "k": 0,
+          "n": 3,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.7075982261787133,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "false_rejection": {
+          "k": 5,
+          "n": 17,
+          "point": 0.29411764705882354,
+          "lo": 0.10313551437031993,
+          "hi": 0.5595827187543372,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "review_rate": {
+          "k": 8,
+          "n": 20,
+          "point": 0.4,
+          "lo": 0.19119006072530725,
+          "hi": 0.6394574126925103,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "reject_rate": {
+          "k": 8,
+          "n": 20,
+          "point": 0.4,
+          "lo": 0.19119006072530725,
+          "hi": 0.6394574126925103,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        }
+      },
+      "answerable": {
+        "n": 16,
+        "confusion": {
+          "LAYAK": {
+            "ACCEPT": 4,
+            "REVIEW": 8,
+            "REJECT": 3
+          },
+          "TIDAK_LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 0,
+            "REJECT": 1
+          }
+        },
+        "CAR": {
+          "k": 4,
+          "n": 15,
+          "point": 0.26666666666666666,
+          "lo": 0.07787154629104359,
+          "hi": 0.551003241036971,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "FAR": {
+          "k": 0,
+          "n": 1,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.9749999999999999,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "false_rejection": {
+          "k": 3,
+          "n": 15,
+          "point": 0.2,
+          "lo": 0.043312005105836604,
+          "hi": 0.480891133806853,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "review_rate": {
+          "k": 8,
+          "n": 16,
+          "point": 0.5,
+          "lo": 0.24651011149057517,
+          "hi": 0.7534898885094246,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "reject_rate": {
+          "k": 4,
+          "n": 16,
+          "point": 0.25,
+          "lo": 0.07266203825288214,
+          "hi": 0.5237708198961275,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        }
+      },
+      "probe": {
+        "n": 4,
+        "confusion": {
+          "LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 0,
+            "REJECT": 2
+          },
+          "TIDAK_LAYAK": {
+            "ACCEPT": 0,
+            "REVIEW": 0,
+            "REJECT": 2
+          }
+        },
+        "CAR": {
+          "k": 0,
+          "n": 2,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.841886116991581,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "FAR": {
+          "k": 0,
+          "n": 2,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.841886116991581,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "false_rejection": {
+          "k": 2,
+          "n": 2,
+          "point": 1.0,
+          "lo": 0.15811388300841894,
+          "hi": 1.0,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "review_rate": {
+          "k": 0,
+          "n": 4,
+          "point": 0.0,
+          "lo": 0.0,
+          "hi": 0.6023646356164745,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        },
+        "reject_rate": {
+          "k": 4,
+          "n": 4,
+          "point": 1.0,
+          "lo": 0.3976353643835252,
+          "hi": 1.0,
+          "defined": true,
+          "interval": "Clopper-Pearson dua sisi 95%"
+        }
+      }
+    }
+  },
+  "claim_prefix_required": "Di bawah pelabelan validator tunggal (intra-rater agreement {pct}%, n={n}): ",
+  "note": "parameter dipilih pada tahap I (validation); di sini diterapkan pada seluruh jawaban asli, jadi bukan evaluasi independen"
+}

@@ -1,0 +1,339 @@
+{
+  "checked_on": "2026-11-11",
+  "method": "pdftotext (poppler), dua mode baca (urutan baca & layout), casefold, pencocokan substring",
+  "limits": [
+    "kata kunci != makna: sinonim/penulisan lain bisa lolos",
+    "lapisan teks dokumen scan berisik: istilah salah-OCR bisa lolos",
+    "pencarian ini hanya halaman terindeks pilot, bukan seluruh PDF"
+  ],
+  "manual_check_required_docs": [
+    "perpres_59_2024_perubahan_ketiga_jaminan_kesehatan",
+    "perpres_64_2020_perubahan_kedua_jaminan_kesehatan"
+  ],
+  "scope": [
+    {
+      "doc_id": "bpjs_03_2024_skrining_peserta_jkn",
+      "file": "BPJS_03_2024_Skrining_Peserta_JKN.pdf",
+      "sha256": "eafd44f4a8d676c8c77b64ef40cc1d9dd068434db3b732804ee531d78d948848",
+      "eval_role": "evidence_source",
+      "text_layer_class": "digital_asli",
+      "pages_searched": [
+        1,
+        21
+      ],
+      "n_pages": 21
+    },
+    {
+      "doc_id": "kepmenkes_1511_2023_layanan_kebidanan_neonatal_jkn",
+      "file": "Kepmenkes_1511_2023_Layanan_Kebidanan_Neonatal_JKN.pdf",
+      "sha256": "8ce2e4686a493ae262ce6a4fbde70d8569a56785116f316ff1d80189676824c3",
+      "eval_role": "evidence_source",
+      "text_layer_class": "digital_asli",
+      "pages_searched": [
+        1,
+        16
+      ],
+      "n_pages": 16
+    },
+    {
+      "doc_id": "permenkes_03_2023_standar_tarif_jkn",
+      "file": "Permenkes_03_2023_Standar_Tarif_JKN.pdf",
+      "sha256": "9ad3c8ce7e6de0de246c294267502712354e958e835b9030ca9234754f389ee7",
+      "eval_role": "evidence_source",
+      "text_layer_class": "digital_asli",
+      "pages_searched": [
+        1,
+        91
+      ],
+      "n_pages": 91
+    },
+    {
+      "doc_id": "permenkes_28_2014_pedoman_jkn",
+      "file": "Permenkes_28_2014_Pedoman_JKN.pdf",
+      "sha256": "641e7766d33cbb221e97c8d89f155f6d19aba8d398940cf6896eda0bac23a649",
+      "eval_role": "evidence_source",
+      "text_layer_class": "digital_asli",
+      "pages_searched": [
+        1,
+        48
+      ],
+      "n_pages": 48
+    },
+    {
+      "doc_id": "perpres_59_2024_perubahan_ketiga_jaminan_kesehatan",
+      "file": "Perpres_59_2024_Perubahan_Ketiga_Jaminan_Kesehatan.pdf",
+      "sha256": "2063435307ca083c6b1a4d0b676bd3d2982cfb064257c8005eeea05665f728b5",
+      "eval_role": "evidence_source",
+      "text_layer_class": "scan_dengan_OCR_bawaan_tak_kasatmata",
+      "pages_searched": [
+        1,
+        33
+      ],
+      "n_pages": 33
+    },
+    {
+      "doc_id": "permenkes_05_2018_perubahan_ketiga_permenkes_71_2013",
+      "file": "Permenkes_05_2018_Perubahan_Ketiga_Permenkes_71_2013.pdf",
+      "sha256": "e5b8e31972134c9c1c00024b7b629b2f88ace8fbca0c8bfa06cee4057e7f5c70",
+      "eval_role": "distractor_only",
+      "text_layer_class": "digital_asli",
+      "pages_searched": [
+        1,
+        7
+      ],
+      "n_pages": 7
+    },
+    {
+      "doc_id": "permenkes_07_2021_perubahan_keempat_permenkes_71_2013",
+      "file": "Permenkes_07_2021_Perubahan_Keempat_Permenkes_71_2013.pdf",
+      "sha256": "ebf8283f76f827184f6ed82c685093ef15b141df6f466702a46c7c4f90c85335",
+      "eval_role": "distractor_only",
+      "text_layer_class": "digital_asli",
+      "pages_searched": [
+        1,
+        7
+      ],
+      "n_pages": 7
+    },
+    {
+      "doc_id": "permenkes_23_2017_perubahan_kedua_permenkes_71_2013",
+      "file": "Permenkes_23_2017_Perubahan_Kedua_Permenkes_71_2013.pdf",
+      "sha256": "326154937cdd0865842dada94258b9168df842839a7a744f69611ab3e4bdf7fa",
+      "eval_role": "distractor_only",
+      "text_layer_class": "digital_asli",
+      "pages_searched": [
+        1,
+        4
+      ],
+      "n_pages": 4
+    },
+    {
+      "doc_id": "permenkes_71_2013_pelayanan_jkn",
+      "file": "Permenkes_71_2013_Pelayanan_JKN.pdf",
+      "sha256": "4185cd036e0141992aa846d26dd7a993143624357d936fdd9fc0f9caf3e9dc50",
+      "eval_role": "distractor_only",
+      "text_layer_class": "digital_asli",
+      "pages_searched": [
+        1,
+        28
+      ],
+      "n_pages": 28
+    },
+    {
+      "doc_id": "perpres_64_2020_perubahan_kedua_jaminan_kesehatan",
+      "file": "Perpres_64_2020_Perubahan_Kedua_Jaminan_Kesehatan.pdf",
+      "sha256": "15df58914b2ca170d4199c7d38bd18e4bfe9729b2ba979e8e2c07e1e4be59ecd",
+      "eval_role": "distractor_only",
+      "text_layer_class": "scan_dengan_OCR_bawaan_tak_kasatmata",
+      "pages_searched": [
+        1,
+        12
+      ],
+      "n_pages": 12
+    }
+  ],
+  "probes": [
+    {
+      "case_id": "R17",
+      "question": "Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, berapa kali dalam setahun pemeriksaan mamografi dijamin oleh BPJS Kesehatan?",
+      "terms": [
+        "mamografi",
+        "mammografi",
+        "mamogram",
+        "mammography"
+      ],
+      "result": "ABSENT_ALL",
+      "found": {
+        "mamografi": {},
+        "mammografi": {},
+        "mamogram": {},
+        "mammography": {}
+      },
+      "control_terms": {
+        "payudara klinis": {
+          "bpjs_03_2024_skrining_peserta_jkn": [
+            6,
+            7,
+            8
+          ],
+          "permenkes_03_2023_standar_tarif_jkn": [
+            4
+          ]
+        }
+      },
+      "controls_ok": true
+    },
+    {
+      "case_id": "R18",
+      "question": "Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, berapa besaran tarif pelayanan ambulans udara?",
+      "terms": [
+        "ambulans udara",
+        "ambulan udara",
+        "air ambulance",
+        "helikopter",
+        "pesawat"
+      ],
+      "result": "ABSENT_ALL",
+      "found": {
+        "ambulans udara": {},
+        "ambulan udara": {},
+        "air ambulance": {},
+        "helikopter": {},
+        "pesawat": {}
+      },
+      "control_terms": {
+        "ambulans darat": {
+          "permenkes_03_2023_standar_tarif_jkn": [
+            9,
+            23
+          ],
+          "perpres_59_2024_perubahan_ketiga_jaminan_kesehatan": [
+            18,
+            19
+          ]
+        }
+      },
+      "controls_ok": true
+    },
+    {
+      "case_id": "R19",
+      "question": "Menurut Peraturan Presiden Nomor 59 Tahun 2024, berapa nominal iuran bulanan Peserta PBPU Kelas 3 yang berlaku pada tahun 2026?",
+      "terms": [
+        "tahun 2026",
+        "2026",
+        "1 januari 2026"
+      ],
+      "result": "ABSENT_ALL",
+      "found": {
+        "tahun 2026": {},
+        "2026": {},
+        "1 januari 2026": {}
+      },
+      "control_terms": {
+        "iuran": {
+          "bpjs_03_2024_skrining_peserta_jkn": [
+            3
+          ],
+          "kepmenkes_1511_2023_layanan_kebidanan_neonatal_jkn": [
+            1,
+            6
+          ],
+          "permenkes_03_2023_standar_tarif_jkn": [
+            1,
+            26
+          ],
+          "permenkes_28_2014_pedoman_jkn": [
+            2,
+            3,
+            8,
+            9,
+            10,
+            12,
+            13,
+            14,
+            15,
+            16,
+            19,
+            20,
+            31,
+            33,
+            40,
+            41
+          ],
+          "perpres_59_2024_perubahan_ketiga_jaminan_kesehatan": [
+            3,
+            9,
+            10,
+            11,
+            12,
+            13,
+            15,
+            29,
+            31,
+            32
+          ],
+          "permenkes_71_2013_pelayanan_jkn": [
+            2,
+            3,
+            14
+          ],
+          "perpres_64_2020_perubahan_kedua_jaminan_kesehatan": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      },
+      "controls_ok": true
+    },
+    {
+      "case_id": "R20",
+      "question": "Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014, berapa lama masa tunggu sebelum Peserta baru dapat menggunakan manfaat Jaminan Kesehatan?",
+      "terms": [
+        "masa tunggu",
+        "waktu tunggu",
+        "periode tunggu",
+        "masa menunggu",
+        "tenggang waktu"
+      ],
+      "result": "ABSENT_ALL",
+      "found": {
+        "masa tunggu": {},
+        "waktu tunggu": {},
+        "periode tunggu": {},
+        "masa menunggu": {},
+        "tenggang waktu": {}
+      },
+      "control_terms": {
+        "paling lambat": {
+          "bpjs_03_2024_skrining_peserta_jkn": [
+            14
+          ],
+          "kepmenkes_1511_2023_layanan_kebidanan_neonatal_jkn": [
+            5
+          ],
+          "permenkes_28_2014_pedoman_jkn": [
+            31,
+            32,
+            34,
+            35,
+            44
+          ],
+          "perpres_59_2024_perubahan_ketiga_jaminan_kesehatan": [
+            13,
+            28,
+            31,
+            32
+          ],
+          "permenkes_05_2018_perubahan_ketiga_permenkes_71_2013": [
+            6
+          ],
+          "permenkes_07_2021_perubahan_keempat_permenkes_71_2013": [
+            5
+          ],
+          "permenkes_23_2017_perubahan_kedua_permenkes_71_2013": [
+            3
+          ],
+          "permenkes_71_2013_pelayanan_jkn": [
+            9,
+            10
+          ],
+          "perpres_64_2020_perubahan_kedua_jaminan_kesehatan": [
+            8,
+            10,
+            11
+          ]
+        }
+      },
+      "controls_ok": true
+    }
+  ]
+}

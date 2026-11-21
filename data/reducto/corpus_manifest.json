@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-11-08T23:05:14+07:00",
+  "script_version": "2026-11-03.1",
+  "model": "r-1",
+  "page_range": [
+    1,
+    91
+  ],
+  "documents": [
+    {
+      "doc_id": "permenkes_03_2023_standar_tarif_jkn",
+      "status": "TECH_QA_FLAGS",
+      "source_pdf_sha256": "9ad3c8ce7e6de0de246c294267502712354e958e835b9030ca9234754f389ee7",
+      "local_page_count": 721,
+      "flags": [
+        "TEXT_LAYER_UNRELIABLE_REFERENCE: 62 dari 91 halaman berbeda; pembanding tidak dapat dipercaya (scan + OCR bawaan?) -> wajib QA berbasis gambar halaman"
+      ],
+      "raw_json": "data/reducto/raw/permenkes_03_2023_standar_tarif_jkn__p001-091__reducto-r-1.json",
+      "block_count": 788
+    }
+  ]
+}

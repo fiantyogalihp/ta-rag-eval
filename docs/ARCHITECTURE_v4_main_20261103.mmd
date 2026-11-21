@@ -1,0 +1,33 @@
+flowchart LR
+    subgraph FIX["Lingkungan eksperimen tetap — bukan kontribusi penelitian"]
+        direction LR
+        A["Dokumen sumber<br/>PDF resmi JKN<br/>pilot: 267 dari 1346 hlm"] --> R["Retrieval tetap<br/>BM25 + dense + RRF, top-k dibekukan"]
+        R --> G["Jawaban MiMo (prompt hanya konteks)<br/>disimpan, tidak dibangkitkan ulang"]
+    end
+
+    P["Pendukung: parsing Reducto API r-1,<br/>chunking, indeks FAISS lokal"] -.-> A
+
+    G --> E["Evaluator yang dibandingkan<br/>A lexical · B semantic · C hybrid · D hybrid + hard-fail"]
+    E --> X{"Keputusan"}
+    X --> AC["ACCEPT<br/>dilepas ke pengguna"]
+    X --> RV["REVIEW<br/>ditahan"]
+    X --> RJ["REJECT<br/>ditahan"]
+
+    A -. "kutipan dari PDF ASLI + halaman fisik" .-> EV["Evidence oracle"]
+    EV --> L["Label manusia per jawaban, blind terhadap skor<br/>validator tunggal = pengguna<br/>faktual · layak tampil · risiko · retrieval_ok"]
+    R -. "chunk terambil" .-> L
+    G -. "jawaban diuji (Track R asli, Track M mutasi)" .-> L
+
+    L --> M["Metrik: CAR · FAR · REVIEW · REJECT<br/>latency p50/p95 · interval ketidakpastian<br/>Track R dan Track M dilaporkan terpisah"]
+    AC --> M
+    RV --> M
+    RJ --> M
+
+    classDef fixed fill:#eef2f7,stroke:#8696ad,color:#1f2d3d
+    classDef contrib fill:#e9f1fd,stroke:#5382be,color:#183d6b
+    classDef human fill:#fff1d6,stroke:#bb8b24,color:#4b390b
+    classDef support fill:#f3f3f3,stroke:#999,color:#444,stroke-dasharray: 4 3
+    class A,R,G fixed
+    class E,X,AC,RV,RJ,M contrib
+    class EV,L human
+    class P support

@@ -1,0 +1,68 @@
+{
+  "accepted": [
+    {
+      "case_id": "R06",
+      "family": "numeric_value",
+      "anchor_page_opposite": "BPJS_03_2024_Skrining_Peserta_JKN.pdf, hlm. fisik 13, Pasal 19 ayat (6):\n\"Jumlah Peserta Prolanis yang mengikuti aktivitas fisik dan/atau edukasi kesehatan sebagaimana dimaksud pada ayat (1) paling sedikit 15 (lima belas) orang dan paling banyak 30 (tiga puluh) orang per klub.\""
+    },
+    {
+      "case_id": "R10",
+      "family": "date",
+      "anchor_page_opposite": "Kepmenkes_1511_2023_Layanan_Kebidanan_Neonatal_JKN.pdf, hlm. fisik 12, bagian 3.b Pembiayaan SHK, butir 4):\n\"Persalinan di fasilitas pelayanan kesehatan yang dilakukan setelah tanggal 1 September 2023 hanya dapat dibayarkan oleh BPJS Kesehatan jika disertai bukti pengambilan sampel SHK\""
+    },
+    {
+      "case_id": "R15",
+      "family": "numeric_value",
+      "anchor_page_opposite": "Permenkes_03_2023_Standar_Tarif_JKN.pdf, hlm. fisik 5, Pasal 4 huruf a:\n\"Standar Tarif Kapitasi ditetapkan sebagai berikut: a. Puskesmas sebesar Rp3.600,00 (tiga ribu enam ratus rupiah) sampai dengan Rp9.000,00 (sembilan ribu rupiah) per peserta per bulan;\""
+    },
+    {
+      "case_id": "R13",
+      "family": "numeric_value",
+      "anchor_page_opposite": "Permenkes_28_2014_Pedoman_JKN.pdf, hlm. fisik 38, bagian D. Pengelolaan dan Pemanfaatan Dana, butir c.3) FKTP lainnya milik Pemerintah:\n\"Dana kapitasi yang digunakan untuk Jasa Pelayanan dialokasikan antara 40% - 60% dari total pengembalian dana Penerimaan Negara Bukan Pajak (PNBP) dan sisanya dimanfaatkan untuk dukungan biaya operasional pelayanan kesehatan\""
+    },
+    {
+      "case_id": "R01",
+      "family": "numeric_value",
+      "anchor_page_opposite": "Perpres_59_2024_Perubahan_Ketiga_Jaminan_Kesehatan.pdf, hlm. fisik 3, Pasal 1 angka 2:\n\"Peserta adalah setiap orang, termasuk orang asing yang bekerja paling singkat 6 (enam) bulan di Indonesia, yang telah membayar Iuran Jaminan Kesehatan.\""
+    },
+    {
+      "case_id": "R02",
+      "family": "unit",
+      "anchor_page_opposite": "Perpres_59_2024_Perubahan_Ketiga_Jaminan_Kesehatan.pdf, hlm. fisik 8, Pasal 7 ayat (1):\n\"Peserta dapat mengganti FKTP tempat Peserta terdaftar setelah jangka waktu 3 (tiga) bulan.\""
+    },
+    {
+      "case_id": "R03",
+      "family": "numeric_value",
+      "anchor_page_opposite": "Perpres_59_2024_Perubahan_Ketiga_Jaminan_Kesehatan.pdf, hlm. fisik 9, Pasal 15 ayat (2):\n\"BPJS Kesehatan harus melakukan verifikasi pendaftaran sebagaimana dimaksud pada ayat (1) dalam waktu 14 (empat belas) hari sejak pendaftaran.\""
+    },
+    {
+      "case_id": "R07",
+      "family": "unit",
+      "anchor_page_opposite": "BPJS_03_2024_Skrining_Peserta_JKN.pdf, hlm. fisik 14, Pasal 24 ayat (2):\n\"Pengajuan klaim penggantian biaya sebagaimana dimaksud pada ayat (1) diberikan jangka waktu paling lambat 3 (tiga) bulan sejak kegiatan kelompok dilaksanakan.\""
+    },
+    {
+      "case_id": "R16",
+      "family": "numeric_value",
+      "anchor_page_opposite": "Permenkes_03_2023_Standar_Tarif_JKN.pdf, hlm. fisik 8, Pasal 10 ayat (3):\n\"Besaran tarif kapitasi khusus sebagaimana dimaksud pada ayat (1) bagi FKTP yang hanya memiliki bidan/perawat ditetapkan sebesar Rp8.000,00 (delapan ribu rupiah) per peserta per bulan.\""
+    },
+    {
+      "case_id": "R09",
+      "family": "numeric_value",
+      "anchor_page_opposite": "Kepmenkes_1511_2023_Layanan_Kebidanan_Neonatal_JKN.pdf, hlm. fisik 10, poin 2.e.2):\n\"Pelayanan persalinan dengan tindakan emergensi dasar di FKTP PONED dilaksanakan minimal 2 (dua) hari, tarif pelayanan dibayarkan sesuai dengan tarif pelayanan persalinan PONED.\""
+    },
+    {
+      "case_id": "R12",
+      "family": "unit",
+      "anchor_page_opposite": "Permenkes_28_2014_Pedoman_JKN.pdf, hlm. fisik 35, bagian 5. Mekanisme Pembayaran INA CBGs:\n\"Klaim FKRTL dibayarkan oleh BPJS Kesehatan paling lambat 15 hari setelah berkas klaim diterima lengkap.\""
+    }
+  ],
+  "skipped": [
+    {
+      "case_id": "R05",
+      "reason": "Angka kunci jawaban adalah 1 (frekuensi pemeriksaan), sehingga kandidat nilai baru dari urutan faktor 2, 3, 5 adalah 2, 3, dan 5; ketiganya muncul sebagai angka pada halaman jangkar BPJS_03_2024_Skrining_Peserta_JKN.pdf hlm. fisik 8 (nomor butir 2., 3., dan 5. pada Pasal 11 ayat (1) huruf a, nomor ayat (2), serta rujukan \"angka 3, angka 4, angka 5, angka 6\" pada ayat (2)). Tidak ada faktor dari urutan 2, 3, 5 yang menghasilkan nilai baru yang tidak muncul pada halaman jangkar, sehingga mutasi numeric_value tidak dapat diterapkan."
+    }
+  ],
+  "n_pairs": 11,
+  "target": 12,
+  "shortfall": 1
+}

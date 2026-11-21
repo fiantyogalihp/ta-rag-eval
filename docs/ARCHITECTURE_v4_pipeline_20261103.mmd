@@ -1,0 +1,77 @@
+flowchart TD
+    subgraph CORP["0 · Korpus dan cakupan (config/corpus.json)"]
+        Z["Zip pengguna: 13 PDF, 1346 hlm<br/>SHA256 + halaman = audit pengguna"] --> V0{"corpus verify<br/>header %PDF · SHA256 · halaman"}
+        V0 -->|"cocok 13/13"| SC["Cakupan pilot, dikunci sebelum lihat skor<br/>evidence: 4 UTAMA + Permenkes 3/2023 hlm 1-91<br/>pengecoh: 5 RIWAYAT · ditunda: 3 HISTORIS + hlm 92-721"]
+        V0 -->|"beda"| STOP0["Berhenti: berkas bukan yang diaudit"]
+    end
+
+    subgraph PARSE["1 · Parsing (komponen pendukung)"]
+        SC --> C["Reducto API, settings.model = r-1 dipin<br/>267 hlm pilot, per rentang halaman"]
+        C --> D[("JSON mentah per dokumen<br/>sumber kebenaran, di-hash")]
+        D --> H["Markdown bukti baca<br/>penanda PDF_PAGE, Figure ditandai"]
+        D --> Q{"QA teknis otomatis<br/>halaman tercakup · usage = jumlah halaman<br/>model teramati = diminta"}
+        D --> TL{"Pembanding teks-bawaan PDF<br/>+ vonis keandalan dokumen"}
+        TL -->|"USABLE_REFERENCE"| TLF["Flag per halaman:<br/>angka beda · kemiripan rendah"]
+        TL -->|"UNRELIABLE / NO_REFERENCE<br/>scan + OCR berisik"| TLU["Satu flag dokumen<br/>pembanding diabaikan"]
+        Q --> OK1["Lolos QA teknis (belum = benar)"]
+        TLF --> OK1
+        TLU --> OK1
+    end
+
+    subgraph CASEQA["2 · QA fidelity manusia berbasis kasus"]
+        OK1 --> QH["Bandingkan dengan GAMBAR PDF asli:<br/>halaman evidence 20 record + 2 penolakan,<br/>halaman chunk relevan tahap II"]
+        QH -->|"salah"| RP["Parse ulang halaman/dokumen<br/>raw lama dipindah, tidak ditimpa"]
+        RP --> C
+        QH -->|"sesuai"| G1["G1 lulus: human_fidelity_qa terisi"]
+    end
+
+    subgraph IDX["3 · Chunking dan retrieval (lokal, tanpa SaaS)"]
+        G1 --> K["Chunking sadar struktur<br/>Pasal via regex · tabel satu block = satu unit<br/>Figure/Signature/Header/Footer dikeluarkan"]
+        K --> CJ[("chunks.jsonl<br/>doc, hlm awal-akhir, heading_path, eval_role, hash")]
+        CJ --> EM["Embedding lokal multilingual"]
+        EM --> FX[("Indeks FAISS flat")]
+    end
+
+    subgraph CASES["4 · Kasus beku"]
+        FX --> RT["Retrieval tetap: BM25 + dense + RRF<br/>top-k dibekukan, konteks tidak dipangkas"]
+        RT --> LLM["Generator MiMo tetap, temperature 0<br/>prompt HANYA konteks, dibekukan + di-hash<br/>respons mentah disimpan"]
+        LLM --> TR["Track R (utama): jawaban asli MiMo<br/>tanpa mutasi · min 10, usulan 20 pertanyaan"]
+        MU["Track M (sekunder): 10 jawaban salah<br/>mutasi_terkontrol, berlabel, dilaporkan terpisah"]
+        TR --> FC[("Frozen cases")]
+        MU --> FC
+        OR["Evidence oracle: kutipan dari PDF ASLI<br/>+ halaman fisik (independen dari parser)"] --> FC
+        Z -.-> OR
+    end
+
+    subgraph GT["5 · Ground truth"]
+        FC --> LB["Label per JAWABAN oleh manusia (pengguna, validator tunggal)<br/>buta skor · faktual · layak tampil · risiko · retrieval_ok<br/>re-label intra-rater 20%"]
+        LB --> VG{"Evidence, label, split valid?"}
+        VG -->|"tidak"| LB
+        VG -->|"ya"| SP["Split per group_id dan evidence_group<br/>pasangan selalu satu split"]
+    end
+
+    subgraph EVAL["6 · Evaluasi"]
+        SP --> VAL["VALIDATION: benchmark A-D<br/>oracle dan retrieved terpisah"]
+        VAL --> SA["Tahap A: sweep bobot 0-100%<br/>Tahap B: sweep threshold 0-1"]
+        SA --> GR["Tahap C: grid 30 kombinasi C + 30 D<br/>satu baris per kombinasi"]
+        GR --> SEL["Pilih parameter dengan aturan<br/>yang dikunci SEBELUM melihat hasil"]
+        SEL --> FZ["Bekukan bobot, threshold, aturan, kode"]
+        SP --> TEST["TEST terpisah"]
+        FZ --> RUN["Uji final SEKALI"]
+        TEST --> RUN
+        RUN --> DG["Sensitivity test = diagnostik saja<br/>tanpa memilih ulang"]
+    end
+
+    DG --> OUT["Tabel 11/12, confusion matrix, 3 kasus contoh,<br/>latency, error analysis, keterbatasan<br/>Track R dan Track M terpisah"]
+    OUT --> RG{"Persetujuan desain?"}
+    RG -->|"belum"| ST["Laporkan sebagai pilot / preliminary"]
+    RG -->|"ya"| PUB["Naskah jurnal"]
+
+    classDef manual fill:#fff1d6,stroke:#bb8b24,color:#4b390b
+    classDef gate fill:#fce7e7,stroke:#b95e5e,color:#5e1f1f
+    classDef research fill:#e9f1fd,stroke:#5382be,color:#183d6b
+    classDef store fill:#eef2f7,stroke:#8696ad,color:#1f2d3d
+    class QH,LB,MU,OR manual
+    class Q,TL,V0,VG,RG gate
+    class VAL,SA,GR,SEL,FZ,RUN,DG research
+    class D,CJ,FX,FC store

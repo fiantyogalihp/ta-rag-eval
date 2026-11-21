@@ -1,0 +1,35 @@
+{
+  "n": 8,
+  "agree": 6,
+  "pct": 75.0,
+  "discrepancies": [
+    {
+      "answer_id": "run1:R18",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "run1:R20",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    }
+  ],
+  "kappa": 0.5,
+  "kappa_note": "dilaporkan hanya sebagai pelengkap persentase kesepakatan; n kecil",
+  "min_gap_hours_observed": 7.18,
+  "min_gap_hours_required": 12,
+  "gap_deviation": true,
+  "sheet_saved_at": "2026-11-13T07:35:31+00:00",
+  "imported_at": "2026-11-13T08:02:09+00:00",
+  "sheet_sha256": "ce48c921d68b2f65021cfaec212b32d1b49fbb6ce2fb18c562bfe77d8fd51659",
+  "gap_is_upper_bound": true,
+  "gap_time_basis": "earlier_of_import_and_sheet_save",
+  "composition": {
+    "mutation": 2,
+    "probe": 2,
+    "natural_tidak_layak": 2,
+    "natural_layak": 2
+  },
+  "strata_short": {},
+  "disclosure": "ini intra-rater: mengukur konsistensi diri, bukan kebenaran dan bukan independensi; tidak menghilangkan bias penulis-pertanyaan = pelabel"
+}

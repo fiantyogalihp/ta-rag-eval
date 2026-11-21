@@ -1,0 +1,975 @@
+{
+ "_comment": "Alur deterministik TA. Urutan = urutan topologis. Ubah file ini = ubah rencana (hash rencana ikut berubah). Lihat src/ta_rag/agent.py.",
+ "version": "1.0",
+ "stages": [
+  {
+   "id": "S00_env",
+   "title": "Cek lingkungan (paket, nama kunci; nilai kunci tidak ditampilkan)",
+   "kind": "auto",
+   "needs": [],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.agent",
+    "envcheck"
+   ],
+   "outputs": [],
+   "review_outputs": true
+  },
+  {
+   "id": "S01_tests",
+   "title": "Jalankan seluruh tes (kode harus hijau sebelum menyentuh data)",
+   "kind": "auto",
+   "needs": [
+    "S00_env"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "pytest",
+    "-q"
+   ],
+   "outputs": [],
+   "review_outputs": true,
+   "timeout_s": 900
+  },
+  {
+   "id": "S02_pdfs",
+   "title": "Sediakan 13 PDF asli di data/raw_pdf",
+   "kind": "human",
+   "needs": [
+    "S01_tests"
+   ],
+   "evidence": [
+    "data/raw_pdf"
+   ],
+   "guards_post": [
+    "pdfs_real"
+   ],
+   "instructions": "Letakkan 13 PDF JKN asli di data/raw_pdf. Jika punya ZIP-nya:\n  python -m ta_rag.corpus unpack --zip <ZIP> --dest data/raw_pdf\nPenjaga memeriksa SHA256 dan jumlah halaman terhadap audit (13/13 harus cocok)."
+  },
+  {
+   "id": "S03_manifest",
+   "title": "Manifest cakupan (tersedia vs terindeks vs jangkar vs pengecoh)",
+   "kind": "auto",
+   "needs": [
+    "S02_pdfs"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.corpus",
+    "manifest"
+   ],
+   "inputs": [
+    "config/corpus.json"
+   ],
+   "outputs": [
+    "data/manifest/scope_manifest.json"
+   ],
+   "review_outputs": true
+  },
+  {
+   "id": "S04_parse_dry",
+   "title": "Parsing Reducto: dry-run atas rencana yang sama dengan parsing penuh (tanpa API, tanpa biaya)",
+   "kind": "auto",
+   "needs": [
+    "S03_manifest"
+   ],
+   "inputs": [
+    "data/raw_pdf",
+    "config/corpus.json"
+   ],
+   "outputs": [],
+   "review_outputs": true,
+   "cmd_dynamic": "parse_full_dry"
+  },
+  {
+   "id": "S05_parse_pilot",
+   "title": "Parsing Reducto: pilot 3 halaman (satu dokumen)",
+   "kind": "auto",
+   "needs": [
+    "S04_parse_dry"
+   ],
+   "cost": "paid_api",
+   "cost_note": "3 halaman; kredit kecil. Periksa hasil sebelum menerima.",
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.parsing.reducto_parse_corpus",
+    "--pdf-dir",
+    "data/raw_pdf",
+    "--out-dir",
+    "data/reducto_pilot",
+    "--only",
+    "perpres_59_2024_perubahan_ketiga_jaminan_kesehatan",
+    "--page-range",
+    "1-3",
+    "--model",
+    "r-1"
+   ],
+   "env_required": [
+    "REDUCTO_API_KEY"
+   ],
+   "inputs": [
+    "data/raw_pdf"
+   ],
+   "outputs": [
+    "data/reducto_pilot"
+   ],
+   "review_outputs": true,
+   "timeout_s": 1800
+  },
+  {
+   "id": "S06_parse_full",
+   "title": "Parsing Reducto: korpus pilot 267 halaman (model r-1)",
+   "kind": "auto",
+   "needs": [
+    "S05_parse_pilot"
+   ],
+   "cost": "paid_api",
+   "cost_note": "Perintah diturunkan dari config/corpus.json (corpus plan). Estimasi kredit ~178 [Dugaan]; kuota akunmu tidak diketahui.",
+   "cmd_dynamic": "parse_full",
+   "env_required": [
+    "REDUCTO_API_KEY"
+   ],
+   "inputs": [
+    "data/raw_pdf",
+    "config/corpus.json"
+   ],
+   "outputs": [
+    "data/reducto/raw",
+    "data/reducto/markdown"
+   ],
+   "guards_post": [
+    "reducto_provenance"
+   ],
+   "review_outputs": true,
+   "timeout_s": 7200
+  },
+  {
+   "id": "S07_parse_qa",
+   "title": "QA fidelitas parsing oleh manusia (halaman jangkar vs gambar PDF)",
+   "kind": "human",
+   "needs": [
+    "S06_parse_full"
+   ],
+   "evidence": [
+    "data/reducto/manifests"
+   ],
+   "guards_post": [
+    "reducto_provenance",
+    "parse_human_qa"
+   ],
+   "instructions": "Untuk setiap dokumen sumber bukti: bandingkan halaman jangkar pada data/reducto/markdown dengan gambar halaman PDF asli (angka, negasi, tabel).\nIsi di data/reducto/manifests/<dokumen>.manifest.json:\n  \"human_fidelity_qa\": {\"status\": \"PASS\" | \"PASS_WITH_NOTES\" | \"FAIL\", \"reviewer\": \"<namamu>\", \"reviewed_at\": \"<ISO>\", \"notes\": \"...\"}\nPerpres 59/2024 dan 64/2020 adalah scan+OCR: periksa visual. Status FAIL ditolak penjaga: perbaiki sumbernya, jangan mengubah status."
+  },
+  {
+   "id": "S08_questions",
+   "title": "Verifikasi manusia 20 pertanyaan (kutipan, nilai, negasi, halaman)",
+   "kind": "human",
+   "needs": [
+    "S07_parse_qa"
+   ],
+   "evidence": [
+    "data/cases/questions_draft.jsonl"
+   ],
+   "guards_post": [
+    "questions_verified"
+   ],
+   "instructions": "Buka verification_pack_R01-R20.pdf. Per pertanyaan: kutipan benar? nilai/satuan/negasi benar? halaman fisik benar?\nBila semua benar, ubah di data/cases/questions_draft.jsonl: \"status\": \"HUMAN_VERIFIED\", \"validator\": \"<namamu>\", \"validated_at\": \"<ISO>\", \"human_verified\": true.\nPerbaiki dulu yang salah. Khusus probe R17-R20: periksa visual pada dua dokumen scan (mamografi / 2026 / masa tunggu)."
+  },
+  {
+   "id": "S09_qverify",
+   "title": "Verifikasi otomatis kutipan terhadap PDF asli",
+   "kind": "auto",
+   "needs": [
+    "S08_questions"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.questions",
+    "verify",
+    "--cases",
+    "data/cases/questions_draft.jsonl",
+    "--pdf-dir",
+    "data/raw_pdf"
+   ],
+   "inputs": [
+    "data/cases/questions_draft.jsonl",
+    "data/raw_pdf"
+   ],
+   "outputs": [],
+   "review_outputs": true
+  },
+  {
+   "id": "S10_absence",
+   "title": "Audit absence R17-R20 (kontrol topik tetangga)",
+   "kind": "auto",
+   "needs": [
+    "S09_qverify"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.questions",
+    "absence-audit",
+    "--cases",
+    "data/cases/questions_draft.jsonl",
+    "--pdf-dir",
+    "data/raw_pdf",
+    "--out",
+    "data/cases/absence_audit.json",
+    "--date",
+    "{today}"
+   ],
+   "inputs": [
+    "data/cases/questions_draft.jsonl",
+    "data/raw_pdf"
+   ],
+   "outputs": [
+    "data/cases/absence_audit.json"
+   ],
+   "review_outputs": true
+  },
+  {
+   "id": "S11_lock",
+   "title": "KUNCI protokol (pra-registrasi) sebelum melabeli",
+   "kind": "auto",
+   "needs": [
+    "S10_absence"
+   ],
+   "cost": "irreversible",
+   "cost_note": "Periksa config/protocol.json sebelum dikunci. Perubahan sesudah kunci = amandemen bertanggal.",
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.protocol",
+    "lock"
+   ],
+   "inputs": [
+    "config/protocol.json"
+   ],
+   "outputs": [
+    "config/protocol.lock.json"
+   ],
+   "guards_post": [
+    "protocol_locked"
+   ],
+   "review_outputs": true
+  },
+  {
+   "id": "S12_chunk",
+   "title": "Chunking + penjaga cakupan indeks",
+   "kind": "auto",
+   "needs": [
+    "S07_parse_qa",
+    "S11_lock"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.pipeline",
+    "chunk"
+   ],
+   "inputs": [
+    "config/corpus.json",
+    "config/protocol.json",
+    "data/reducto/raw"
+   ],
+   "outputs": [
+    "data/index/chunks.jsonl"
+   ],
+   "guards_pre": [
+    "reducto_provenance",
+    "parse_human_qa"
+   ],
+   "review_outputs": true
+  },
+  {
+   "id": "S13_smoke",
+   "title": "Smoke test generator: 1 pertanyaan (R02), periksa bentuk respons",
+   "kind": "auto",
+   "needs": [
+    "S12_chunk"
+   ],
+   "cost": "paid_api",
+   "cost_note": "Periksa: message.content terisi, finish_reason bukan 'length', usage ada, response.model memuat 'mimo'. Jika terpotong, naikkan max_tokens di config/generator.json SEBELUM langkah beku. Ulang smoke: hapus data/smoke/answers_smoke.jsonl lalu `reject` langkah ini.",
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.pipeline",
+    "capture",
+    "--cases",
+    "data/cases/questions_draft.jsonl",
+    "--chunks",
+    "data/index/chunks.jsonl",
+    "--run",
+    "smoke",
+    "--out",
+    "data/smoke",
+    "--only",
+    "R02",
+    "--smoke"
+   ],
+   "env_required": [
+    "MIMO_API_KEY"
+   ],
+   "inputs": [
+    "config/generator.json",
+    "data/index/chunks.jsonl"
+   ],
+   "outputs": [
+    "data/smoke/answers_smoke.jsonl"
+   ],
+   "review_outputs": true,
+   "timeout_s": 600
+  },
+  {
+   "id": "S14_freeze",
+   "title": "BEKUKAN generator (model, prompt, parameter) sebelum Track R",
+   "kind": "auto",
+   "needs": [
+    "S13_smoke"
+   ],
+   "cost": "irreversible",
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.capture",
+    "freeze"
+   ],
+   "inputs": [
+    "config/generator.json"
+   ],
+   "outputs": [
+    "config/generator.json",
+    "config/generator.lock.json"
+   ],
+   "guards_post": [
+    "generator_frozen"
+   ],
+   "review_outputs": true
+  },
+  {
+   "id": "S15_run1",
+   "title": "Capture jawaban generator run 1 (primer)",
+   "kind": "auto",
+   "needs": [
+    "S14_freeze"
+   ],
+   "cost": "paid_api",
+   "cost_note": "20 panggilan API, satu per pertanyaan. Run tidak dapat ditimpa.",
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.pipeline",
+    "capture",
+    "--cases",
+    "data/cases/questions_draft.jsonl",
+    "--chunks",
+    "data/index/chunks.jsonl",
+    "--run",
+    "run1",
+    "--out",
+    "data/runs"
+   ],
+   "env_required": [
+    "MIMO_API_KEY"
+   ],
+   "inputs": [
+    "data/cases/questions_draft.jsonl",
+    "data/index/chunks.jsonl",
+    "config/generator.json",
+    "config/protocol.json"
+   ],
+   "outputs": [
+    "data/runs/answers_run1.jsonl"
+   ],
+   "guards_pre": [
+    "protocol_locked",
+    "generator_frozen",
+    "questions_verified",
+    "no_synthetic"
+   ],
+   "guards_post": [
+    "captures_real"
+   ],
+   "review_outputs": true,
+   "timeout_s": 3600
+  },
+  {
+   "id": "S18_sheet",
+   "title": "Lembar label buta-skor untuk jawaban run 1",
+   "kind": "auto",
+   "needs": [
+    "S15_run1"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.labeling",
+    "sheet",
+    "--run",
+    "run1"
+   ],
+   "inputs": [
+    "data/runs/answers_run1.jsonl",
+    "data/cases/questions_draft.jsonl"
+   ],
+   "outputs": [
+    "data/labels/sheet_run1.csv"
+   ],
+   "mutable_outputs": true,
+   "review_outputs": true
+  },
+  {
+   "id": "S19_label",
+   "title": "PELABELAN oleh manusia (buta skor, rubrik terkunci)",
+   "kind": "human",
+   "needs": [
+    "S18_sheet"
+   ],
+   "evidence": [
+    "data/labels/sheet_run1.csv"
+   ],
+   "instructions": "Buka data/labels/sheet_run1.csv (UTF-8; Excel: Data > From Text/CSV). Isi kolom `label` dengan LAYAK / TIDAK_LAYAK / INSUFFICIENT_EVIDENCE sesuai rubrik pada kolom `rubric`.\nUntuk pertanyaan berjawab isi juga kolom `abstain`: `ya` bila jawaban HANYA menyatakan informasi tidak ada dalam konteks, selain itu `tidak` (abstain pada pertanyaan berjawab = TIDAK_LAYAK di tahap I; kolom ini dipakai menurunkan label tahap II secara mekanis).\nATURAN: jangan menyunting kolom answer; jangan membuka skor evaluator apa pun; satu orang saja; catat keraguan di `note`.\nFile ini adalah hasil kerjamu: agent tidak boleh mengisinya."
+  },
+  {
+   "id": "S20_label_import",
+   "title": "Impor label (validasi + kunci)",
+   "kind": "auto",
+   "needs": [
+    "S19_label"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.labeling",
+    "import",
+    "--run",
+    "run1",
+    "--validator",
+    "{env:TA_VALIDATOR}"
+   ],
+   "env_required": [
+    "TA_VALIDATOR"
+   ],
+   "inputs": [
+    "data/labels/sheet_run1.csv",
+    "data/runs/answers_run1.jsonl",
+    "data/cases/questions_draft.jsonl"
+   ],
+   "outputs": [
+    "data/labels/labels.jsonl"
+   ],
+   "guards_post": [
+    "labels_valid"
+   ],
+   "review_outputs": true
+  },
+  {
+   "id": "S21_mutants_sheet",
+   "title": "Lembar mutasi Track M (urutan kandidat pra-registrasi)",
+   "kind": "auto",
+   "needs": [
+    "S20_label_import",
+    "S12_chunk"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.labeling",
+    "mutants-sheet"
+   ],
+   "inputs": [
+    "data/labels/labels.jsonl",
+    "data/index/chunks.jsonl",
+    "data/cases/questions_draft.jsonl"
+   ],
+   "outputs": [
+    "data/labels/mutants_sheet.csv"
+   ],
+   "mutable_outputs": true,
+   "review_outputs": true
+  },
+  {
+   "id": "S22_mutants",
+   "title": "MUTASI jawaban oleh manusia (urut, tanpa memilih yang mudah)",
+   "kind": "human",
+   "needs": [
+    "S21_mutants_sheet"
+   ],
+   "evidence": [
+    "data/labels/mutants_sheet.csv"
+   ],
+   "instructions": "Kerjakan baris BERURUTAN dari atas (urutan pra-registrasi; jangan melompat). Kolom mutation_family sudah terisi dan TIDAK boleh diubah (ditetapkan pra-registrasi). Per baris isi mutated_answer (SATU blok perubahan sesuai family) dan anchor_page_opposite (halaman+kutipan yang membuktikan kebalikannya; buka PDF-nya).\nJika mutasi tak dapat diterapkan secara mekanis, isi skip_reason (bukan mutated_answer) beserta alasannya. SETIAP baris wajib terisi salah satunya; baris kosong ditolak saat impor."
+  },
+  {
+   "id": "S23_mutants_import",
+   "title": "Impor mutasi (verifikasi mekanis)",
+   "kind": "auto",
+   "needs": [
+    "S22_mutants"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.labeling",
+    "mutants-import",
+    "--validator",
+    "{env:TA_VALIDATOR}"
+   ],
+   "env_required": [
+    "TA_VALIDATOR"
+   ],
+   "inputs": [
+    "data/labels/mutants_sheet.csv",
+    "data/labels/labels.jsonl",
+    "data/index/chunks.jsonl",
+    "data/cases/questions_draft.jsonl"
+   ],
+   "outputs": [
+    "data/labels/mutants.jsonl",
+    "data/labels/mutants_log.json"
+   ],
+   "review_outputs": true
+  },
+  {
+   "id": "S24_merge",
+   "title": "Gabungkan label Track R + Track M",
+   "kind": "auto",
+   "needs": [
+    "S23_mutants_import"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.labeling",
+    "merge"
+   ],
+   "inputs": [
+    "data/labels/labels.jsonl",
+    "data/labels/mutants.jsonl"
+   ],
+   "outputs": [
+    "data/labels/labels_all.jsonl"
+   ],
+   "guards_post": [
+    "labels_all_valid"
+   ],
+   "review_outputs": true
+  },
+  {
+   "id": "S25_relabel_sheet",
+   "title": "Lembar relabel (8 jawaban terstratifikasi, tanpa label pertama)",
+   "kind": "auto",
+   "needs": [
+    "S24_merge"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.labeling",
+    "relabel-sheet"
+   ],
+   "inputs": [
+    "data/labels/labels_all.jsonl",
+    "data/cases/questions_draft.jsonl"
+   ],
+   "outputs": [
+    "data/labels/relabel_sheet.csv",
+    "data/labels/relabel_sample.json"
+   ],
+   "mutable_outputs": true,
+   "review_outputs": true
+  },
+  {
+   "id": "S26_relabel",
+   "title": "RELABEL oleh manusia (jeda >= 12 jam, buta label pertama)",
+   "kind": "human",
+   "needs": [
+    "S25_relabel_sheet"
+   ],
+   "evidence": [
+    "data/labels/relabel_sheet.csv"
+   ],
+   "not_before": {
+    "stage": "S20_label_import",
+    "hours": 12,
+    "override_env": "TA_ACCEPT_SHORT_GAP"
+   },
+   "instructions": "Isi kolom label_baru pada data/labels/relabel_sheet.csv tanpa membuka label pertamamu. Jeda minimum 12 jam sejak impor label pertama (protocol.json relabel.min_gap_hours, D15).\nBila jadwal tidak memungkinkan: set TA_ACCEPT_SHORT_GAP=1; deviasi dicatat di hasil dan ringkasan, dan harus ditulis di naskah."
+  },
+  {
+   "id": "S27_relabel_import",
+   "title": "Impor relabel + kesepakatan intra-rater",
+   "kind": "auto",
+   "needs": [
+    "S26_relabel"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.labeling",
+    "relabel-import",
+    "{opt:TA_ACCEPT_SHORT_GAP=--accept-short-gap}"
+   ],
+   "inputs": [
+    "data/labels/relabel_sheet.csv",
+    "data/labels/relabel_sample.json",
+    "data/labels/labels_all.jsonl"
+   ],
+   "outputs": [
+    "data/labels/relabel.jsonl",
+    "data/labels/relabel_result.json"
+   ],
+   "guards_post": [
+    "relabel_gap"
+   ],
+   "review_outputs": true
+  },
+  {
+   "id": "S28_second_validator",
+   "title": "Upaya validator kedua (dicatat)",
+   "kind": "human",
+   "needs": [
+    "S24_merge"
+   ],
+   "evidence": [
+    "data/labels/second_validator_log.json"
+   ],
+   "instructions": "Minta satu orang non-ahli yang bisa membaca peraturan melabeli 5-10 record dari sampel relabel. Tulis data/labels/second_validator_log.json berupa DAFTAR string, mis.:\n  [\"2026-11-05; rekan mahasiswa (peran); menolak; alasan: tidak punya waktu\"]\nTanggal, peran, hasil (bersedia/menolak/tidak menjawab), alasan. Upayanya wajib tercatat; hasilnya boleh nihil."
+  },
+  {
+   "id": "S29_summary",
+   "title": "Ringkasan pra-evaluator (tanpa skor)",
+   "kind": "auto",
+   "needs": [
+    "S24_merge",
+    "S27_relabel_import",
+    "S28_second_validator"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.labeling",
+    "summary"
+   ],
+   "inputs": [
+    "data/labels/labels_all.jsonl",
+    "data/labels/mutants_log.json",
+    "data/labels/relabel_result.json",
+    "data/labels/second_validator_log.json"
+   ],
+   "outputs": [
+    "data/labels/pre_evaluator_summary.md"
+   ],
+   "review_outputs": true
+  },
+  {
+   "id": "S30_send_dosen",
+   "title": "Kirim ringkasan pra-evaluator sebelum skor dihitung",
+   "kind": "human",
+   "needs": [
+    "S29_summary"
+   ],
+   "evidence": [
+    "data/agent/pre_evaluator_sent.txt"
+   ],
+   "instructions": "Kirim data/labels/pre_evaluator_summary.md SEBELUM evaluator dijalankan. Lalu tulis data/agent/pre_evaluator_sent.txt: tanggal-jam, saluran (email/WA), dan nama berkas bukti (tangkapan layar / .eml). Langkah ini ada karena kamu menjanjikannya; skor baru boleh dihitung sesudahnya."
+  },
+  {
+   "id": "S31_score_I",
+   "title": "Skor tahap I (evidence oracle: kutipan jangkar)",
+   "kind": "auto",
+   "needs": [
+    "S30_send_dosen"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.pipeline",
+    "score",
+    "--stage",
+    "I",
+    "--labels",
+    "data/labels/labels_all.jsonl",
+    "--cases",
+    "data/cases/questions_draft.jsonl",
+    "--out",
+    "data/results/scored_I.jsonl"
+   ],
+   "inputs": [
+    "data/labels/labels_all.jsonl",
+    "data/cases/questions_draft.jsonl",
+    "config/protocol.json"
+   ],
+   "outputs": [
+    "data/results/scored_I.jsonl"
+   ],
+   "guards_pre": [
+    "protocol_locked",
+    "labels_all_valid",
+    "no_synthetic"
+   ],
+   "review_outputs": true,
+   "timeout_s": 3600
+  },
+  {
+   "id": "S32_score_II",
+   "title": "Skor tahap II (konteks hasil retrieval; hanya jawaban asli)",
+   "kind": "auto",
+   "needs": [
+    "S31_score_I"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.pipeline",
+    "score",
+    "--stage",
+    "II",
+    "--labels",
+    "data/labels/labels_all.jsonl",
+    "--cases",
+    "data/cases/questions_draft.jsonl",
+    "--chunks",
+    "data/index/chunks.jsonl",
+    "--out",
+    "data/results/scored_II.jsonl"
+   ],
+   "inputs": [
+    "data/labels/labels_all.jsonl",
+    "data/cases/questions_draft.jsonl",
+    "data/index/chunks.jsonl"
+   ],
+   "outputs": [
+    "data/results/scored_II.jsonl"
+   ],
+   "guards_pre": [
+    "protocol_locked",
+    "labels_all_valid",
+    "no_synthetic"
+   ],
+   "review_outputs": true,
+   "timeout_s": 3600
+  },
+  {
+   "id": "S33_latency",
+   "title": "Ukur latency evaluator konfigurasi C dan D (>=100 iterasi, setelah warm-up)",
+   "kind": "auto",
+   "needs": [
+    "S30_send_dosen"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.pipeline",
+    "latency",
+    "--labels",
+    "data/labels/labels_all.jsonl",
+    "--cases",
+    "data/cases/questions_draft.jsonl",
+    "--out",
+    "data/results/latency.json"
+   ],
+   "inputs": [
+    "data/labels/labels_all.jsonl",
+    "data/cases/questions_draft.jsonl"
+   ],
+   "outputs": [
+    "data/results/latency.json"
+   ],
+   "review_outputs": true,
+   "timeout_s": 1800
+  },
+  {
+   "id": "S34_sweep_I",
+   "title": "Sweep tahap I pada validation + pemilihan parameter (R1/R2)",
+   "kind": "auto",
+   "needs": [
+    "S31_score_I",
+    "S33_latency"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.pipeline",
+    "sweep",
+    "--scored",
+    "data/results/scored_I.jsonl",
+    "--out",
+    "data/results/I",
+    "--latency",
+    "data/results/latency.json"
+   ],
+   "inputs": [
+    "data/results/scored_I.jsonl",
+    "data/results/latency.json",
+    "config/protocol.json"
+   ],
+   "outputs": [
+    "data/results/I"
+   ],
+   "review_outputs": true
+  },
+  {
+   "id": "S35_stage2_II",
+   "title": "Tahap II deskriptif: parameter beku tahap I diterapkan pada jawaban asli (tanpa sweep, tanpa test)",
+   "kind": "auto",
+   "needs": [
+    "S32_score_II",
+    "S34_sweep_I"
+   ],
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.pipeline",
+    "stage2",
+    "--scored",
+    "data/results/scored_II.jsonl",
+    "--selection",
+    "data/results/I/selection.json",
+    "--out",
+    "data/results/II"
+   ],
+   "inputs": [
+    "data/results/scored_II.jsonl",
+    "data/results/I/selection.json",
+    "config/protocol.json"
+   ],
+   "outputs": [
+    "data/results/II"
+   ],
+   "review_outputs": true
+  },
+  {
+   "id": "S36_test_I",
+   "title": "TEST tahap I: sekali, parameter beku",
+   "kind": "auto",
+   "needs": [
+    "S34_sweep_I"
+   ],
+   "cost": "irreversible",
+   "cost_note": "Hasil apa pun (termasuk NO_ELIGIBLE_PARAMETER dan CAR_ZERO_DEGENERATE) adalah temuan yang dilaporkan, bukan alasan mengulang.",
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.pipeline",
+    "test",
+    "--scored",
+    "data/results/scored_I.jsonl",
+    "--selection",
+    "data/results/I/selection.json",
+    "--out",
+    "data/results/I/test_result.json"
+   ],
+   "inputs": [
+    "data/results/scored_I.jsonl",
+    "data/results/I/selection.json"
+   ],
+   "outputs": [
+    "data/results/I/test_result.json",
+    "data/results/I/per_case.csv"
+   ],
+   "review_outputs": true
+  },
+  {
+   "id": "S38_run2_opsional",
+   "title": "OPSIONAL — capture run 2 (replikasi; analisis per-run belum otomatis)",
+   "kind": "auto",
+   "needs": [
+    "S14_freeze",
+    "S15_run1"
+   ],
+   "cost": "paid_api",
+   "cost_note": "20 panggilan API, satu per pertanyaan. Run tidak dapat ditimpa.",
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.pipeline",
+    "capture",
+    "--cases",
+    "data/cases/questions_draft.jsonl",
+    "--chunks",
+    "data/index/chunks.jsonl",
+    "--run",
+    "run2",
+    "--out",
+    "data/runs"
+   ],
+   "env_required": [
+    "MIMO_API_KEY"
+   ],
+   "inputs": [
+    "data/cases/questions_draft.jsonl",
+    "data/index/chunks.jsonl",
+    "config/generator.json",
+    "config/protocol.json"
+   ],
+   "outputs": [
+    "data/runs/answers_run2.jsonl"
+   ],
+   "guards_pre": [
+    "protocol_locked",
+    "generator_frozen",
+    "questions_verified",
+    "no_synthetic"
+   ],
+   "guards_post": [
+    "captures_real"
+   ],
+   "review_outputs": true,
+   "timeout_s": 3600
+  },
+  {
+   "id": "S39_run3_opsional",
+   "title": "OPSIONAL — capture run 3 (replikasi; analisis per-run belum otomatis)",
+   "kind": "auto",
+   "needs": [
+    "S14_freeze",
+    "S38_run2_opsional"
+   ],
+   "cost": "paid_api",
+   "cost_note": "20 panggilan API, satu per pertanyaan. Run tidak dapat ditimpa.",
+   "cmd": [
+    "{python}",
+    "-m",
+    "ta_rag.pipeline",
+    "capture",
+    "--cases",
+    "data/cases/questions_draft.jsonl",
+    "--chunks",
+    "data/index/chunks.jsonl",
+    "--run",
+    "run3",
+    "--out",
+    "data/runs"
+   ],
+   "env_required": [
+    "MIMO_API_KEY"
+   ],
+   "inputs": [
+    "data/cases/questions_draft.jsonl",
+    "data/index/chunks.jsonl",
+    "config/generator.json",
+    "config/protocol.json"
+   ],
+   "outputs": [
+    "data/runs/answers_run3.jsonl"
+   ],
+   "guards_pre": [
+    "protocol_locked",
+    "generator_frozen",
+    "questions_verified",
+    "no_synthetic"
+   ],
+   "guards_post": [
+    "captures_real"
+   ],
+   "review_outputs": true,
+   "timeout_s": 3600
+  }
+ ]
+}

@@ -1,0 +1,177 @@
+{
+  "stability": {
+    "status": "EXPLORATORY_POST_TEST_BOOTSTRAP_OF_VALIDATION",
+    "n_boot": 1000,
+    "seed": 20261104,
+    "alpha": 0.05,
+    "n_units": 12,
+    "configs": {
+      "A": {
+        "status_share": {
+          "SELECTED": 1.0
+        },
+        "chosen_share": {
+          "C:w0.0:t0.75": 0.678,
+          "C:w0.0:t0.78": 0.211,
+          "C:w0.0:t0.8": 0.085,
+          "C:w0.0:t0.85": 0.026
+        }
+      },
+      "B": {
+        "status_share": {
+          "NO_ELIGIBLE_PARAMETER": 0.991,
+          "SELECTED": 0.009
+        },
+        "chosen_share": {
+          "C:w1.0:t0.85": 0.891,
+          "C:w1.0:t0.8": 0.065,
+          "C:w1.0:t0.7": 0.035,
+          "C:w1.0:t0.75": 0.009
+        }
+      },
+      "C": {
+        "status_share": {
+          "SELECTED": 1.0
+        },
+        "chosen_share": {
+          "C:w0.25:t0.8": 0.974,
+          "C:w0.6:t0.8": 0.017,
+          "C:w0.5:t0.7": 0.008,
+          "C:w0.75:t0.7": 0.001
+        }
+      },
+      "D": {
+        "status_share": {
+          "SELECTED": 1.0
+        },
+        "chosen_share": {
+          "D:w0.25:t0.8": 0.974,
+          "D:w0.6:t0.8": 0.017,
+          "D:w0.5:t0.7": 0.008,
+          "D:w0.75:t0.7": 0.001
+        }
+      },
+      "D*": {
+        "status_share": {
+          "SELECTED": 1.0
+        },
+        "chosen_share": {
+          "D:w0.0:t0.75": 0.431,
+          "D:w1.0:t0.8": 0.234,
+          "D:w0.0:t0.78": 0.147,
+          "D:w0.0:t0.8": 0.085,
+          "D:w1.0:t0.7": 0.067,
+          "D:w1.0:t0.75": 0.028,
+          "D:w0.5:t0.7": 0.006,
+          "D:w0.75:t0.7": 0.001,
+          "D:w0.5:t0.75": 0.001
+        }
+      }
+    }
+  },
+  "alpha_sensitivity": {
+    "0.05": {
+      "A": {
+        "status": "SELECTED",
+        "chosen": "C:w0.0:t0.75",
+        "car_R": "3/8",
+        "far_M": "0/7"
+      },
+      "B": {
+        "status": "NO_ELIGIBLE_PARAMETER",
+        "chosen": "C:w1.0:t0.85",
+        "car_R": "4/8",
+        "far_M": "4/7"
+      },
+      "C": {
+        "status": "SELECTED",
+        "chosen": "C:w0.25:t0.8",
+        "car_R": "3/8",
+        "far_M": "0/7"
+      },
+      "D": {
+        "status": "SELECTED",
+        "chosen": "D:w0.25:t0.8",
+        "car_R": "3/8",
+        "far_M": "0/7"
+      },
+      "D*": {
+        "status": "SELECTED",
+        "chosen": "D:w0.0:t0.75",
+        "car_R": "3/8",
+        "far_M": "0/7"
+      }
+    },
+    "0.1": {
+      "A": {
+        "status": "SELECTED",
+        "chosen": "C:w0.0:t0.75",
+        "car_R": "3/8",
+        "far_M": "0/7"
+      },
+      "B": {
+        "status": "NO_ELIGIBLE_PARAMETER",
+        "chosen": "C:w1.0:t0.85",
+        "car_R": "4/8",
+        "far_M": "4/7"
+      },
+      "C": {
+        "status": "SELECTED",
+        "chosen": "C:w0.25:t0.8",
+        "car_R": "3/8",
+        "far_M": "0/7"
+      },
+      "D": {
+        "status": "SELECTED",
+        "chosen": "D:w0.25:t0.8",
+        "car_R": "3/8",
+        "far_M": "0/7"
+      },
+      "D*": {
+        "status": "SELECTED",
+        "chosen": "D:w0.0:t0.75",
+        "car_R": "3/8",
+        "far_M": "0/7"
+      }
+    },
+    "0.2": {
+      "A": {
+        "status": "SELECTED",
+        "chosen": "C:w0.0:t0.75",
+        "car_R": "3/8",
+        "far_M": "0/7"
+      },
+      "B": {
+        "status": "NO_ELIGIBLE_PARAMETER",
+        "chosen": "C:w1.0:t0.85",
+        "car_R": "4/8",
+        "far_M": "4/7"
+      },
+      "C": {
+        "status": "SELECTED",
+        "chosen": "C:w0.25:t0.8",
+        "car_R": "3/8",
+        "far_M": "0/7"
+      },
+      "D": {
+        "status": "SELECTED",
+        "chosen": "D:w0.25:t0.8",
+        "car_R": "3/8",
+        "far_M": "0/7"
+      },
+      "D*": {
+        "status": "SELECTED",
+        "chosen": "D:w1.0:t0.8",
+        "car_R": "8/8",
+        "far_M": "1/7"
+      }
+    }
+  },
+  "locked_selection_reproduced": {
+    "A": true,
+    "B": true,
+    "C": true,
+    "D": true,
+    "D*": true
+  }
+}

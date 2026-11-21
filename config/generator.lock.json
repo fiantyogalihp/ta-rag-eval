@@ -1,0 +1,6 @@
+{
+  "prompt_sha256": "cc92680be8cc020eddcfe97fc732f09d48802c74af3eaa6edcfcfbd930943163",
+  "generator_json_sha256": "8132387877dd31cf366e841b74a3db65dcab772407b5474561812084dc29c255",
+  "model": "mimo-v2.6-flash",
+  "frozen_at": "2026-11-11T15:51:55+00:00"
+}

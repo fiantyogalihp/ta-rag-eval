@@ -1,0 +1,19 @@
+{
+  "reviewer": "Fiantyo Galih Pramudya",
+  "recorded_at": "2026-11-13T14:42:02+07:00",
+  "source_sheet": "data/labels/relabel_sheet_answer.csv",
+  "source_sheet_sha256": "ce48c921d68b2f65021cfaec212b32d1b49fbb6ce2fb18c562bfe77d8fd51659",
+  "source_sheet_saved_at": "2026-11-13T14:35:31+07:00",
+  "timing_basis": "Waktu simpan berkas yang sudah berisi penilaian dan telah diserahkan pengguna; penanda dokumentasi/batas atas penyelesaian, bukan waktu pasti mulai inspeksi.",
+  "minimum_gap_hours_required": 12,
+  "latest_sample_first_label_at": "2026-11-13T07:24:27+07:00",
+  "minimum_gap_ready_at": "2026-11-13T19:24:27+07:00",
+  "documented_gap_upper_bound_approx": "7 jam 11 menit",
+  "human_acknowledged_short_gap": true,
+  "decision_context": "Pengguna ditanya apakah menyetujui penggunaan hasil relabel dengan pengakuan deviasi jeda pendek.",
+  "human_reply_literal": "ya saya setuju",
+  "label_values_modified": false,
+  "original_locked_labels_modified": false,
+  "disclosure_required": ["hasil relabel", "ringkasan pra-evaluator", "keterbatasan/deviasi pada naskah"],
+  "workflow_note": "Tidak ada pengisian frasa persetujuan atau penyuntingan ledger oleh agent. Pengguna tetap mengaktifkan TA_ACCEPT_SHORT_GAP=1 dan menyatakan S26 selesai/mengimpor S27 di TTY."
+}

@@ -1,0 +1,92 @@
+{
+  "configs": {
+    "A": {
+      "selection": {
+        "status": "SELECTED",
+        "rule": "R1",
+        "chosen": "C:w0.0:t0.75"
+      },
+      "params": {
+        "label": "A",
+        "config": "C",
+        "w_s": 0.0,
+        "accept": 0.75,
+        "hard_fail": false
+      }
+    },
+    "B": {
+      "selection": {
+        "status": "NO_ELIGIBLE_PARAMETER",
+        "rule": "R2",
+        "chosen": "C:w1.0:t0.85"
+      },
+      "params": {
+        "label": "B",
+        "config": "C",
+        "w_s": 1.0,
+        "accept": 0.85,
+        "hard_fail": false
+      }
+    },
+    "C": {
+      "selection": {
+        "status": "SELECTED",
+        "rule": "R1",
+        "chosen": "C:w0.25:t0.8"
+      },
+      "params": {
+        "label": "C",
+        "config": "C",
+        "w_s": 0.25,
+        "accept": 0.8,
+        "hard_fail": false
+      }
+    },
+    "D": {
+      "selection": {
+        "status": "SELECTED",
+        "rule": "D=C+hard-fail",
+        "chosen": "D:w0.25:t0.8"
+      },
+      "params": {
+        "label": "D",
+        "config": "D",
+        "w_s": 0.25,
+        "accept": 0.8,
+        "hard_fail": true
+      }
+    },
+    "D*": {
+      "selection": {
+        "status": "SELECTED",
+        "rule": "R1",
+        "chosen": "D:w0.0:t0.75"
+      },
+      "params": {
+        "label": "D*",
+        "config": "D",
+        "w_s": 0.0,
+        "accept": 0.75,
+        "hard_fail": true
+      }
+    }
+  },
+  "alpha": 0.05,
+  "selection_far": "FAR Track M pada validation (D10)",
+  "split_report": {
+    "validation": {
+      "n": 19,
+      "LAYAK": 8,
+      "TIDAK_LAYAK": 11,
+      "warning": null
+    },
+    "test": {
+      "n": 8,
+      "LAYAK": 4,
+      "TIDAK_LAYAK": 4,
+      "warning": null
+    }
+  },
+  "splits_sha256": "cbbddb92c9c099f0b68793c4e4c4fd48b481f568694f13073e612e97b396df17",
+  "note": "dipilih HANYA dari validation; test belum disentuh"
+}

@@ -1,0 +1,129 @@
+{
+  "doc_id": "kepmenkes_1511_2023_layanan_kebidanan_neonatal_jkn",
+  "source_pdf_path": "data/raw_pdf/Kepmenkes_1511_2023_Layanan_Kebidanan_Neonatal_JKN.pdf",
+  "source_pdf_sha256": "8ce2e4686a493ae262ce6a4fbde70d8569a56785116f316ff1d80189676824c3",
+  "source_pdf_bytes": 472309,
+  "local_page_count": 16,
+  "provider": "reducto",
+  "script_version": "2026-11-03.1",
+  "issues": [],
+  "status": "TECH_QA_FLAGS",
+  "reused_existing_raw": true,
+  "request": {
+    "model": "r-1",
+    "settings": {
+      "model": "r-1"
+    },
+    "formatting": null,
+    "enhance": null,
+    "retrieval": null,
+    "note": "Hanya settings.model (dan page_range bila ada) yang dikirim; sisanya default server."
+  },
+  "timing": {
+    "started_at": "2026-11-07T21:12:37+07:00",
+    "completed_at": "2026-11-07T21:13:42+07:00"
+  },
+  "sdk_version": "0.26.0",
+  "job_result_was_url": false,
+  "job": {
+    "job_id": "fb617e6f-794a-44f1-b691-32001b54d022",
+    "studio_link": "https://studio.reducto.ai/job/fb617e6f-794a-44f1-b691-32001b54d022",
+    "duration_s": 2.141526222229004,
+    "usage": {
+      "num_pages": 16,
+      "credit_breakdown": null,
+      "credits": null,
+      "non_empty_cell_count": null,
+      "page_billing_breakdown": null,
+      "usage_breakdown": {
+        "parse_model": "R-1",
+        "tier": "Default",
+        "charts": 0,
+        "legacy_parse_credits": 0.0,
+        "ocr_pages": 0,
+        "parse_native_pages": 0,
+        "parse_pages": 16,
+        "prompted_blocks": 0
+      }
+    }
+  },
+  "files": {
+    "raw_json": "data/reducto/raw/kepmenkes_1511_2023_layanan_kebidanan_neonatal_jkn__reducto-r-1.json",
+    "raw_json_sha256": "3ff92f54d9fa7a768bdaf41847304d325e472bddab0c962fa0a1c5c36760b38d",
+    "markdown": "data/reducto/markdown/kepmenkes_1511_2023_layanan_kebidanan_neonatal_jkn__reducto-r-1.md",
+    "markdown_sha256": "11f9612a6bfb519fbb0b6910c450e26b6ed732c858996d9836dfa9dff64ddf94"
+  },
+  "technical_qa": {
+    "expected_pages": [
+      1,
+      16
+    ],
+    "expected_page_count": 16,
+    "usage_num_pages": 16,
+    "pages_without_blocks": [],
+    "pages_outside_scope": [],
+    "block_count": 167,
+    "block_types": {
+      "Figure": 2,
+      "Title": 5,
+      "Section Header": 14,
+      "List Item": 78,
+      "Footer": 16,
+      "Header": 15,
+      "Text": 32,
+      "Key Value": 5
+    },
+    "figure_or_signature_blocks": 2,
+    "low_confidence_pages": [],
+    "models_observed": [
+      "r-1"
+    ],
+    "flags": []
+  },
+  "text_layer_check": {
+    "method": "pypdf_text_layer_vs_reducto_blocks",
+    "thresholds": {
+      "low_sim_dice": 0.85,
+      "min_text_layer_words": 5,
+      "unreliable_flag_ratio": 0.5,
+      "min_pages_for_verdict": 3
+    },
+    "page_status_counts": {
+      "OK": 15,
+      "NUM_MISMATCH": 1
+    },
+    "differing_ratio": 0.0625,
+    "reference_reliability": "USABLE_REFERENCE",
+    "pages_to_review": [
+      {
+        "page": 14,
+        "status": "NUM_MISMATCH",
+        "dice": 0.3408,
+        "numbers_only_in_pdf_text": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "8",
+          "8",
+          "8"
+        ],
+        "numbers_only_in_reducto": []
+      }
+    ],
+    "note": "Pendeteksi, bukan bukti kebenaran. Halaman OK tidak menggantikan QA manusia. Jika reference_reliability = UNRELIABLE_REFERENCE/NO_REFERENCE, pemeriksaan ini TIDAK informatif untuk dokumen tsb; verifikasi harus lewat gambar halaman PDF asli."
+  },
+  "technical_qa_flags": [
+    "TEXT_LAYER_NUM_MISMATCH: 1 halaman"
+  ],
+  "human_fidelity_qa": {
+    "status": "PASS",
+    "reviewer": "fiantyo galih pramudya",
+    "reviewed_at": "2026-11-10T20:17:55+07:00",
+    "notes": "Transkripsi pernyataan manusia dalam percakapan: 'saya setujui semua, lalu jalankan verifier, dan berikan catatan bahwa cocok disemua pemeriksaan', menjawab daftar S07 halaman fisik 5/10/12 dan QA tambahan halaman 14. Sumber hasil fidelitas adalah pernyataan eksplisit reviewer, bukan inferensi agent dari checkbox kutipan. PDF sebelum revisi (SHA256 1223303ef78a5fbb01142a87d7a21cda04283ed2c94ccc65430a4c38bf7178e8) menandai kutipan R08/R09/R10 PERBAIKI karena fragmen kehilangan subjek/pengecualian; masalah kutipan ditangani terpisah melalui revisi draf yang disetujui, dan revisi itu menunggu pemeriksaan ulang untuk S08. reviewed_at = waktu transkripsi konfirmasi, bukan waktu persis pemeriksaan tiap halaman. Cakupan PASS hanya halaman fisik 5/10/12/14, bukan seluruh dokumen. Diagram halaman 14 bertipe Figure tetap bukan evidence teks; deskripsi model tidak disahkan sebagai OCR. Raw Reducto, hasil QA teknis, dan ledger tidak diubah."
+  }
+}

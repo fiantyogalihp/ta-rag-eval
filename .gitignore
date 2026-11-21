@@ -1,0 +1,21 @@
+# data besar / sensitif tidak di-commit; manifest + hash di-commit
+data/raw_pdf/*
+data/reducto/raw/*
+data/reducto/markdown/*
+data/index/*
+data/cases/*.tmp
+!data/**/.gitkeep
+.env
+*.env
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.venv/
+# pilot Reducto 3 halaman dan paket verifikasi (dihasilkan ulang; raw tidak di-commit, aturan 16)
+data/reducto_pilot/raw/*
+data/reducto_pilot/markdown/*
+verification_pack*.pdf
+verification_pack*.zip
+data/smoke/
+# cache halaman + teks OCR (dihasilkan ulang); crosscheck_report.json boleh di-commit
+data/qa/*/ocr_*

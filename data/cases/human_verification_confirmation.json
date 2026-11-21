@@ -1,0 +1,50 @@
+{
+  "reviewer": "fiantyo galih pramudya",
+  "recorded_at": "2026-11-11T17:32:37+07:00",
+  "timestamp_meaning": "Waktu dokumentasi pernyataan pengguna dalam sesi, bukan waktu persis inspeksi tiap halaman.",
+  "question_review_only": true,
+  "answer_labels_created": false,
+  "answerable_cases": {
+    "case_ids": ["R01", "R02", "R03", "R04", "R05", "R06", "R07", "R08", "R09", "R10", "R11", "R12", "R13", "R14", "R15", "R16"],
+    "basis": "Lembar PDF aktif yang diisi pengguna menunjukkan VERIFIED untuk seluruh R01–R16, termasuk kutipan hasil revisi.",
+    "evidence_pdf_at_review": "verification_pack_R01-R20.pdf",
+    "evidence_archive": "verification_pack_versions_backup.zip",
+    "evidence_archive_member": "snapshots/verification_pack_R01-R20_6f03450be06987787000d5f9a37259123e42512741cac60c57dccd39918f365c.pdf",
+    "evidence_sha256": "6f03450be06987787000d5f9a37259123e42512741cac60c57dccd39918f365c"
+  },
+  "probe_cases": {
+    "case_ids": ["R17", "R18", "R19", "R20"],
+    "supplied_pdf": "/home/satoru/Downloads/verification_pack_R17-R20_TERISI.pdf",
+    "supplied_pdf_sha256": "ef5dcf9269c4807bbdffe9729d7020c77d1e44d2e099e011ef2088587f618a37",
+    "supplied_pdf_status_literal": "VERIFIED_BY_AGENTIC_CHECK",
+    "human_confirmation_literal": "saya sudah memeiksa semua nya dengan bantuan agent",
+    "basis": "Pernyataan eksplisit pengguna bahwa ia sendiri sudah memeriksa semuanya dengan bantuan agent, setelah perbedaan antara keluaran agent dan pemeriksaan manusia ditanyakan. Hasil agent sendiri bukan pengganti konfirmasi ini.",
+    "assistance_disclosure": "Pemeriksaan manusia berbantuan agent; bukan verifikasi independen tanpa bantuan AI.",
+    "scope_note": "Korpus eksperimen adalah 10 dokumen / 267 halaman terindeks. PDF bantuan menyebut pencarian 13 PDF dan seluruh 721 halaman Permenkes 3/2023; temuan di luar cakupan hanya informasi tambahan, bukan perluasan korpus eksperimen.",
+    "r19_note": "Catatan bantuan membahas klausul tahun 2021 dan tahun berikutnya pada Perpres 64/2020. Hasil probe dibaca dalam batas pertanyaan menurut Perpres 59/2024 dan larangan konsolidasi aturan; bukan klaim hukum bahwa seluruh ketentuan lama pasti tidak berlaku pada 2026.",
+    "detailed_agent_report_claims_independently_reproduced_in_this_session": false
+  },
+  "transcription_status": "QUESTION_METADATA_TRANSCRIBED_FROM_HUMAN_REVIEW",
+  "metadata_imported_at": "2026-11-11T17:41:09+07:00",
+  "validated_at_meaning": "Waktu transkripsi final status HUMAN_VERIFIED setelah lembar R01–R16 dan konfirmasi manusia R17–R20 tersedia; bukan waktu persis inspeksi tiap halaman.",
+  "merged_active_pdf": "verification_pack_R01-R20.pdf",
+  "merged_active_pdf_sha256": "aaacdc2ecfc03360b9984cbeda8a17da91589360c04ef35850a6d62f87140583",
+  "merged_pdf_note": "36 halaman; 32 halaman awal dan anotasinya dipertahankan, 4 halaman terakhir berasal dari PDF probe yang diserahkan pengguna. Status laporan asal tetap, dengan komentar tambahan konfirmasi manusia dan batas cakupan pilot. PDF Downloads tidak diubah; salinan sumber probe tersimpan dalam ZIP cadangan.",
+  "checks": {
+    "questions_verifier": "PASS_SCHEMA_AND_PDF_20_HUMAN_VERIFIED",
+    "pdfs_real": "PASS_13_OF_13",
+    "reducto_provenance": "PASS",
+    "parse_human_qa": "PASS",
+    "questions_verified_guard": "PASS",
+    "agent_verify": "LEDGER_UTUH_NO_DRIFT",
+    "pytest": "290 passed",
+    "mutation_check": "Menonaktifkan g_questions_verified hanya di memori membuat tes penolakan draf gagal sebagaimana diharapkan; kode produksi tidak diubah."
+  },
+  "cleanup": {
+    "user_authorized_deleted_file": "data/raw_pdf/Archive.zip",
+    "deleted_file_sha256": "96995ae08f78f6284eaee41fa57862983370626e1383a3a34021a489e4ac8cf1",
+    "original_pdfs_modified": false,
+    "review_backup_archive_deleted": false
+  },
+  "workflow_note": "S07 sudah DONE oleh manusia; S08 tetap menunggu pernyataan selesai manusia di TTY. Tidak ada approve/done/reject atau penyuntingan ledger oleh agent. Archive.zip tambahan dihapus atas izin pengguna; drift folder PDF teratasi."
+}

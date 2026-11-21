@@ -1,0 +1,182 @@
+{
+  "documents": [
+    {
+      "doc_id": "bpjs_03_2024_skrining_peserta_jkn",
+      "file": "BPJS_03_2024_Skrining_Peserta_JKN.pdf",
+      "eval_role": "evidence_source",
+      "pdf_available_pages": 21,
+      "indexed_pages": 21,
+      "anchor_pages": [
+        "1-21"
+      ],
+      "in_document_distractor_pages": [],
+      "distractor_doc_pages": [],
+      "not_indexed_pages": []
+    },
+    {
+      "doc_id": "kepmenkes_1511_2023_layanan_kebidanan_neonatal_jkn",
+      "file": "Kepmenkes_1511_2023_Layanan_Kebidanan_Neonatal_JKN.pdf",
+      "eval_role": "evidence_source",
+      "pdf_available_pages": 16,
+      "indexed_pages": 16,
+      "anchor_pages": [
+        "1-16"
+      ],
+      "in_document_distractor_pages": [],
+      "distractor_doc_pages": [],
+      "not_indexed_pages": []
+    },
+    {
+      "doc_id": "permenkes_03_2023_standar_tarif_jkn",
+      "file": "Permenkes_03_2023_Standar_Tarif_JKN.pdf",
+      "eval_role": "evidence_source",
+      "pdf_available_pages": 721,
+      "indexed_pages": 91,
+      "anchor_pages": [
+        "1-31",
+        "84-91"
+      ],
+      "in_document_distractor_pages": [
+        "32-83"
+      ],
+      "distractor_doc_pages": [],
+      "not_indexed_pages": [
+        "92-721"
+      ]
+    },
+    {
+      "doc_id": "permenkes_28_2014_pedoman_jkn",
+      "file": "Permenkes_28_2014_Pedoman_JKN.pdf",
+      "eval_role": "evidence_source",
+      "pdf_available_pages": 48,
+      "indexed_pages": 48,
+      "anchor_pages": [
+        "1-48"
+      ],
+      "in_document_distractor_pages": [],
+      "distractor_doc_pages": [],
+      "not_indexed_pages": []
+    },
+    {
+      "doc_id": "perpres_59_2024_perubahan_ketiga_jaminan_kesehatan",
+      "file": "Perpres_59_2024_Perubahan_Ketiga_Jaminan_Kesehatan.pdf",
+      "eval_role": "evidence_source",
+      "pdf_available_pages": 33,
+      "indexed_pages": 33,
+      "anchor_pages": [
+        "1-33"
+      ],
+      "in_document_distractor_pages": [],
+      "distractor_doc_pages": [],
+      "not_indexed_pages": []
+    },
+    {
+      "doc_id": "laporan_tahunan_jkn_2023_djsn",
+      "file": "Laporan_Tahunan_JKN_2023_DJSN.pdf",
+      "eval_role": "deferred",
+      "pdf_available_pages": 33,
+      "indexed_pages": 0,
+      "anchor_pages": [],
+      "in_document_distractor_pages": [],
+      "distractor_doc_pages": [],
+      "not_indexed_pages": [
+        "1-33"
+      ]
+    },
+    {
+      "doc_id": "statistik_jkn_2015_2019_djsn",
+      "file": "Statistik_JKN_2015-2019_DJSN.pdf",
+      "eval_role": "deferred",
+      "pdf_available_pages": 164,
+      "indexed_pages": 0,
+      "anchor_pages": [],
+      "in_document_distractor_pages": [],
+      "distractor_doc_pages": [],
+      "not_indexed_pages": [
+        "1-164"
+      ]
+    },
+    {
+      "doc_id": "statistik_jkn_2016_2021_djsn",
+      "file": "Statistik_JKN_2016-2021_DJSN.pdf",
+      "eval_role": "deferred",
+      "pdf_available_pages": 252,
+      "indexed_pages": 0,
+      "anchor_pages": [],
+      "in_document_distractor_pages": [],
+      "distractor_doc_pages": [],
+      "not_indexed_pages": [
+        "1-252"
+      ]
+    },
+    {
+      "doc_id": "permenkes_05_2018_perubahan_ketiga_permenkes_71_2013",
+      "file": "Permenkes_05_2018_Perubahan_Ketiga_Permenkes_71_2013.pdf",
+      "eval_role": "distractor_only",
+      "pdf_available_pages": 7,
+      "indexed_pages": 7,
+      "anchor_pages": [],
+      "in_document_distractor_pages": [],
+      "distractor_doc_pages": [
+        "1-7"
+      ],
+      "not_indexed_pages": []
+    },
+    {
+      "doc_id": "permenkes_07_2021_perubahan_keempat_permenkes_71_2013",
+      "file": "Permenkes_07_2021_Perubahan_Keempat_Permenkes_71_2013.pdf",
+      "eval_role": "distractor_only",
+      "pdf_available_pages": 7,
+      "indexed_pages": 7,
+      "anchor_pages": [],
+      "in_document_distractor_pages": [],
+      "distractor_doc_pages": [
+        "1-7"
+      ],
+      "not_indexed_pages": []
+    },
+    {
+      "doc_id": "permenkes_23_2017_perubahan_kedua_permenkes_71_2013",
+      "file": "Permenkes_23_2017_Perubahan_Kedua_Permenkes_71_2013.pdf",
+      "eval_role": "distractor_only",
+      "pdf_available_pages": 4,
+      "indexed_pages": 4,
+      "anchor_pages": [],
+      "in_document_distractor_pages": [],
+      "distractor_doc_pages": [
+        "1-4"
+      ],
+      "not_indexed_pages": []
+    },
+    {
+      "doc_id": "permenkes_71_2013_pelayanan_jkn",
+      "file": "Permenkes_71_2013_Pelayanan_JKN.pdf",
+      "eval_role": "distractor_only",
+      "pdf_available_pages": 28,
+      "indexed_pages": 28,
+      "anchor_pages": [],
+      "in_document_distractor_pages": [],
+      "distractor_doc_pages": [
+        "1-28"
+      ],
+      "not_indexed_pages": []
+    },
+    {
+      "doc_id": "perpres_64_2020_perubahan_kedua_jaminan_kesehatan",
+      "file": "Perpres_64_2020_Perubahan_Kedua_Jaminan_Kesehatan.pdf",
+      "eval_role": "distractor_only",
+      "pdf_available_pages": 12,
+      "indexed_pages": 12,
+      "anchor_pages": [],
+      "in_document_distractor_pages": [],
+      "distractor_doc_pages": [
+        "1-12"
+      ],
+      "not_indexed_pages": []
+    }
+  ],
+  "totals": {
+    "pdf_pages": 1346,
+    "indexed_pages": 267
+  }
+}

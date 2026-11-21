@@ -1,0 +1,13 @@
+# Tabel 11 (split test, parameter beku; Track R dan M TIDAK digabung)
+
+Setiap klaim diawali: "Di bawah pelabelan validator tunggal (intra-rater agreement 75%, n=8): "
+
+n test: {'R': 4, 'M': 4}. Interval: Clopper–Pearson dua sisi 95%.
+
+| konfigurasi | bobot_SL | threshold | car_R | far_R | far_M | review_R | reject_R | false_rejection_R | p95_ms | status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| A | 0:100 | 0.75 | 1/4 = 25.0% [0.6–80.6] | tidak terdefinisi (n=0) | 0/4 = 0.0% [0.0–60.2] | 2/4 = 50.0% [6.8–93.2] | 1/4 = 25.0% [0.6–80.6] | 1/4 = 25.0% [0.6–80.6] | 0.48 | TEST_RUN_ONCE_FROZEN_PARAMS |
+| B | 100:0 | 0.85 | 4/4 = 100.0% [39.8–100.0] | tidak terdefinisi (n=0) | 4/4 = 100.0% [39.8–100.0] | 0/4 = 0.0% [0.0–60.2] | 0/4 = 0.0% [0.0–60.2] | 0/4 = 0.0% [0.0–60.2] | 257.37 | TEST_RUN_ONCE_R2_REFERENCE_NO_ELIGIBLE_PARAMETER |
+| C | 25:75 | 0.8 | 0/4 = 0.0% [0.0–60.2] | tidak terdefinisi (n=0) | 0/4 = 0.0% [0.0–60.2] | 4/4 = 100.0% [39.8–100.0] | 0/4 = 0.0% [0.0–60.2] | 0/4 = 0.0% [0.0–60.2] | 385.48 | TEST_RUN_ONCE_FROZEN_PARAMS |
+| D | 25:75 | 0.8 | 0/4 = 0.0% [0.0–60.2] | tidak terdefinisi (n=0) | 0/4 = 0.0% [0.0–60.2] | 3/4 = 75.0% [19.4–99.4] | 1/4 = 25.0% [0.6–80.6] | 1/4 = 25.0% [0.6–80.6] | 267.51 | TEST_RUN_ONCE_FROZEN_PARAMS |
+| D* | 0:100 | 0.75 | 1/4 = 25.0% [0.6–80.6] | tidak terdefinisi (n=0) | 0/4 = 0.0% [0.0–60.2] | 2/4 = 50.0% [6.8–93.2] | 1/4 = 25.0% [0.6–80.6] | 1/4 = 25.0% [0.6–80.6] | 0.66 | TEST_RUN_ONCE_FROZEN_PARAMS |

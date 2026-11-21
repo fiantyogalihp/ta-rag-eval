@@ -1,0 +1,386 @@
+{
+  "status": "EXPLORATORY_POST_TEST_UNLABELED",
+  "runs": [
+    "run1",
+    "run2",
+    "run3"
+  ],
+  "n_cases": 16,
+  "same_route_all_runs": {
+    "A": 9,
+    "B": 12,
+    "C": 12,
+    "D": 10,
+    "D*": 9
+  },
+  "per_case": {
+    "R01": {
+      "run1": {
+        "A": "ACCEPT",
+        "B": "ACCEPT",
+        "C": "ACCEPT",
+        "D": "ACCEPT",
+        "D*": "ACCEPT"
+      },
+      "run2": {
+        "A": "REVIEW",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REVIEW"
+      },
+      "run3": {
+        "A": "ACCEPT",
+        "B": "ACCEPT",
+        "C": "ACCEPT",
+        "D": "ACCEPT",
+        "D*": "ACCEPT"
+      }
+    },
+    "R02": {
+      "run1": {
+        "A": "REVIEW",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REVIEW"
+      },
+      "run2": {
+        "A": "REVIEW",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REVIEW"
+      },
+      "run3": {
+        "A": "REVIEW",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REVIEW"
+      }
+    },
+    "R03": {
+      "run1": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REJECT"
+      },
+      "run2": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REJECT"
+      },
+      "run3": {
+        "A": "REVIEW",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REVIEW"
+      }
+    },
+    "R04": {
+      "run1": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REJECT",
+        "D": "REJECT",
+        "D*": "REJECT"
+      },
+      "run2": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REJECT",
+        "D": "REJECT",
+        "D*": "REJECT"
+      },
+      "run3": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REJECT",
+        "D": "REJECT",
+        "D*": "REJECT"
+      }
+    },
+    "R05": {
+      "run1": {
+        "A": "REVIEW",
+        "B": "REVIEW",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REVIEW"
+      },
+      "run2": {
+        "A": "REVIEW",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REVIEW"
+      },
+      "run3": {
+        "A": "REVIEW",
+        "B": "REVIEW",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REVIEW"
+      }
+    },
+    "R06": {
+      "run1": {
+        "A": "ACCEPT",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "ACCEPT"
+      },
+      "run2": {
+        "A": "ACCEPT",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "ACCEPT"
+      },
+      "run3": {
+        "A": "ACCEPT",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "ACCEPT"
+      }
+    },
+    "R07": {
+      "run1": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REJECT"
+      },
+      "run2": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REJECT"
+      },
+      "run3": {
+        "A": "REJECT",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REJECT"
+      }
+    },
+    "R08": {
+      "run1": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REJECT",
+        "D": "REJECT",
+        "D*": "REJECT"
+      },
+      "run2": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REJECT",
+        "D": "REJECT",
+        "D*": "REJECT"
+      },
+      "run3": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REJECT",
+        "D": "REJECT",
+        "D*": "REJECT"
+      }
+    },
+    "R09": {
+      "run1": {
+        "A": "REVIEW",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REVIEW"
+      },
+      "run2": {
+        "A": "REVIEW",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REVIEW"
+      },
+      "run3": {
+        "A": "REJECT",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REJECT",
+        "D*": "REJECT"
+      }
+    },
+    "R10": {
+      "run1": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REJECT",
+        "D": "REJECT",
+        "D*": "REJECT"
+      },
+      "run2": {
+        "A": "REJECT",
+        "B": "ACCEPT",
+        "C": "REJECT",
+        "D": "REJECT",
+        "D*": "REJECT"
+      },
+      "run3": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REJECT",
+        "D": "REJECT",
+        "D*": "REJECT"
+      }
+    },
+    "R11": {
+      "run1": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REJECT",
+        "D": "REJECT",
+        "D*": "REJECT"
+      },
+      "run2": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REJECT",
+        "D": "REJECT",
+        "D*": "REJECT"
+      },
+      "run3": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REJECT",
+        "D": "REJECT",
+        "D*": "REJECT"
+      }
+    },
+    "R12": {
+      "run1": {
+        "A": "ACCEPT",
+        "B": "ACCEPT",
+        "C": "ACCEPT",
+        "D": "ACCEPT",
+        "D*": "ACCEPT"
+      },
+      "run2": {
+        "A": "REVIEW",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REVIEW"
+      },
+      "run3": {
+        "A": "REJECT",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REJECT"
+      }
+    },
+    "R13": {
+      "run1": {
+        "A": "ACCEPT",
+        "B": "ACCEPT",
+        "C": "ACCEPT",
+        "D": "ACCEPT",
+        "D*": "ACCEPT"
+      },
+      "run2": {
+        "A": "REVIEW",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REVIEW"
+      },
+      "run3": {
+        "A": "ACCEPT",
+        "B": "ACCEPT",
+        "C": "ACCEPT",
+        "D": "ACCEPT",
+        "D*": "ACCEPT"
+      }
+    },
+    "R14": {
+      "run1": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REJECT",
+        "D": "REJECT",
+        "D*": "REJECT"
+      },
+      "run2": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REJECT",
+        "D": "REJECT",
+        "D*": "REJECT"
+      },
+      "run3": {
+        "A": "REJECT",
+        "B": "REVIEW",
+        "C": "REJECT",
+        "D": "REJECT",
+        "D*": "REJECT"
+      }
+    },
+    "R15": {
+      "run1": {
+        "A": "REVIEW",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REVIEW"
+      },
+      "run2": {
+        "A": "ACCEPT",
+        "B": "ACCEPT",
+        "C": "ACCEPT",
+        "D": "ACCEPT",
+        "D*": "ACCEPT"
+      },
+      "run3": {
+        "A": "ACCEPT",
+        "B": "ACCEPT",
+        "C": "ACCEPT",
+        "D": "ACCEPT",
+        "D*": "ACCEPT"
+      }
+    },
+    "R16": {
+      "run1": {
+        "A": "REJECT",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REJECT",
+        "D*": "REJECT"
+      },
+      "run2": {
+        "A": "REVIEW",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REVIEW",
+        "D*": "REVIEW"
+      },
+      "run3": {
+        "A": "REJECT",
+        "B": "ACCEPT",
+        "C": "REVIEW",
+        "D": "REJECT",
+        "D*": "REJECT"
+      }
+    }
+  }
+}

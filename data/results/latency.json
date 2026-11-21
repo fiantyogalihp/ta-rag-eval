@@ -1,0 +1,85 @@
+{
+  "A": {
+    "n": 100,
+    "warning": null,
+    "p50": 0.16541697550565004,
+    "p50_ci95": [
+      0.14950399054214358,
+      0.17711601685732603
+    ],
+    "p95": 0.3839040291495621,
+    "p95_ci95": [
+      0.3425150061957538,
+      0.4165800055488944
+    ],
+    "unit": "ms",
+    "w_s": 0.0,
+    "hard_fail": false,
+    "hardware": {
+      "platform": "Linux-6.12.91-1-MANJARO-x86_64-with-glibc2.43",
+      "processor": null,
+      "cpu_count": 4,
+      "ram_mb": 15889,
+      "gpu": "tidak dicatat (embedding dijalankan di CPU)",
+      "python": "3.12.15"
+    },
+    "scope": "evaluator saja (skor + keputusan); tanpa retrieval dan generator"
+  },
+  "C": {
+    "n": 100,
+    "warning": null,
+    "p50": 110.44008197495714,
+    "p50_ci95": [
+      104.12242903839797,
+      119.32556697865948
+    ],
+    "p95": 229.476421023719,
+    "p95_ci95": [
+      208.9210159610957,
+      266.59528899472207
+    ],
+    "unit": "ms",
+    "w_s": 0.6,
+    "hard_fail": false,
+    "hardware": {
+      "platform": "Linux-6.12.91-1-MANJARO-x86_64-with-glibc2.43",
+      "processor": null,
+      "cpu_count": 4,
+      "ram_mb": 15889,
+      "gpu": "tidak dicatat (embedding dijalankan di CPU)",
+      "python": "3.12.15"
+    },
+    "scope": "evaluator saja (skor + keputusan); tanpa retrieval dan generator"
+  },
+  "D": {
+    "n": 100,
+    "warning": null,
+    "p50": 122.40237498190254,
+    "p50_ci95": [
+      110.86616403190419,
+      142.4958260031417
+    ],
+    "p95": 241.09743296867236,
+    "p95_ci95": [
+      209.85533203929663,
+      273.50007701897994
+    ],
+    "unit": "ms",
+    "w_s": 0.6,
+    "hard_fail": true,
+    "hardware": {
+      "platform": "Linux-6.12.91-1-MANJARO-x86_64-with-glibc2.43",
+      "processor": null,
+      "cpu_count": 4,
+      "ram_mb": 15889,
+      "gpu": "tidak dicatat (embedding dijalankan di CPU)",
+      "python": "3.12.15"
+    },
+    "scope": "evaluator saja (skor + keputusan); tanpa retrieval dan generator"
+  },
+  "p95_ms_by_config": {
+    "A": 0.3839040291495621,
+    "C": 229.476421023719,
+    "D": 241.09743296867236
+  }
+}

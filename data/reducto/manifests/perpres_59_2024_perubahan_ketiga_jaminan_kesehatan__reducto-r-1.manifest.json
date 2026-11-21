@@ -1,0 +1,569 @@
+{
+  "doc_id": "perpres_59_2024_perubahan_ketiga_jaminan_kesehatan",
+  "source_pdf_path": "data/raw_pdf/Perpres_59_2024_Perubahan_Ketiga_Jaminan_Kesehatan.pdf",
+  "source_pdf_sha256": "2063435307ca083c6b1a4d0b676bd3d2982cfb064257c8005eeea05665f728b5",
+  "source_pdf_bytes": 3394871,
+  "local_page_count": 33,
+  "provider": "reducto",
+  "script_version": "2026-11-03.1",
+  "issues": [],
+  "status": "TECH_QA_FLAGS",
+  "reused_existing_raw": true,
+  "request": {
+    "model": "r-1",
+    "settings": {
+      "model": "r-1"
+    },
+    "formatting": null,
+    "enhance": null,
+    "retrieval": null,
+    "note": "Hanya settings.model (dan page_range bila ada) yang dikirim; sisanya default server."
+  },
+  "timing": {
+    "started_at": "2026-11-07T21:19:28+07:00",
+    "completed_at": "2026-11-07T21:24:29+07:00"
+  },
+  "sdk_version": "0.26.0",
+  "job_result_was_url": false,
+  "job": {
+    "job_id": "7e62eeaf-5488-4000-a322-1a4354c62aa9",
+    "studio_link": "https://studio.reducto.ai/job/7e62eeaf-5488-4000-a322-1a4354c62aa9",
+    "duration_s": 4.793741226196289,
+    "usage": {
+      "num_pages": 33,
+      "credit_breakdown": null,
+      "credits": null,
+      "non_empty_cell_count": null,
+      "page_billing_breakdown": null,
+      "usage_breakdown": {
+        "parse_model": "R-1",
+        "tier": "Default",
+        "charts": 0,
+        "legacy_parse_credits": 0.0,
+        "ocr_pages": 0,
+        "parse_native_pages": 0,
+        "parse_pages": 33,
+        "prompted_blocks": 0
+      }
+    }
+  },
+  "files": {
+    "raw_json": "data/reducto/raw/perpres_59_2024_perubahan_ketiga_jaminan_kesehatan__reducto-r-1.json",
+    "raw_json_sha256": "4214c337f19adf5662e205df48a2676d32d69ee70323c3ffc54df7a60dce272e",
+    "markdown": "data/reducto/markdown/perpres_59_2024_perubahan_ketiga_jaminan_kesehatan__reducto-r-1.md",
+    "markdown_sha256": "0fc60f3a74081516ac16ce6b7316d96e9946550aa81ae8e7ce499c18d1d0a270"
+  },
+  "technical_qa": {
+    "expected_pages": [
+      1,
+      33
+    ],
+    "expected_page_count": 33,
+    "usage_num_pages": 33,
+    "pages_without_blocks": [],
+    "pages_outside_scope": [],
+    "block_count": 544,
+    "block_types": {
+      "Figure": 34,
+      "Header": 42,
+      "Title": 25,
+      "Section Header": 30,
+      "Key Value": 3,
+      "List Item": 355,
+      "Footer": 35,
+      "Text": 20
+    },
+    "figure_or_signature_blocks": 34,
+    "low_confidence_pages": [],
+    "models_observed": [
+      "r-1"
+    ],
+    "flags": []
+  },
+  "text_layer_check": {
+    "method": "pypdf_text_layer_vs_reducto_blocks",
+    "thresholds": {
+      "low_sim_dice": 0.85,
+      "min_text_layer_words": 5,
+      "unreliable_flag_ratio": 0.5,
+      "min_pages_for_verdict": 3
+    },
+    "page_status_counts": {
+      "NUM_MISMATCH": 30,
+      "OK": 3
+    },
+    "differing_ratio": 0.9091,
+    "reference_reliability": "UNRELIABLE_REFERENCE",
+    "pages_to_review": [
+      {
+        "page": 1,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9399,
+        "numbers_only_in_pdf_text": [
+          "1704544",
+          "2",
+          "2",
+          "2",
+          "2",
+          "2",
+          "4",
+          "4",
+          "44561",
+          "8"
+        ],
+        "numbers_only_in_reducto": [
+          "1",
+          "170454",
+          "2004",
+          "2004",
+          "2018",
+          "2020",
+          "4456"
+        ]
+      },
+      {
+        "page": 2,
+        "status": "NUM_MISMATCH",
+        "dice": 0.8969,
+        "numbers_only_in_pdf_text": [
+          "1",
+          "1",
+          "11",
+          "13",
+          "2",
+          "2",
+          "2",
+          "2",
+          "2",
+          "2",
+          "2",
+          "2",
+          "2",
+          "2",
+          "2"
+        ],
+        "numbers_only_in_reducto": [
+          "130",
+          "2011",
+          "2011",
+          "2018",
+          "2018",
+          "2019",
+          "2019",
+          "2020",
+          "2020",
+          "2020",
+          "2020",
+          "210"
+        ]
+      },
+      {
+        "page": 4,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9824,
+        "numbers_only_in_pdf_text": [
+          "2",
+          "945"
+        ],
+        "numbers_only_in_reducto": [
+          "12",
+          "1945"
+        ]
+      },
+      {
+        "page": 6,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9843,
+        "numbers_only_in_pdf_text": [
+          "3"
+        ],
+        "numbers_only_in_reducto": [
+          "30"
+        ]
+      },
+      {
+        "page": 7,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9764,
+        "numbers_only_in_pdf_text": [
+          "21",
+          "21",
+          "21"
+        ],
+        "numbers_only_in_reducto": [
+          "2",
+          "2",
+          "2"
+        ]
+      },
+      {
+        "page": 8,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9737,
+        "numbers_only_in_pdf_text": [
+          "1",
+          "21",
+          "21"
+        ],
+        "numbers_only_in_reducto": [
+          "2",
+          "2"
+        ]
+      },
+      {
+        "page": 9,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9664,
+        "numbers_only_in_pdf_text": [
+          "21",
+          "21",
+          "41",
+          "71"
+        ],
+        "numbers_only_in_reducto": [
+          "2",
+          "2",
+          "4",
+          "7"
+        ]
+      },
+      {
+        "page": 10,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9805,
+        "numbers_only_in_pdf_text": [
+          "1",
+          "21",
+          "21"
+        ],
+        "numbers_only_in_reducto": [
+          "2",
+          "27"
+        ]
+      },
+      {
+        "page": 11,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9741,
+        "numbers_only_in_pdf_text": [
+          "21",
+          "21",
+          "3",
+          "3"
+        ],
+        "numbers_only_in_reducto": [
+          "2",
+          "2",
+          "30",
+          "30"
+        ]
+      },
+      {
+        "page": 12,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9606,
+        "numbers_only_in_pdf_text": [
+          "2",
+          "41"
+        ],
+        "numbers_only_in_reducto": [
+          "12",
+          "4"
+        ]
+      },
+      {
+        "page": 13,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9756,
+        "numbers_only_in_pdf_text": [
+          "2",
+          "2",
+          "41"
+        ],
+        "numbers_only_in_reducto": [
+          "2020",
+          "4"
+        ]
+      },
+      {
+        "page": 14,
+        "status": "NUM_MISMATCH",
+        "dice": 0.932,
+        "numbers_only_in_pdf_text": [
+          "0",
+          "00",
+          "000",
+          "2",
+          "2",
+          "200",
+          "3",
+          "71"
+        ],
+        "numbers_only_in_reducto": [
+          "2000000000",
+          "2020",
+          "3000000000",
+          "7"
+        ]
+      },
+      {
+        "page": 15,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9751,
+        "numbers_only_in_pdf_text": [
+          "21",
+          "21"
+        ],
+        "numbers_only_in_reducto": [
+          "2",
+          "2"
+        ]
+      },
+      {
+        "page": 16,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9772,
+        "numbers_only_in_pdf_text": [
+          "1",
+          "71"
+        ],
+        "numbers_only_in_reducto": [
+          "7"
+        ]
+      },
+      {
+        "page": 17,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9674,
+        "numbers_only_in_pdf_text": [
+          "1",
+          "21"
+        ],
+        "numbers_only_in_reducto": [
+          "2"
+        ]
+      },
+      {
+        "page": 18,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9649,
+        "numbers_only_in_pdf_text": [
+          "1",
+          "1",
+          "2"
+        ],
+        "numbers_only_in_reducto": [
+          "11",
+          "12"
+        ]
+      },
+      {
+        "page": 19,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9669,
+        "numbers_only_in_pdf_text": [
+          "21",
+          "41",
+          "91964"
+        ],
+        "numbers_only_in_reducto": [
+          "1",
+          "191964",
+          "2",
+          "4"
+        ]
+      },
+      {
+        "page": 21,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9688,
+        "numbers_only_in_pdf_text": [],
+        "numbers_only_in_reducto": [
+          "1"
+        ]
+      },
+      {
+        "page": 22,
+        "status": "NUM_MISMATCH",
+        "dice": 0.985,
+        "numbers_only_in_pdf_text": [
+          "19196",
+          "4"
+        ],
+        "numbers_only_in_reducto": [
+          "14",
+          "191961"
+        ]
+      },
+      {
+        "page": 23,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9789,
+        "numbers_only_in_pdf_text": [
+          "1"
+        ],
+        "numbers_only_in_reducto": []
+      },
+      {
+        "page": 24,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9755,
+        "numbers_only_in_pdf_text": [
+          "21"
+        ],
+        "numbers_only_in_reducto": [
+          "2"
+        ]
+      },
+      {
+        "page": 25,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9613,
+        "numbers_only_in_pdf_text": [
+          "21"
+        ],
+        "numbers_only_in_reducto": [
+          "2"
+        ]
+      },
+      {
+        "page": 26,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9801,
+        "numbers_only_in_pdf_text": [
+          "71"
+        ],
+        "numbers_only_in_reducto": [
+          "7"
+        ]
+      },
+      {
+        "page": 27,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9543,
+        "numbers_only_in_pdf_text": [
+          "21",
+          "21",
+          "41",
+          "7"
+        ],
+        "numbers_only_in_reducto": [
+          "1",
+          "2",
+          "2",
+          "4",
+          "71"
+        ]
+      },
+      {
+        "page": 28,
+        "status": "NUM_MISMATCH",
+        "dice": 0.961,
+        "numbers_only_in_pdf_text": [
+          "21",
+          "21",
+          "21",
+          "41"
+        ],
+        "numbers_only_in_reducto": [
+          "2",
+          "2",
+          "2",
+          "4"
+        ]
+      },
+      {
+        "page": 29,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9885,
+        "numbers_only_in_pdf_text": [
+          "21"
+        ],
+        "numbers_only_in_reducto": [
+          "2"
+        ]
+      },
+      {
+        "page": 30,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9713,
+        "numbers_only_in_pdf_text": [
+          "21",
+          "21",
+          "71"
+        ],
+        "numbers_only_in_reducto": [
+          "2",
+          "2",
+          "7"
+        ]
+      },
+      {
+        "page": 31,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9476,
+        "numbers_only_in_pdf_text": [
+          "1038",
+          "1038",
+          "21",
+          "21",
+          "21",
+          "21",
+          "21",
+          "3"
+        ],
+        "numbers_only_in_reducto": [
+          "103",
+          "103",
+          "2",
+          "2",
+          "2",
+          "2",
+          "2",
+          "30"
+        ]
+      },
+      {
+        "page": 32,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9623,
+        "numbers_only_in_pdf_text": [
+          "21",
+          "3",
+          "71",
+          "71"
+        ],
+        "numbers_only_in_reducto": [
+          "2",
+          "30",
+          "7",
+          "7"
+        ]
+      },
+      {
+        "page": 33,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9007,
+        "numbers_only_in_pdf_text": [
+          "1704554",
+          "2",
+          "24"
+        ],
+        "numbers_only_in_reducto": [
+          "170455",
+          "2024"
+        ]
+      }
+    ],
+    "note": "Pendeteksi, bukan bukti kebenaran. Halaman OK tidak menggantikan QA manusia. Jika reference_reliability = UNRELIABLE_REFERENCE/NO_REFERENCE, pemeriksaan ini TIDAK informatif untuk dokumen tsb; verifikasi harus lewat gambar halaman PDF asli."
+  },
+  "technical_qa_flags": [
+    "TEXT_LAYER_UNRELIABLE_REFERENCE: 30 dari 33 halaman berbeda; pembanding tidak dapat dipercaya (scan + OCR bawaan?) -> wajib QA berbasis gambar halaman"
+  ],
+  "human_fidelity_qa": {
+    "status": "PASS",
+    "reviewer": "fiantyo galih pramudya",
+    "reviewed_at": "2026-11-10T17:54:00+07:00",
+    "notes": "Transkripsi hasil pemeriksaan manusia dari verification_pack_R01-R20_revisi2.pdf (SHA256 31e568a1cbf974aac8bf44018169eff29a182059d114b714db594ce97636a5ce), kini diarsipkan tanpa perubahan isi sebagai anggota verification_pack_R01-R20_revisi2.pdf dalam verification_pack_versions_backup.zip; PDF aktif bernama verification_pack_R01-R20.pdf. R01/R02/R03/R04 pada halaman fisik PDF asli 3/8/9/16 masing-masing ditandai VERIFIED dan diberi catatan pengguna: 'S07 — teks Reducto dibanding gambar PDF: cocok'. reviewed_at memakai waktu simpan PDF beranotasi sebagai penanda waktu dokumentasi pemeriksaan, bukan klaim waktu persis pemeriksaan tiap halaman. Cakupan PASS hanya empat halaman jangkar tersebut, bukan seluruh dokumen. R03 memakai fragmen kutipan yang disetujui pengguna; salah-OCR bawaan 'hants' bukan evidence. Tidak mengubah raw Reducto, hasil QA teknis, atau status langkah dalam ledger."
+  }
+}

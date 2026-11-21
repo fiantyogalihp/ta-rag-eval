@@ -1,0 +1,474 @@
+{
+  "status": "EXPLORATORY_POST_TEST_DESCRIPTIVE",
+  "hash": "bert-base-multilingual-cased_L9_no-idf_version=0.3.12(hug_trans=5.22.2)",
+  "n_layak_asli": 12,
+  "summary": {
+    "BERT_F1": {
+      "n_pairs": 11,
+      "n_lower": 10,
+      "median_delta": -0.0034,
+      "mean_delta": -0.0031,
+      "auc_layak_vs_mutasi": 0.538
+    },
+    "S": {
+      "n_pairs": 11,
+      "n_lower": 11,
+      "median_delta": -0.0081,
+      "mean_delta": -0.0079,
+      "auc_layak_vs_mutasi": 0.561
+    },
+    "L": {
+      "n_pairs": 11,
+      "n_lower": 11,
+      "median_delta": -0.0571,
+      "mean_delta": -0.0655,
+      "auc_layak_vs_mutasi": 0.644
+    }
+  },
+  "pairs": [
+    {
+      "case_pair": [
+        "run1:R06",
+        "M:R06"
+      ],
+      "family": "numeric_value",
+      "unsupported_numbers": [
+        "60"
+      ],
+      "BERT_F1_asli": 0.7859,
+      "S_asli": 0.8924,
+      "L_asli": 0.7619,
+      "BERT_F1_mutasi": 0.7828,
+      "S_mutasi": 0.8871,
+      "L_mutasi": 0.6984
+    },
+    {
+      "case_pair": [
+        "run1:R10",
+        "M:R10"
+      ],
+      "family": "date",
+      "unsupported_numbers": [
+        "2024"
+      ],
+      "BERT_F1_asli": 0.6779,
+      "S_asli": 0.826,
+      "L_asli": 0.314,
+      "BERT_F1_mutasi": 0.6778,
+      "S_mutasi": 0.8233,
+      "L_mutasi": 0.3115
+    },
+    {
+      "case_pair": [
+        "run1:R15",
+        "M:R15"
+      ],
+      "family": "numeric_value",
+      "unsupported_numbers": [
+        "7200"
+      ],
+      "BERT_F1_asli": 0.8304,
+      "S_asli": 0.9179,
+      "L_asli": 0.7333,
+      "BERT_F1_mutasi": 0.8262,
+      "S_mutasi": 0.9158,
+      "L_mutasi": 0.6
+    },
+    {
+      "case_pair": [
+        "run1:R13",
+        "M:R13"
+      ],
+      "family": "numeric_value",
+      "unsupported_numbers": [
+        "80"
+      ],
+      "BERT_F1_asli": 0.8711,
+      "S_asli": 0.9607,
+      "L_asli": 0.7647,
+      "BERT_F1_mutasi": 0.8699,
+      "S_mutasi": 0.9579,
+      "L_mutasi": 0.7353
+    },
+    {
+      "case_pair": [
+        "run1:R01",
+        "M:R01"
+      ],
+      "family": "numeric_value",
+      "unsupported_numbers": [
+        "12"
+      ],
+      "BERT_F1_asli": 0.8498,
+      "S_asli": 0.917,
+      "L_asli": 0.7843,
+      "BERT_F1_mutasi": 0.8463,
+      "S_mutasi": 0.9069,
+      "L_mutasi": 0.6923
+    },
+    {
+      "case_pair": [
+        "run1:R02",
+        "M:R02"
+      ],
+      "family": "unit",
+      "unsupported_numbers": [],
+      "BERT_F1_asli": 0.8167,
+      "S_asli": 0.9088,
+      "L_asli": 0.6857,
+      "BERT_F1_mutasi": 0.8108,
+      "S_mutasi": 0.8962,
+      "L_mutasi": 0.6286
+    },
+    {
+      "case_pair": [
+        "run1:R03",
+        "M:R03"
+      ],
+      "family": "numeric_value",
+      "unsupported_numbers": [
+        "28"
+      ],
+      "BERT_F1_asli": 0.7581,
+      "S_asli": 0.8255,
+      "L_asli": 0.4878,
+      "BERT_F1_mutasi": 0.7535,
+      "S_mutasi": 0.8173,
+      "L_mutasi": 0.3333
+    },
+    {
+      "case_pair": [
+        "run1:R07",
+        "M:R07"
+      ],
+      "family": "unit",
+      "unsupported_numbers": [],
+      "BERT_F1_asli": 0.7509,
+      "S_asli": 0.8018,
+      "L_asli": 0.4865,
+      "BERT_F1_mutasi": 0.7444,
+      "S_mutasi": 0.7925,
+      "L_mutasi": 0.4324
+    },
+    {
+      "case_pair": [
+        "run1:R16",
+        "M:R16"
+      ],
+      "family": "numeric_value",
+      "unsupported_numbers": [
+        "1000",
+        "10000",
+        "16000"
+      ],
+      "BERT_F1_asli": 0.7577,
+      "S_asli": 0.9109,
+      "L_asli": 0.4615,
+      "BERT_F1_mutasi": 0.7529,
+      "S_mutasi": 0.908,
+      "L_mutasi": 0.4051
+    },
+    {
+      "case_pair": [
+        "run1:R09",
+        "M:R09"
+      ],
+      "family": "numeric_value",
+      "unsupported_numbers": [
+        "4"
+      ],
+      "BERT_F1_asli": 0.773,
+      "S_asli": 0.9494,
+      "L_asli": 0.5965,
+      "BERT_F1_mutasi": 0.7741,
+      "S_mutasi": 0.9274,
+      "L_mutasi": 0.5763
+    },
+    {
+      "case_pair": [
+        "run1:R12",
+        "M:R12"
+      ],
+      "family": "unit",
+      "unsupported_numbers": [],
+      "BERT_F1_asli": 0.8488,
+      "S_asli": 0.9739,
+      "L_asli": 0.8,
+      "BERT_F1_mutasi": 0.8472,
+      "S_mutasi": 0.9654,
+      "L_mutasi": 0.7429
+    }
+  ],
+  "records": [
+    {
+      "answer_id": "run1:R06",
+      "track": "R",
+      "label": "LAYAK",
+      "BERT_P": 0.7423,
+      "BERT_R": 0.8349,
+      "BERT_F1": 0.7859,
+      "S": 0.8924,
+      "L": 0.7619
+    },
+    {
+      "answer_id": "run1:R01",
+      "track": "R",
+      "label": "LAYAK",
+      "BERT_P": 0.7827,
+      "BERT_R": 0.9294,
+      "BERT_F1": 0.8498,
+      "S": 0.917,
+      "L": 0.7843
+    },
+    {
+      "answer_id": "run1:R12",
+      "track": "R",
+      "label": "LAYAK",
+      "BERT_P": 0.8,
+      "BERT_R": 0.9039,
+      "BERT_F1": 0.8488,
+      "S": 0.9739,
+      "L": 0.8
+    },
+    {
+      "answer_id": "run1:R11",
+      "track": "R",
+      "label": "TIDAK_LAYAK",
+      "BERT_P": 0.5994,
+      "BERT_R": 0.7724,
+      "BERT_F1": 0.675,
+      "S": 0.6994,
+      "L": 0.2222
+    },
+    {
+      "answer_id": "run1:R16",
+      "track": "R",
+      "label": "LAYAK",
+      "BERT_P": 0.6708,
+      "BERT_R": 0.8705,
+      "BERT_F1": 0.7577,
+      "S": 0.9109,
+      "L": 0.4615
+    },
+    {
+      "answer_id": "run1:R09",
+      "track": "R",
+      "label": "LAYAK",
+      "BERT_P": 0.7046,
+      "BERT_R": 0.8563,
+      "BERT_F1": 0.773,
+      "S": 0.9494,
+      "L": 0.5965
+    },
+    {
+      "answer_id": "run1:R14",
+      "track": "R",
+      "label": "TIDAK_LAYAK",
+      "BERT_P": 0.5988,
+      "BERT_R": 0.6774,
+      "BERT_F1": 0.6357,
+      "S": 0.6263,
+      "L": 0.1918
+    },
+    {
+      "answer_id": "run1:R04",
+      "track": "R",
+      "label": "TIDAK_LAYAK",
+      "BERT_P": 0.635,
+      "BERT_R": 0.6974,
+      "BERT_F1": 0.6647,
+      "S": 0.7642,
+      "L": 0.2903
+    },
+    {
+      "answer_id": "run1:R15",
+      "track": "R",
+      "label": "LAYAK",
+      "BERT_P": 0.7826,
+      "BERT_R": 0.8844,
+      "BERT_F1": 0.8304,
+      "S": 0.9179,
+      "L": 0.7333
+    },
+    {
+      "answer_id": "run1:R07",
+      "track": "R",
+      "label": "LAYAK",
+      "BERT_P": 0.6475,
+      "BERT_R": 0.8938,
+      "BERT_F1": 0.7509,
+      "S": 0.8018,
+      "L": 0.4865
+    },
+    {
+      "answer_id": "run1:R03",
+      "track": "R",
+      "label": "LAYAK",
+      "BERT_P": 0.6954,
+      "BERT_R": 0.8333,
+      "BERT_F1": 0.7581,
+      "S": 0.8255,
+      "L": 0.4878
+    },
+    {
+      "answer_id": "run1:R02",
+      "track": "R",
+      "label": "LAYAK",
+      "BERT_P": 0.7404,
+      "BERT_R": 0.9107,
+      "BERT_F1": 0.8167,
+      "S": 0.9088,
+      "L": 0.6857
+    },
+    {
+      "answer_id": "run1:R05",
+      "track": "R",
+      "label": "LAYAK",
+      "BERT_P": 0.6741,
+      "BERT_R": 0.8868,
+      "BERT_F1": 0.7659,
+      "S": 0.8455,
+      "L": 0.6316
+    },
+    {
+      "answer_id": "run1:R10",
+      "track": "R",
+      "label": "LAYAK",
+      "BERT_P": 0.6702,
+      "BERT_R": 0.6859,
+      "BERT_F1": 0.6779,
+      "S": 0.826,
+      "L": 0.314
+    },
+    {
+      "answer_id": "run1:R08",
+      "track": "R",
+      "label": "TIDAK_LAYAK",
+      "BERT_P": 0.6396,
+      "BERT_R": 0.7218,
+      "BERT_F1": 0.6782,
+      "S": 0.7024,
+      "L": 0.2759
+    },
+    {
+      "answer_id": "run1:R13",
+      "track": "R",
+      "label": "LAYAK",
+      "BERT_P": 0.8107,
+      "BERT_R": 0.9412,
+      "BERT_F1": 0.8711,
+      "S": 0.9607,
+      "L": 0.7647
+    },
+    {
+      "answer_id": "M:R06",
+      "track": "M",
+      "label": "TIDAK_LAYAK",
+      "BERT_P": 0.7396,
+      "BERT_R": 0.8313,
+      "BERT_F1": 0.7828,
+      "S": 0.8871,
+      "L": 0.6984
+    },
+    {
+      "answer_id": "M:R10",
+      "track": "M",
+      "label": "TIDAK_LAYAK",
+      "BERT_P": 0.6697,
+      "BERT_R": 0.6861,
+      "BERT_F1": 0.6778,
+      "S": 0.8233,
+      "L": 0.3115
+    },
+    {
+      "answer_id": "M:R15",
+      "track": "M",
+      "label": "TIDAK_LAYAK",
+      "BERT_P": 0.7792,
+      "BERT_R": 0.8792,
+      "BERT_F1": 0.8262,
+      "S": 0.9158,
+      "L": 0.6
+    },
+    {
+      "answer_id": "M:R13",
+      "track": "M",
+      "label": "TIDAK_LAYAK",
+      "BERT_P": 0.8098,
+      "BERT_R": 0.9398,
+      "BERT_F1": 0.8699,
+      "S": 0.9579,
+      "L": 0.7353
+    },
+    {
+      "answer_id": "M:R01",
+      "track": "M",
+      "label": "TIDAK_LAYAK",
+      "BERT_P": 0.7801,
+      "BERT_R": 0.9248,
+      "BERT_F1": 0.8463,
+      "S": 0.9069,
+      "L": 0.6923
+    },
+    {
+      "answer_id": "M:R02",
+      "track": "M",
+      "label": "TIDAK_LAYAK",
+      "BERT_P": 0.7359,
+      "BERT_R": 0.9026,
+      "BERT_F1": 0.8108,
+      "S": 0.8962,
+      "L": 0.6286
+    },
+    {
+      "answer_id": "M:R03",
+      "track": "M",
+      "label": "TIDAK_LAYAK",
+      "BERT_P": 0.6938,
+      "BERT_R": 0.8244,
+      "BERT_F1": 0.7535,
+      "S": 0.8173,
+      "L": 0.3333
+    },
+    {
+      "answer_id": "M:R07",
+      "track": "M",
+      "label": "TIDAK_LAYAK",
+      "BERT_P": 0.6443,
+      "BERT_R": 0.8813,
+      "BERT_F1": 0.7444,
+      "S": 0.7925,
+      "L": 0.4324
+    },
+    {
+      "answer_id": "M:R16",
+      "track": "M",
+      "label": "TIDAK_LAYAK",
+      "BERT_P": 0.669,
+      "BERT_R": 0.8608,
+      "BERT_F1": 0.7529,
+      "S": 0.908,
+      "L": 0.4051
+    },
+    {
+      "answer_id": "M:R09",
+      "track": "M",
+      "label": "TIDAK_LAYAK",
+      "BERT_P": 0.7052,
+      "BERT_R": 0.8578,
+      "BERT_F1": 0.7741,
+      "S": 0.9274,
+      "L": 0.5763
+    },
+    {
+      "answer_id": "M:R12",
+      "track": "M",
+      "label": "TIDAK_LAYAK",
+      "BERT_P": 0.7991,
+      "BERT_R": 0.9014,
+      "BERT_F1": 0.8472,
+      "S": 0.9654,
+      "L": 0.7429
+    }
+  ]
+}

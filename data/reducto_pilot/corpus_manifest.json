@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-11-07T21:10:10+07:00",
+  "script_version": "2026-11-03.1",
+  "model": "r-1",
+  "page_range": [
+    1,
+    3
+  ],
+  "documents": [
+    {
+      "doc_id": "perpres_59_2024_perubahan_ketiga_jaminan_kesehatan",
+      "status": "TECH_QA_FLAGS",
+      "source_pdf_sha256": "2063435307ca083c6b1a4d0b676bd3d2982cfb064257c8005eeea05665f728b5",
+      "local_page_count": 33,
+      "flags": [
+        "TEXT_LAYER_UNRELIABLE_REFERENCE: 2 dari 3 halaman berbeda; pembanding tidak dapat dipercaya (scan + OCR bawaan?) -> wajib QA berbasis gambar halaman"
+      ],
+      "raw_json": "data/reducto_pilot/raw/perpres_59_2024_perubahan_ketiga_jaminan_kesehatan__p001-003__reducto-r-1.json",
+      "block_count": 42
+    }
+  ]
+}

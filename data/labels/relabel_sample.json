@@ -1,0 +1,19 @@
+{
+  "answer_ids": [
+    "run1:R20",
+    "run1:R14",
+    "run1:R02",
+    "M:R13",
+    "run1:R16",
+    "M:R15",
+    "run1:R04",
+    "run1:R18"
+  ],
+  "composition": {
+    "mutation": 2,
+    "probe": 2,
+    "natural_tidak_layak": 2,
+    "natural_layak": 2
+  },
+  "strata_short": {}
+}
