@@ -1,0 +1,453 @@
+{
+  "accepted": [
+    {
+      "case_id": "T13",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 21: \"…usus diberikan kepada Peserta usia ≥ 50 tahun yang memiliki risiko penyakit kanker usus dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa…\""
+    },
+    {
+      "case_id": "T13",
+      "slot": 2,
+      "family": "unit",
+      "anchor_page_opposite": "hlm. 21: \"…usus diberikan kepada Peserta usia ≥ 50 tahun yang memiliki risiko penyakit kanker usus dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa…\""
+    },
+    {
+      "case_id": "T18",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 9: \"…komplikasi dapat dilakukan oleh tim paling sedikit 2 (dua) orang tenaga kesehatan, yaitu:\""
+    },
+    {
+      "case_id": "T18",
+      "slot": 2,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 9: \"…dokter, persalinan tanpa komplikasi dapat dilakukan oleh tim paling sedikit 2 (dua) orang tenaga kesehatan, yaitu:\""
+    },
+    {
+      "case_id": "T21",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 12: \"…ratus ribu rupiah) sampai dengan Rp300.000,00 (tiga ratus ribu rupiah) per hari.\""
+    },
+    {
+      "case_id": "T21",
+      "slot": 2,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 12: \"…ratus ribu rupiah) sampai dengan Rp300.000,00 (tiga ratus ribu rupiah) per hari.\""
+    },
+    {
+      "case_id": "T36",
+      "slot": 1,
+      "family": "date",
+      "anchor_page_opposite": "hlm. 7: \"…BPJS Kesehatan, implementasinya telah dimulai sejak 1 Januari 2014.\""
+    },
+    {
+      "case_id": "T36",
+      "slot": 2,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 7: \"…BPJS Kesehatan, implementasinya telah dimulai sejak 1 Januari 2014.\""
+    },
+    {
+      "case_id": "T56",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 10: \"…hak Manfaat Jaminan Kesehatan paling lama 6 (enam) bulan sejak di PHK, tanpa membayar Iuran.\""
+    },
+    {
+      "case_id": "T56",
+      "slot": 2,
+      "family": "unit",
+      "anchor_page_opposite": "hlm. 10: \"…hak Manfaat Jaminan Kesehatan paling lama 6 (enam) bulan sejak di PHK, tanpa membayar Iuran.\""
+    },
+    {
+      "case_id": "T22",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 14: \"…a. yang dilakukan di puskesmas dibayarkan sebesar Rp1.000.000,00 (satu juta rupiah);\""
+    },
+    {
+      "case_id": "T22",
+      "slot": 2,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 14: \"…a. yang dilakukan di puskesmas dibayarkan sebesar Rp1.000.000,00 (satu juta rupiah);\""
+    },
+    {
+      "case_id": "T12",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 20: \"…paru diberikan kepada Peserta usia ≥ 45 tahun yang memiliki risiko penyakit kanker paru dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa…\""
+    },
+    {
+      "case_id": "T12",
+      "slot": 2,
+      "family": "unit",
+      "anchor_page_opposite": "hlm. 20: \"…paru diberikan kepada Peserta usia ≥ 45 tahun yang memiliki risiko penyakit kanker paru dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa…\""
+    },
+    {
+      "case_id": "T43",
+      "slot": 1,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 19: \"…medis yang menjadi kompetensi FKTP harus diselesaikan secara tuntas di FKTP, kecuali terdapat keterbatasan SDM, sarana dan prasarana di fasilitas…\""
+    },
+    {
+      "case_id": "T14",
+      "slot": 1,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 4: \"…Kesehatan Tingkat Pertama (FKTP) dibayarkan dalam satu paket tarif persalinan.\""
+    },
+    {
+      "case_id": "T29",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 23: \"…dimaksud pada ayat (1) diberikan paling banyak 4 (empat) kantong darah dalam kurun waktu 1 (satu) bulan.\""
+    },
+    {
+      "case_id": "T29",
+      "slot": 2,
+      "family": "unit",
+      "anchor_page_opposite": "hlm. 23: \"…dimaksud pada ayat (1) diberikan paling banyak 4 (empat) kantong darah dalam kurun waktu 1 (satu) bulan.\""
+    },
+    {
+      "case_id": "T03",
+      "slot": 2,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 5: \"…sebagaimana dimaksud dalam Pasal 3 dilaksanakan 1 (satu) kali dalam tahun berjalan.\""
+    },
+    {
+      "case_id": "T31",
+      "slot": 1,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 26: \"…pelayanan rawat jalan eksekutif harus membayar selisih biaya paket pelayanan rawat jalan eksekutif sesuai dengan ketentuan peraturan…\""
+    },
+    {
+      "case_id": "T31",
+      "slot": 2,
+      "family": "clause_deletion",
+      "anchor_page_opposite": "hlm. 26: \"…jalan eksekutif harus membayar selisih biaya paket pelayanan rawat jalan eksekutif sesuai dengan ketentuan peraturan perundangan-undangan.\""
+    },
+    {
+      "case_id": "T11",
+      "slot": 1,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 19: \"…maka pembiayaan skrining tersebut dijamin oleh BPJS Kesehatan.\""
+    },
+    {
+      "case_id": "T59",
+      "slot": 1,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 28: \"…kredensial atau re-kredensial yang telah disepakati oleh BPJS Kesehatan bersama dinas kesehatan dan/atau asosiasi Fasilitas Kesehatan.\""
+    },
+    {
+      "case_id": "T59",
+      "slot": 2,
+      "family": "clause_deletion",
+      "anchor_page_opposite": "hlm. 28: \"…dapat diselesaikan sesuai dengan jangka waktu sebagaimana dimaksud pada ayat (3), BPJS Kesehatan melakukan pembayaran tarif sesuai hasil kredensial…\""
+    },
+    {
+      "case_id": "T17",
+      "slot": 1,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 8: \"…Puskesmas dapat dilakukan dengan rujukan horizontal ke Puskesmas dengan pembiayaan program.\""
+    },
+    {
+      "case_id": "T35",
+      "slot": 1,
+      "family": "date",
+      "anchor_page_opposite": "hlm. 5: \"Ditetapkan di Jakarta pada tanggal 3 Juni 2014\""
+    },
+    {
+      "case_id": "T35",
+      "slot": 2,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 5: \"Ditetapkan di Jakarta pada tanggal 3 Juni 2014\""
+    },
+    {
+      "case_id": "T25",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 18: \"…jalan dan tarif rawat inap, dengan 5 (lima) kelompok tarif yaitu: a. untuk: 1. Rumah Sakit Umum Pusat Nasional (RSUPN) Dr. Cipto Mangunkusumo; dan 2.…\""
+    },
+    {
+      "case_id": "T25",
+      "slot": 2,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 18: \"…jalan dan tarif rawat inap, dengan 5 (lima) kelompok tarif yaitu: a. untuk: 1. Rumah Sakit Umum Pusat Nasional (RSUPN) Dr. Cipto Mangunkusumo; dan 2.…\""
+    },
+    {
+      "case_id": "T40",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 14: \"…dilakukan oleh Menteri Sosial melalui verifikasi dan validasi setiap 6 (enam) bulan dalam tahun anggaran berjalan sesuai Peraturan Pemerintah Nomor…\""
+    },
+    {
+      "case_id": "T40",
+      "slot": 2,
+      "family": "unit",
+      "anchor_page_opposite": "hlm. 14: \"…dilakukan oleh Menteri Sosial melalui verifikasi dan validasi setiap 6 (enam) bulan dalam tahun anggaran berjalan sesuai Peraturan Pemerintah Nomor…\""
+    },
+    {
+      "case_id": "T42",
+      "slot": 1,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 18: \"…Lanjut (FKRTL) penerima rujukan wajib merujuk kembali peserta JKN disertai jawaban dan tindak lanjut yang harus dilakukan jika secara medis peserta…\""
+    },
+    {
+      "case_id": "T42",
+      "slot": 2,
+      "family": "clause_deletion",
+      "anchor_page_opposite": "hlm. 18: \"…Lanjut (FKRTL) penerima rujukan wajib merujuk kembali peserta JKN disertai jawaban dan tindak lanjut yang harus dilakukan jika secara medis peserta…\""
+    },
+    {
+      "case_id": "T33",
+      "slot": 1,
+      "family": "date",
+      "anchor_page_opposite": "hlm. 30: \"Diundangkan di Jakarta pada tanggal 9 Januari 2023\""
+    },
+    {
+      "case_id": "T33",
+      "slot": 2,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 30: \"Diundangkan di Jakarta pada tanggal 9 Januari 2023\""
+    },
+    {
+      "case_id": "T10",
+      "slot": 1,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 18: \"…maka pembiayaan skrining tersebut masuk dalam mekanisme penjaminan Program Pemerintah selain Program JKN.\""
+    },
+    {
+      "case_id": "T58",
+      "slot": 1,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 24: \"…kebutuhan medis sejumlah Peserta, BPJS Kesehatan wajib memberikan kompensasi.\""
+    },
+    {
+      "case_id": "T01",
+      "slot": 1,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 2: \"…atau Skrining Kesehatan Tertentu adalah deteksi risiko penyakit tertentu, melalui pemeriksaan atau prosedur spesifik secara cepat, serta pencegahan…\""
+    },
+    {
+      "case_id": "T16",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 7: \"…kegiatan pemeriksaan kehamilan (antenatal care) 6 (enam) kali selama masa kehamilan meliputi:\""
+    },
+    {
+      "case_id": "T16",
+      "slot": 2,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 7: \"…kegiatan pemeriksaan kehamilan (antenatal care) 6 (enam) kali selama masa kehamilan meliputi:\""
+    },
+    {
+      "case_id": "T07",
+      "slot": 1,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 12: \"FKTP wajib melakukan pemantauan status kesehatan Peserta Prolanis agar status kesehatan Peserta terkendali sesuai dengan ketentuan peraturan…\""
+    },
+    {
+      "case_id": "T07",
+      "slot": 2,
+      "family": "clause_deletion",
+      "anchor_page_opposite": "hlm. 12: \"…pemberian obat kepada Peserta Prolanis paling sedikit 1 (satu) kali setiap bulan; b. pemeriksaan penunjang sesuai ketentuan; c. evaluasi status…\""
+    },
+    {
+      "case_id": "T28",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 22: \"…pada ayat (1) dibayarkan untuk pemberian obat kronis paling banyak 23 (dua puluh tiga) hari.\""
+    },
+    {
+      "case_id": "T28",
+      "slot": 2,
+      "family": "unit",
+      "anchor_page_opposite": "hlm. 22: \"…pada ayat (1) dibayarkan untuk pemberian obat kronis paling banyak 23 (dua puluh tiga) hari.\""
+    },
+    {
+      "case_id": "T24",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 16: \"…b. untuk rahang gigi yang sama diberikan paling cepat 2 (dua) tahun sekali sesuai indikasi medis.\""
+    },
+    {
+      "case_id": "T24",
+      "slot": 2,
+      "family": "unit",
+      "anchor_page_opposite": "hlm. 16: \"…b. untuk rahang gigi yang sama diberikan paling cepat 2 (dua) tahun sekali sesuai indikasi medis.\""
+    },
+    {
+      "case_id": "T26",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 19: \"…setara, diberlakukan tarif sebesar 70% (tujuh puluh persen) sampai dengan 100% (seratus persen) dari standar tarif INA-CBG untuk kelompok rumah sakit…\""
+    },
+    {
+      "case_id": "T26",
+      "slot": 2,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 19: \"…setara, diberlakukan tarif sebesar 70% (tujuh puluh persen) sampai dengan 100% (seratus persen) dari standar tarif INA-CBG untuk kelompok rumah sakit…\""
+    },
+    {
+      "case_id": "T44",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 20: \"Manfaat JKN terdiri atas 2 (dua) jenis, yaitu manfaat medis dan manfaat non-medis.\""
+    },
+    {
+      "case_id": "T44",
+      "slot": 2,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 20: \"Manfaat JKN terdiri atas 2 (dua) jenis, yaitu manfaat medis dan manfaat non-medis.\""
+    },
+    {
+      "case_id": "T09",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 16: \"Pasal 32 Peraturan Badan ini mulai berlaku 30 (tiga puluh) hari sejak tanggal diundangkan.\""
+    },
+    {
+      "case_id": "T09",
+      "slot": 2,
+      "family": "unit",
+      "anchor_page_opposite": "hlm. 16: \"Pasal 32 Peraturan Badan ini mulai berlaku 30 (tiga puluh) hari sejak tanggal diundangkan.\""
+    },
+    {
+      "case_id": "T32",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 27: \"…ketentuan dalam Peraturan Menteri ini mulai berlaku 14 (empat belas) hari sejak Peraturan Menteri ini diundangkan.\""
+    },
+    {
+      "case_id": "T32",
+      "slot": 2,
+      "family": "unit",
+      "anchor_page_opposite": "hlm. 27: \"…ketentuan dalam Peraturan Menteri ini mulai berlaku 14 (empat belas) hari sejak Peraturan Menteri ini diundangkan.\""
+    },
+    {
+      "case_id": "T49",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 39: \"…di FKRTL milik Pemerintah dalam kisaran 30 - 50% (tiga puluh sampai dengan lima puluh persen) dari total pendapatan fasilitas kesehatan tersebut.\""
+    },
+    {
+      "case_id": "T49",
+      "slot": 2,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 39: \"…di FKRTL milik Pemerintah dalam kisaran 30 - 50% (tiga puluh sampai dengan lima puluh persen) dari total pendapatan fasilitas kesehatan tersebut.\""
+    },
+    {
+      "case_id": "T20",
+      "slot": 1,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 10: \"…sebagaimana dimaksud pada ayat (1) harus menggunakan obat program rujuk balik sebagaimana tercantum dalam formularium nasional.\""
+    },
+    {
+      "case_id": "T52",
+      "slot": 1,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 4: \"…selanjutnya disingkat PPU adalah setiap orang yang bekerja pada Pemberi Kerja dengan menerima Gaji atau Upah.\""
+    },
+    {
+      "case_id": "T52",
+      "slot": 2,
+      "family": "clause_deletion",
+      "anchor_page_opposite": "hlm. 4: \"…selanjutnya disingkat PPU adalah setiap orang yang bekerja pada Pemberi Kerja dengan menerima Gaji atau Upah.\""
+    },
+    {
+      "case_id": "T19",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 7: \"…praktik dokter layanan primer yang memiliki peserta lebih dari 100 (seratus) peserta.\""
+    },
+    {
+      "case_id": "T19",
+      "slot": 2,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 7: \"…praktik dokter layanan primer yang memiliki peserta lebih dari 100 (seratus) peserta.\""
+    },
+    {
+      "case_id": "T27",
+      "slot": 1,
+      "family": "numeric_value",
+      "anchor_page_opposite": "hlm. 21: \"…sebagaimana dimaksud pada ayat (1) dibayarkan sebesar Rp8.000.000,00 (delapan juta rupiah) per bulan.\""
+    },
+    {
+      "case_id": "T27",
+      "slot": 2,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 21: \"…sebagaimana dimaksud pada ayat (1) dibayarkan sebesar Rp8.000.000,00 (delapan juta rupiah) per bulan.\""
+    },
+    {
+      "case_id": "T08",
+      "slot": 1,
+      "family": "negation",
+      "anchor_page_opposite": "hlm. 15: \"…Pusat dan/atau Pemerintah Daerah bertanggung jawab dalam pemenuhan sarana dan prasarana untuk peningkatan kesehatan bagi Peserta penderita penyakit…\""
+    }
+  ],
+  "skipped": [
+    {
+      "case_id": "T43",
+      "slot": 2,
+      "reason": "Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+    },
+    {
+      "case_id": "T14",
+      "slot": 2,
+      "reason": "Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+    },
+    {
+      "case_id": "T03",
+      "slot": 1,
+      "reason": "Angka kunci 1 (satu): hasil x2, x3, dan x5 semuanya ada di halaman jangkar; operasi numeric_value tidak dapat diterapkan (keputusan validator 18 Nov 2026)."
+    },
+    {
+      "case_id": "T11",
+      "slot": 2,
+      "reason": "Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+    },
+    {
+      "case_id": "T17",
+      "slot": 2,
+      "reason": "Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+    },
+    {
+      "case_id": "T10",
+      "slot": 2,
+      "reason": "Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+    },
+    {
+      "case_id": "T58",
+      "slot": 2,
+      "reason": "Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+    },
+    {
+      "case_id": "T01",
+      "slot": 2,
+      "reason": "Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+    },
+    {
+      "case_id": "T04",
+      "slot": 1,
+      "reason": "Klaim utama sudah negatif ('tidak dijamin'); penyisipan 'tidak' terhalang; operasi negation tidak dapat diterapkan (keputusan 16 Nov 2026)."
+    },
+    {
+      "case_id": "T04",
+      "slot": 2,
+      "reason": "Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+    },
+    {
+      "case_id": "T20",
+      "slot": 2,
+      "reason": "Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+    },
+    {
+      "case_id": "T08",
+      "slot": 2,
+      "reason": "Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+    }
+  ],
+  "n_pairs": 64,
+  "target": 76,
+  "shortfall": 12
+}

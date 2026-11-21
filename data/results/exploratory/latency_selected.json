@@ -1,0 +1,192 @@
+{
+  "A": {
+    "n": 100,
+    "warning": null,
+    "p50": 0.26020908262580633,
+    "p50_ci95": [
+      0.2380460500717163,
+      0.2769220154732466
+    ],
+    "p95": 0.6989759858697653,
+    "p95_ci95": [
+      0.5746919196099043,
+      0.7585400016978383
+    ],
+    "unit": "ms",
+    "w_s": 0.0,
+    "hard_fail": false,
+    "hardware": {
+      "platform": "Linux-6.12.91-1-MANJARO-x86_64-with-glibc2.43",
+      "processor": null,
+      "cpu_count": 4,
+      "ram_mb": 15889,
+      "gpu": "tidak dicatat (embedding dijalankan di CPU)",
+      "python": "3.12.15"
+    },
+    "scope": "evaluator saja (skor + keputusan); tanpa retrieval dan generator"
+  },
+  "B": {
+    "n": 100,
+    "warning": null,
+    "p50": 144.21056606806815,
+    "p50_ci95": [
+      128.1501860357821,
+      185.77177403494716
+    ],
+    "p95": 242.142328992486,
+    "p95_ci95": [
+      213.29476404935122,
+      287.2441919753328
+    ],
+    "unit": "ms",
+    "w_s": 1.0,
+    "hard_fail": false,
+    "hardware": {
+      "platform": "Linux-6.12.91-1-MANJARO-x86_64-with-glibc2.43",
+      "processor": null,
+      "cpu_count": 4,
+      "ram_mb": 15889,
+      "gpu": "tidak dicatat (embedding dijalankan di CPU)",
+      "python": "3.12.15"
+    },
+    "scope": "evaluator saja (skor + keputusan); tanpa retrieval dan generator"
+  },
+  "C": {
+    "n": 100,
+    "warning": null,
+    "p50": 160.7640660367906,
+    "p50_ci95": [
+      139.95513308327645,
+      180.59264298062772
+    ],
+    "p95": 263.7006969889626,
+    "p95_ci95": [
+      230.73449602816254,
+      278.2619110075757
+    ],
+    "unit": "ms",
+    "w_s": 0.25,
+    "hard_fail": false,
+    "hardware": {
+      "platform": "Linux-6.12.91-1-MANJARO-x86_64-with-glibc2.43",
+      "processor": null,
+      "cpu_count": 4,
+      "ram_mb": 15889,
+      "gpu": "tidak dicatat (embedding dijalankan di CPU)",
+      "python": "3.12.15"
+    },
+    "scope": "evaluator saja (skor + keputusan); tanpa retrieval dan generator"
+  },
+  "D": {
+    "n": 100,
+    "warning": null,
+    "p50": 157.10765100084245,
+    "p50_ci95": [
+      123.76648001372814,
+      177.34600498806685
+    ],
+    "p95": 260.27692295610905,
+    "p95_ci95": [
+      208.0172299174592,
+      321.96997106075287
+    ],
+    "unit": "ms",
+    "w_s": 0.25,
+    "hard_fail": true,
+    "hardware": {
+      "platform": "Linux-6.12.91-1-MANJARO-x86_64-with-glibc2.43",
+      "processor": null,
+      "cpu_count": 4,
+      "ram_mb": 15889,
+      "gpu": "tidak dicatat (embedding dijalankan di CPU)",
+      "python": "3.12.15"
+    },
+    "scope": "evaluator saja (skor + keputusan); tanpa retrieval dan generator"
+  },
+  "E": {
+    "n": 100,
+    "warning": null,
+    "p50": 158.53567200247198,
+    "p50_ci95": [
+      124.20643900986761,
+      179.66709600295871
+    ],
+    "p95": 234.52524794265628,
+    "p95_ci95": [
+      212.250733980909,
+      281.47214092314243
+    ],
+    "unit": "ms",
+    "w_s": 0.25,
+    "hard_fail": true,
+    "hardware": {
+      "platform": "Linux-6.12.91-1-MANJARO-x86_64-with-glibc2.43",
+      "processor": null,
+      "cpu_count": 4,
+      "ram_mb": 15889,
+      "gpu": "tidak dicatat (embedding dijalankan di CPU)",
+      "python": "3.12.15"
+    },
+    "scope": "evaluator saja (skor + keputusan); tanpa retrieval dan generator"
+  },
+  "F": {
+    "n": 100,
+    "warning": null,
+    "p50": 458.4990229923278,
+    "p50_ci95": [
+      376.32371799554676,
+      515.6459780409932
+    ],
+    "p95": 1340.9593909746036,
+    "p95_ci95": [
+      1183.1947340397164,
+      1549.573641968891
+    ],
+    "unit": "ms",
+    "config": "F",
+    "hardware": {
+      "platform": "Linux-6.12.91-1-MANJARO-x86_64-with-glibc2.43",
+      "processor": null,
+      "cpu_count": 4,
+      "ram_mb": 15889,
+      "gpu": "tidak dicatat (embedding dijalankan di CPU)",
+      "python": "3.12.15"
+    },
+    "scope": "evaluator F saja (BERTScore F1 + keputusan); tanpa retrieval dan generator"
+  },
+  "D*": {
+    "n": 100,
+    "warning": null,
+    "p50": 154.59604503121227,
+    "p50_ci95": [
+      124.12559799849987,
+      175.65527104306966
+    ],
+    "p95": 273.7281369045377,
+    "p95_ci95": [
+      190.1701269671321,
+      288.3687090361491
+    ],
+    "unit": "ms",
+    "w_s": 0.25,
+    "hard_fail": true,
+    "hardware": {
+      "platform": "Linux-6.12.91-1-MANJARO-x86_64-with-glibc2.43",
+      "processor": null,
+      "cpu_count": 4,
+      "ram_mb": 15889,
+      "gpu": "tidak dicatat (embedding dijalankan di CPU)",
+      "python": "3.12.15"
+    },
+    "scope": "evaluator saja (skor + keputusan); tanpa retrieval dan generator"
+  },
+  "p95_ms_by_config": {
+    "A": 0.6989759858697653,
+    "B": 242.142328992486,
+    "C": 263.7006969889626,
+    "D": 260.27692295610905,
+    "E": 234.52524794265628,
+    "F": 1340.9593909746036,
+    "D*": 273.7281369045377
+  }
+}

@@ -1,0 +1,10 @@
+[
+  "tanggal penyerahan: 2026-11-20",
+  "peran: mahasiswa IT (nama tidak dicatat)",
+  "hasil: bersedia; 60/60 butir berlabel sah",
+  "alasan: bersedia menilai sampel relabel yang sama (R01-R60) sebagai validator kedua, buta terhadap label pertama, skor, dan asal jawaban",
+  "bantuan AI: tidak ada, dinyatakan oleh penilai; daftar periksa chat AI tidak diberikan; ai_assistance=none",
+  "durasi pengerjaan: sekitar 3 jam (pernyataan validator pertama)",
+  "alat: halaman pelabelan lokal (SPEC v4.2.23) dari lembar kosong relabel_sheet_kosong_validator2.csv (sha256 52e7d4ea...)",
+  "cap waktu berkas di mesin validator pertama: halaman S28 dibangun 2026-11-20 19:30 WIB; second_rater_sheet.csv 2026-11-20 19:37 WIB; sha256 1b690314846f8b1d"
+]

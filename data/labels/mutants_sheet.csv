@@ -1,0 +1,704 @@
+order,case_id,slot,source_answer_id,question_type,mutation_family,question,original_answer,source_quote,source_page,mutated_answer,anchor_page_opposite,skip_reason
+1,T13,1,run1:T13,numeric_duration,numeric_value,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, Skrining penyakit kanker usus diberikan kepada Peserta berusia berapa tahun ke atas?","Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024 (Pasal 32 ayat k), skrining penyakit **kanker usus** diberikan kepada Peserta **usia 50 tahun ke atas** (≥ 50 tahun) yang memiliki risiko penyakit kanker usus dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa penyakit kanker usus.",Skrining penyakit kanker usus diberikan kepada Peserta usia ≥ 50 tahun yang memiliki risiko penyakit kanker usus dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa penyakit kanker usus.,21,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024 (Pasal 32 ayat k), skrining penyakit **kanker usus** diberikan kepada Peserta **usia 100 tahun ke atas** (≥ 50 tahun) yang memiliki risiko penyakit kanker usus dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa penyakit kanker usus.","hlm. 21: ""…usus diberikan kepada Peserta usia ≥ 50 tahun yang memiliki risiko penyakit kanker usus dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa…""",
+2,T13,2,run1:T13,numeric_duration,unit,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, Skrining penyakit kanker usus diberikan kepada Peserta berusia berapa tahun ke atas?","Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024 (Pasal 32 ayat k), skrining penyakit **kanker usus** diberikan kepada Peserta **usia 50 tahun ke atas** (≥ 50 tahun) yang memiliki risiko penyakit kanker usus dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa penyakit kanker usus.",Skrining penyakit kanker usus diberikan kepada Peserta usia ≥ 50 tahun yang memiliki risiko penyakit kanker usus dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa penyakit kanker usus.,21,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024 (Pasal 32 ayat k), skrining penyakit **kanker usus** diberikan kepada Peserta **usia 50 bulan ke atas** (≥ 50 tahun) yang memiliki risiko penyakit kanker usus dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa penyakit kanker usus.","hlm. 21: ""…usus diberikan kepada Peserta usia ≥ 50 tahun yang memiliki risiko penyakit kanker usus dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa…""",
+3,T18,1,run1:T18,numeric_count,numeric_value,"Menurut Keputusan Menteri Kesehatan Nomor HK.01.07/MENKES/1511/2023, dalam hal terdapat keterbatasan dokter, persalinan tanpa komplikasi dapat dilakukan oleh tim yang paling sedikit terdiri atas berapa orang tenaga kesehatan?","Menurut Keputusan Menteri Kesehatan Nomor HK.01.07/MENKES/1511/2023, dalam hal terdapat **keterbatasan dokter**, persalinan **tanpa komplikasi** dapat dilakukan oleh tim paling sedikit terdiri atas **2 (dua) orang tenaga kesehatan**, yaitu:
+
+1. **bidan dan bidan**, atau
+2. **bidan dan perawat**.
+
+Keterbatasan dokter tersebut dimaknai sebagai:
+- Tidak ada dokter di tempat sewaktu ibu datang dalam keadaan inpartu kala II (dua), atau
+- Waktu tempuh ke fasilitas pelayanan kesehatan yang tersedia dokter **lebih dari 1 (satu) jam**.","Dalam hal terdapat keterbatasan dokter, persalinan tanpa komplikasi dapat dilakukan oleh tim paling sedikit 2 (dua) orang tenaga kesehatan, yaitu:",9,"Menurut Keputusan Menteri Kesehatan Nomor HK.01.07/MENKES/1511/2023, dalam hal terdapat **keterbatasan dokter**, persalinan **tanpa komplikasi** dapat dilakukan oleh tim paling sedikit terdiri atas **4 (empat) orang tenaga kesehatan**, yaitu:
+
+1. **bidan dan bidan**, atau
+2. **bidan dan perawat**.
+
+Keterbatasan dokter tersebut dimaknai sebagai:
+- Tidak ada dokter di tempat sewaktu ibu datang dalam keadaan inpartu kala II (dua), atau
+- Waktu tempuh ke fasilitas pelayanan kesehatan yang tersedia dokter **lebih dari 1 (satu) jam**.","hlm. 9: ""…komplikasi dapat dilakukan oleh tim paling sedikit 2 (dua) orang tenaga kesehatan, yaitu:""",
+4,T18,2,run1:T18,numeric_count,negation,"Menurut Keputusan Menteri Kesehatan Nomor HK.01.07/MENKES/1511/2023, dalam hal terdapat keterbatasan dokter, persalinan tanpa komplikasi dapat dilakukan oleh tim yang paling sedikit terdiri atas berapa orang tenaga kesehatan?","Menurut Keputusan Menteri Kesehatan Nomor HK.01.07/MENKES/1511/2023, dalam hal terdapat **keterbatasan dokter**, persalinan **tanpa komplikasi** dapat dilakukan oleh tim paling sedikit terdiri atas **2 (dua) orang tenaga kesehatan**, yaitu:
+
+1. **bidan dan bidan**, atau
+2. **bidan dan perawat**.
+
+Keterbatasan dokter tersebut dimaknai sebagai:
+- Tidak ada dokter di tempat sewaktu ibu datang dalam keadaan inpartu kala II (dua), atau
+- Waktu tempuh ke fasilitas pelayanan kesehatan yang tersedia dokter **lebih dari 1 (satu) jam**.","Dalam hal terdapat keterbatasan dokter, persalinan tanpa komplikasi dapat dilakukan oleh tim paling sedikit 2 (dua) orang tenaga kesehatan, yaitu:",9,"Menurut Keputusan Menteri Kesehatan Nomor HK.01.07/MENKES/1511/2023, dalam hal terdapat **keterbatasan dokter**, persalinan **tanpa komplikasi** tidak dapat dilakukan oleh tim paling sedikit terdiri atas **2 (dua) orang tenaga kesehatan**, yaitu:
+
+1. **bidan dan bidan**, atau
+2. **bidan dan perawat**.
+
+Keterbatasan dokter tersebut dimaknai sebagai:
+- Tidak ada dokter di tempat sewaktu ibu datang dalam keadaan inpartu kala II (dua), atau
+- Waktu tempuh ke fasilitas pelayanan kesehatan yang tersedia dokter **lebih dari 1 (satu) jam**.","hlm. 9: ""…dokter, persalinan tanpa komplikasi dapat dilakukan oleh tim paling sedikit 2 (dua) orang tenaga kesehatan, yaitu:""",
+5,T21,1,run1:T21,numeric_range,numeric_value,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, berapa kisaran Tarif Non Kapitasi pelayanan rawat inap per hari sebagaimana dimaksud dalam Pasal 17?","Menurut **Pasal 17 ayat (1)** Permenkes Nomor 3 Tahun 2023, Tarif Non Kapitasi pelayanan rawat inap sebagaimana dimaksud dalam Pasal 11 huruf f adalah sebesar:
+
+> **Rp200.000,00 (dua ratus ribu rupiah) sampai dengan Rp300.000,00 (tiga ratus ribu rupiah) per hari.**
+
+Selain itu, berdasarkan **Pasal 17 ayat (2)**, tarif rawat inap tersebut ditetapkan oleh **BPJS Kesehatan** berdasarkan kesepakatan dengan asosiasi fasilitas kesehatan tingkat pertama, dengan mempertimbangkan:
+
+1. Ketersediaan tenaga kesehatan,
+2. Ketersediaan sarana dan prasarana, dan/atau
+3. Indeks kemahalan pada masing-masing wilayah.","Tarif Non Kapitasi pelayanan rawat inap sebagaimana dimaksud dalam Pasal 11 huruf f sebesar Rp200.000,00 (dua ratus ribu rupiah) sampai dengan Rp300.000,00 (tiga ratus ribu rupiah) per hari.",12,"Menurut **Pasal 17 ayat (1)** Permenkes Nomor 3 Tahun 2023, Tarif Non Kapitasi pelayanan rawat inap sebagaimana dimaksud dalam Pasal 11 huruf f adalah sebesar:
+
+> **Rp200.000,00 (dua ratus ribu rupiah) sampai dengan Rp600.000,00 (enam ratus ribu rupiah) per hari.**
+
+Selain itu, berdasarkan **Pasal 17 ayat (2)**, tarif rawat inap tersebut ditetapkan oleh **BPJS Kesehatan** berdasarkan kesepakatan dengan asosiasi fasilitas kesehatan tingkat pertama, dengan mempertimbangkan:
+
+1. Ketersediaan tenaga kesehatan,
+2. Ketersediaan sarana dan prasarana, dan/atau
+3. Indeks kemahalan pada masing-masing wilayah.","hlm. 12: ""…ratus ribu rupiah) sampai dengan Rp300.000,00 (tiga ratus ribu rupiah) per hari.""",
+6,T21,2,run1:T21,numeric_range,negation,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, berapa kisaran Tarif Non Kapitasi pelayanan rawat inap per hari sebagaimana dimaksud dalam Pasal 17?","Menurut **Pasal 17 ayat (1)** Permenkes Nomor 3 Tahun 2023, Tarif Non Kapitasi pelayanan rawat inap sebagaimana dimaksud dalam Pasal 11 huruf f adalah sebesar:
+
+> **Rp200.000,00 (dua ratus ribu rupiah) sampai dengan Rp300.000,00 (tiga ratus ribu rupiah) per hari.**
+
+Selain itu, berdasarkan **Pasal 17 ayat (2)**, tarif rawat inap tersebut ditetapkan oleh **BPJS Kesehatan** berdasarkan kesepakatan dengan asosiasi fasilitas kesehatan tingkat pertama, dengan mempertimbangkan:
+
+1. Ketersediaan tenaga kesehatan,
+2. Ketersediaan sarana dan prasarana, dan/atau
+3. Indeks kemahalan pada masing-masing wilayah.","Tarif Non Kapitasi pelayanan rawat inap sebagaimana dimaksud dalam Pasal 11 huruf f sebesar Rp200.000,00 (dua ratus ribu rupiah) sampai dengan Rp300.000,00 (tiga ratus ribu rupiah) per hari.",12,"Menurut **Pasal 17 ayat (1)** Permenkes Nomor 3 Tahun 2023, Tarif Non Kapitasi pelayanan rawat inap sebagaimana dimaksud dalam Pasal 11 huruf f tidak adalah sebesar:
+
+> **Rp200.000,00 (dua ratus ribu rupiah) sampai dengan Rp300.000,00 (tiga ratus ribu rupiah) per hari.**
+
+Selain itu, berdasarkan **Pasal 17 ayat (2)**, tarif rawat inap tersebut ditetapkan oleh **BPJS Kesehatan** berdasarkan kesepakatan dengan asosiasi fasilitas kesehatan tingkat pertama, dengan mempertimbangkan:
+
+1. Ketersediaan tenaga kesehatan,
+2. Ketersediaan sarana dan prasarana, dan/atau
+3. Indeks kemahalan pada masing-masing wilayah.","hlm. 12: ""…ratus ribu rupiah) sampai dengan Rp300.000,00 (tiga ratus ribu rupiah) per hari.""",
+7,T36,1,run1:T36,numeric_date,date,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014, sejak kapan implementasi program Jaminan Kesehatan yang diselenggarakan oleh BPJS Kesehatan telah dimulai?","Menurut Permenkes Nomor 28 Tahun 2014 (Pasal 4, hlm. 7-9), implementasi program Jaminan Kesehatan yang diselenggarakan oleh BPJS Kesehatan telah dimulai sejak **1 Januari 2014**.","Untuk program Jaminan Kesehatan yang diselenggarakan oleh BPJS Kesehatan, implementasinya telah dimulai sejak 1 Januari 2014.",7,"Menurut Permenkes Nomor 28 Tahun 2014 (Pasal 4, hlm. 7-9), implementasi program Jaminan Kesehatan yang diselenggarakan oleh BPJS Kesehatan telah dimulai sejak **1 Januari 2015**.","hlm. 7: ""…BPJS Kesehatan, implementasinya telah dimulai sejak 1 Januari 2014.""",
+8,T36,2,run1:T36,numeric_date,negation,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014, sejak kapan implementasi program Jaminan Kesehatan yang diselenggarakan oleh BPJS Kesehatan telah dimulai?","Menurut Permenkes Nomor 28 Tahun 2014 (Pasal 4, hlm. 7-9), implementasi program Jaminan Kesehatan yang diselenggarakan oleh BPJS Kesehatan telah dimulai sejak **1 Januari 2014**.","Untuk program Jaminan Kesehatan yang diselenggarakan oleh BPJS Kesehatan, implementasinya telah dimulai sejak 1 Januari 2014.",7,"Menurut Permenkes Nomor 28 Tahun 2014 (Pasal 4, hlm. 7-9), implementasi program Jaminan Kesehatan yang diselenggarakan oleh BPJS Kesehatan telah tidak dimulai sejak **1 Januari 2014**.","hlm. 7: ""…BPJS Kesehatan, implementasinya telah dimulai sejak 1 Januari 2014.""",
+9,T56,1,run1:T56,numeric_duration,numeric_value,"Menurut Peraturan Presiden Nomor 59 Tahun 2024, Peserta PPU yang mengalami PHK tetap memperoleh hak Manfaat Jaminan Kesehatan paling lama berapa bulan sejak di PHK, tanpa membayar Iuran?","**6 (enam) bulan** sejak di PHK, tanpa membayar Iuran.
+
+Hal ini sesuai dengan **Pasal 27 ayat (1)** Peraturan Presiden Nomor 59 Tahun 2024, yang bunyinya:
+
+> *""Peserta PPU yang mengalami PHK tetap memperoleh hak Manfaat Jaminan Kesehatan paling lama 6 (enam) bulan sejak di PHK, tanpa membayar Iuran.""*","Peserta PPU yang mengalami PHK tetap memperoleh hak Manfaat Jaminan Kesehatan paling lama 6 (enam) bulan sejak di PHK, tanpa membayar Iuran.",10,"**12 (dua belas) bulan** sejak di PHK, tanpa membayar Iuran.
+
+Hal ini sesuai dengan **Pasal 27 ayat (1)** Peraturan Presiden Nomor 59 Tahun 2024, yang bunyinya:
+
+> *""Peserta PPU yang mengalami PHK tetap memperoleh hak Manfaat Jaminan Kesehatan paling lama 6 (enam) bulan sejak di PHK, tanpa membayar Iuran.""*","hlm. 10: ""…hak Manfaat Jaminan Kesehatan paling lama 6 (enam) bulan sejak di PHK, tanpa membayar Iuran.""",
+10,T56,2,run1:T56,numeric_duration,unit,"Menurut Peraturan Presiden Nomor 59 Tahun 2024, Peserta PPU yang mengalami PHK tetap memperoleh hak Manfaat Jaminan Kesehatan paling lama berapa bulan sejak di PHK, tanpa membayar Iuran?","**6 (enam) bulan** sejak di PHK, tanpa membayar Iuran.
+
+Hal ini sesuai dengan **Pasal 27 ayat (1)** Peraturan Presiden Nomor 59 Tahun 2024, yang bunyinya:
+
+> *""Peserta PPU yang mengalami PHK tetap memperoleh hak Manfaat Jaminan Kesehatan paling lama 6 (enam) bulan sejak di PHK, tanpa membayar Iuran.""*","Peserta PPU yang mengalami PHK tetap memperoleh hak Manfaat Jaminan Kesehatan paling lama 6 (enam) bulan sejak di PHK, tanpa membayar Iuran.",10,"**6 (enam) hari** sejak di PHK, tanpa membayar Iuran.
+
+Hal ini sesuai dengan **Pasal 27 ayat (1)** Peraturan Presiden Nomor 59 Tahun 2024, yang bunyinya:
+
+> *""Peserta PPU yang mengalami PHK tetap memperoleh hak Manfaat Jaminan Kesehatan paling lama 6 (enam) bulan sejak di PHK, tanpa membayar Iuran.""*","hlm. 10: ""…hak Manfaat Jaminan Kesehatan paling lama 6 (enam) bulan sejak di PHK, tanpa membayar Iuran.""",
+11,T22,1,run1:T22,numeric_money,numeric_value,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, berapa tarif persalinan yang dilakukan di puskesmas?","Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023 (Pasal 20 ayat (2) huruf a), tarif persalinan yang dilakukan di puskesmas dibayarkan sebesar **Rp1.000.000,00 (satu juta rupiah)**.","Tarif persalinan sebagaimana dimaksud pada ayat (1): a. yang dilakukan di puskesmas dibayarkan sebesar Rp1.000.000,00 (satu juta rupiah);",14,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023 (Pasal 20 ayat (2) huruf a), tarif persalinan yang dilakukan di puskesmas dibayarkan sebesar **Rp2.000.000,00 (dua juta rupiah)**.","hlm. 14: ""…a. yang dilakukan di puskesmas dibayarkan sebesar Rp1.000.000,00 (satu juta rupiah);""",
+12,T22,2,run1:T22,numeric_money,negation,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, berapa tarif persalinan yang dilakukan di puskesmas?","Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023 (Pasal 20 ayat (2) huruf a), tarif persalinan yang dilakukan di puskesmas dibayarkan sebesar **Rp1.000.000,00 (satu juta rupiah)**.","Tarif persalinan sebagaimana dimaksud pada ayat (1): a. yang dilakukan di puskesmas dibayarkan sebesar Rp1.000.000,00 (satu juta rupiah);",14,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023 (Pasal 20 ayat (2) huruf a), tarif persalinan yang dilakukan di puskesmas tidak dibayarkan sebesar **Rp1.000.000,00 (satu juta rupiah)**.","hlm. 14: ""…a. yang dilakukan di puskesmas dibayarkan sebesar Rp1.000.000,00 (satu juta rupiah);""",
+13,T12,1,run1:T12,numeric_duration,numeric_value,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, Skrining kanker paru diberikan kepada Peserta berusia berapa tahun ke atas?","Sesuai Pasal 32 huruf b (peraturan BPJS Kesehatan Nomor 3 Tahun 2024), **Skrining penyakit kanker paru** diberikan kepada Peserta **usia ≥ 45 tahun** yang memiliki risiko penyakit kanker paru dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa penyakit kanker paru.",Skrining kanker paru diberikan kepada Peserta usia ≥ 45 tahun yang memiliki risiko penyakit kanker paru dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa penyakit kanker paru.,20,"Sesuai Pasal 32 huruf b (peraturan BPJS Kesehatan Nomor 3 Tahun 2024), **Skrining penyakit kanker paru** diberikan kepada Peserta **usia ≥ 90 tahun** yang memiliki risiko penyakit kanker paru dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa penyakit kanker paru.","hlm. 20: ""…paru diberikan kepada Peserta usia ≥ 45 tahun yang memiliki risiko penyakit kanker paru dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa…""",
+14,T12,2,run1:T12,numeric_duration,unit,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, Skrining kanker paru diberikan kepada Peserta berusia berapa tahun ke atas?","Sesuai Pasal 32 huruf b (peraturan BPJS Kesehatan Nomor 3 Tahun 2024), **Skrining penyakit kanker paru** diberikan kepada Peserta **usia ≥ 45 tahun** yang memiliki risiko penyakit kanker paru dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa penyakit kanker paru.",Skrining kanker paru diberikan kepada Peserta usia ≥ 45 tahun yang memiliki risiko penyakit kanker paru dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa penyakit kanker paru.,20,"Sesuai Pasal 32 huruf b (peraturan BPJS Kesehatan Nomor 3 Tahun 2024), **Skrining penyakit kanker paru** diberikan kepada Peserta **usia ≥ 45 bulan** yang memiliki risiko penyakit kanker paru dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa penyakit kanker paru.","hlm. 20: ""…paru diberikan kepada Peserta usia ≥ 45 tahun yang memiliki risiko penyakit kanker paru dari hasil Skrining Riwayat Kesehatan dan belum terdiagnosa…""",
+15,T43,1,run1:T43,definition,negation,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014, kasus medis yang menjadi kompetensi FKTP harus diselesaikan di mana, dan apa pengecualiannya?","Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014 (Pasal 4 angka 9), kasus medis yang menjadi kompetensi FKTP **harus diselesaikan secara tuntas di FKTP**.
+
+**Pengecualiannya** adalah apabila terdapat **keterbatasan SDM, sarana, dan prasarana** di fasilitas kesehatan tingkat pertama tersebut.","Kasus medis yang menjadi kompetensi FKTP harus diselesaikan secara tuntas di FKTP, kecuali terdapat keterbatasan SDM, sarana dan prasarana di fasilitas kesehatan tingkat pertama.",19,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014 (Pasal 4 angka 9), kasus medis yang menjadi kompetensi FKTP **tidak harus diselesaikan secara tuntas di FKTP**.
+
+**Pengecualiannya** adalah apabila terdapat **keterbatasan SDM, sarana, dan prasarana** di fasilitas kesehatan tingkat pertama tersebut.","hlm. 19: ""…medis yang menjadi kompetensi FKTP harus diselesaikan secara tuntas di FKTP, kecuali terdapat keterbatasan SDM, sarana dan prasarana di fasilitas…""",
+16,T43,2,run1:T43,definition,clause_deletion,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014, kasus medis yang menjadi kompetensi FKTP harus diselesaikan di mana, dan apa pengecualiannya?","Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014 (Pasal 4 angka 9), kasus medis yang menjadi kompetensi FKTP **harus diselesaikan secara tuntas di FKTP**.
+
+**Pengecualiannya** adalah apabila terdapat **keterbatasan SDM, sarana, dan prasarana** di fasilitas kesehatan tingkat pertama tersebut.","Kasus medis yang menjadi kompetensi FKTP harus diselesaikan secara tuntas di FKTP, kecuali terdapat keterbatasan SDM, sarana dan prasarana di fasilitas kesehatan tingkat pertama.",19,,,"Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+17,T14,1,run1:T14,definition,negation,"Menurut Keputusan Menteri Kesehatan Nomor HK.01.07/MENKES/1511/2023, bagaimana pembayaran pelayanan pengambilan sampel untuk Skrining Hipotiroid Kongenital (SHK) dan persalinan di FKTP?","Berdasarkan konteks yang tersedia, berikut ketentuannya:
+
+**1. Pengambilan sampel SHK**
+
+Menurut Permenkes No. 3 Tahun 2023 Pasal 15 ayat (4) huruf d — yang menjadi dasar pelaksanaan Kepmenkes 1511/2023 — pengambilan sampel untuk SHK **termasuk ke dalam paket tarif persalinan**, sehingga tidak dibayar terpisah. Dalam alur pelayanan SHK pada Kepmenkes 1511/2023 (hlm. 12), pembiayaan untuk sebagian nomor tahapan alur SHK juga merujuk ke **paket persalinan JKN** (nomor 3 dan 4).
+
+**2. Persalinan**
+
+Persalinan di JKN dibiayai melalui **paket persalinan JKN**, sementara tahapan lain dalam alur pelayanan SHK dibiayai dari sumber lain, yaitu:
+- Nomor 2, 6, 7, 8B: **DAK Non Fisik / APBD / APBN**
+- Nomor 3 dan 4: **paket persalinan JKN**
+- Nomor 8A dan 8C: **JKN**
+
+**3. Pembiayaan bahan habis pakai & jasa pemeriksaan sampel**
+
+Apabila pasien memiliki KTP yang berbeda dengan lokasi faskes, pemeriksaan SHK tetap dapat dilaksanakan, dengan pembiayaan bahan habis pakai dan jasa pemeriksaan sampel di laboratorium rujukan berasal dari **DAK nonfisik kabupaten/kota** tempat faskes pelayanan berada, atau diklaim ke **APBN Direktorat Jenderal Kesehatan Masyarakat**.
+
+**Catatan:** Nomor-nomor tahapan dalam alur (nomor 2, 3, 4, 6, 7, 8A, 8B, 8C) hanya disebutkan sebagai rujukan pembiayaan dalam konteks; rincian uraian setiap nomor tahapan tersebut tidak tercantum dalam konteks yang diberikan.",Penjaminan dan pembayaran atas pelayanan kesehatan kebidanan dan neonatal dilaksanakan dengan ketentuan: a. pelayanan pengambilan sampel untuk Skrining Hipotiroid Kongenital (SHK) dan persalinan di Fasilitas Kesehatan Tingkat Pertama (FKTP) dibayarkan dalam satu paket tarif persalinan.,4,"Berdasarkan konteks yang tersedia, berikut ketentuannya:
+
+**1. Pengambilan sampel SHK**
+
+Menurut Permenkes No. 3 Tahun 2023 Pasal 15 ayat (4) huruf d — yang menjadi dasar pelaksanaan Kepmenkes 1511/2023 — pengambilan sampel untuk SHK **tidak termasuk ke dalam paket tarif persalinan**, sehingga tidak dibayar terpisah. Dalam alur pelayanan SHK pada Kepmenkes 1511/2023 (hlm. 12), pembiayaan untuk sebagian nomor tahapan alur SHK juga merujuk ke **paket persalinan JKN** (nomor 3 dan 4).
+
+**2. Persalinan**
+
+Persalinan di JKN dibiayai melalui **paket persalinan JKN**, sementara tahapan lain dalam alur pelayanan SHK dibiayai dari sumber lain, yaitu:
+- Nomor 2, 6, 7, 8B: **DAK Non Fisik / APBD / APBN**
+- Nomor 3 dan 4: **paket persalinan JKN**
+- Nomor 8A dan 8C: **JKN**
+
+**3. Pembiayaan bahan habis pakai & jasa pemeriksaan sampel**
+
+Apabila pasien memiliki KTP yang berbeda dengan lokasi faskes, pemeriksaan SHK tetap dapat dilaksanakan, dengan pembiayaan bahan habis pakai dan jasa pemeriksaan sampel di laboratorium rujukan berasal dari **DAK nonfisik kabupaten/kota** tempat faskes pelayanan berada, atau diklaim ke **APBN Direktorat Jenderal Kesehatan Masyarakat**.
+
+**Catatan:** Nomor-nomor tahapan dalam alur (nomor 2, 3, 4, 6, 7, 8A, 8B, 8C) hanya disebutkan sebagai rujukan pembiayaan dalam konteks; rincian uraian setiap nomor tahapan tersebut tidak tercantum dalam konteks yang diberikan.","hlm. 4: ""…Kesehatan Tingkat Pertama (FKTP) dibayarkan dalam satu paket tarif persalinan.""",
+18,T14,2,run1:T14,definition,clause_deletion,"Menurut Keputusan Menteri Kesehatan Nomor HK.01.07/MENKES/1511/2023, bagaimana pembayaran pelayanan pengambilan sampel untuk Skrining Hipotiroid Kongenital (SHK) dan persalinan di FKTP?","Berdasarkan konteks yang tersedia, berikut ketentuannya:
+
+**1. Pengambilan sampel SHK**
+
+Menurut Permenkes No. 3 Tahun 2023 Pasal 15 ayat (4) huruf d — yang menjadi dasar pelaksanaan Kepmenkes 1511/2023 — pengambilan sampel untuk SHK **termasuk ke dalam paket tarif persalinan**, sehingga tidak dibayar terpisah. Dalam alur pelayanan SHK pada Kepmenkes 1511/2023 (hlm. 12), pembiayaan untuk sebagian nomor tahapan alur SHK juga merujuk ke **paket persalinan JKN** (nomor 3 dan 4).
+
+**2. Persalinan**
+
+Persalinan di JKN dibiayai melalui **paket persalinan JKN**, sementara tahapan lain dalam alur pelayanan SHK dibiayai dari sumber lain, yaitu:
+- Nomor 2, 6, 7, 8B: **DAK Non Fisik / APBD / APBN**
+- Nomor 3 dan 4: **paket persalinan JKN**
+- Nomor 8A dan 8C: **JKN**
+
+**3. Pembiayaan bahan habis pakai & jasa pemeriksaan sampel**
+
+Apabila pasien memiliki KTP yang berbeda dengan lokasi faskes, pemeriksaan SHK tetap dapat dilaksanakan, dengan pembiayaan bahan habis pakai dan jasa pemeriksaan sampel di laboratorium rujukan berasal dari **DAK nonfisik kabupaten/kota** tempat faskes pelayanan berada, atau diklaim ke **APBN Direktorat Jenderal Kesehatan Masyarakat**.
+
+**Catatan:** Nomor-nomor tahapan dalam alur (nomor 2, 3, 4, 6, 7, 8A, 8B, 8C) hanya disebutkan sebagai rujukan pembiayaan dalam konteks; rincian uraian setiap nomor tahapan tersebut tidak tercantum dalam konteks yang diberikan.",Penjaminan dan pembayaran atas pelayanan kesehatan kebidanan dan neonatal dilaksanakan dengan ketentuan: a. pelayanan pengambilan sampel untuk Skrining Hipotiroid Kongenital (SHK) dan persalinan di Fasilitas Kesehatan Tingkat Pertama (FKTP) dibayarkan dalam satu paket tarif persalinan.,4,,,"Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+19,T29,1,run1:T29,numeric_duration,numeric_value,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, penggantian biaya kantong darah diberikan paling banyak 4 (empat) kantong darah dalam kurun waktu berapa lama?","Berdasarkan **Peraturan Menteri Kesehatan Nomor 3 Tahun 2023 tentang Standar Tarif Pelayanan Kesehatan dalam Penyelenggaraan Program Jaminan Kesehatan**, dalam **Pasal 45 ayat (2)** dinyatakan:
+
+> Penggantian biaya kantong darah sebagaimana dimaksud pada ayat (1) diberikan **paling banyak 4 (empat) kantong darah dalam kurun waktu 1 (satu) bulan**.
+
+**Jadi, penggantian biaya kantong darah diberikan paling banyak 4 kantong darah dalam kurun waktu 1 (satu) bulan.**
+
+Adapun penggantian biayanya sendiri sebesar **Rp360.000,00 (tiga ratus enam puluh ribu rupiah) per kantong darah**, sebagaimana diatur dalam Pasal 45 ayat (3) peraturan yang sama. Pelayanan ini diberikan bagi penderita thalassemia mayor, hemodialisa, dan kanker (leukemia) yang membutuhkan pelayanan darah pada rawat jalan.",Penggantian biaya kantong darah sebagaimana dimaksud pada ayat (1) diberikan paling banyak 4 (empat) kantong darah dalam kurun waktu 1 (satu) bulan.,23,"Berdasarkan **Peraturan Menteri Kesehatan Nomor 3 Tahun 2023 tentang Standar Tarif Pelayanan Kesehatan dalam Penyelenggaraan Program Jaminan Kesehatan**, dalam **Pasal 45 ayat (2)** dinyatakan:
+
+> Penggantian biaya kantong darah sebagaimana dimaksud pada ayat (1) diberikan **paling banyak 4 (empat) kantong darah dalam kurun waktu 5 (lima) bulan**.
+
+**Jadi, penggantian biaya kantong darah diberikan paling banyak 4 kantong darah dalam kurun waktu 1 (satu) bulan.**
+
+Adapun penggantian biayanya sendiri sebesar **Rp360.000,00 (tiga ratus enam puluh ribu rupiah) per kantong darah**, sebagaimana diatur dalam Pasal 45 ayat (3) peraturan yang sama. Pelayanan ini diberikan bagi penderita thalassemia mayor, hemodialisa, dan kanker (leukemia) yang membutuhkan pelayanan darah pada rawat jalan.","hlm. 23: ""…dimaksud pada ayat (1) diberikan paling banyak 4 (empat) kantong darah dalam kurun waktu 1 (satu) bulan.""",
+20,T29,2,run1:T29,numeric_duration,unit,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, penggantian biaya kantong darah diberikan paling banyak 4 (empat) kantong darah dalam kurun waktu berapa lama?","Berdasarkan **Peraturan Menteri Kesehatan Nomor 3 Tahun 2023 tentang Standar Tarif Pelayanan Kesehatan dalam Penyelenggaraan Program Jaminan Kesehatan**, dalam **Pasal 45 ayat (2)** dinyatakan:
+
+> Penggantian biaya kantong darah sebagaimana dimaksud pada ayat (1) diberikan **paling banyak 4 (empat) kantong darah dalam kurun waktu 1 (satu) bulan**.
+
+**Jadi, penggantian biaya kantong darah diberikan paling banyak 4 kantong darah dalam kurun waktu 1 (satu) bulan.**
+
+Adapun penggantian biayanya sendiri sebesar **Rp360.000,00 (tiga ratus enam puluh ribu rupiah) per kantong darah**, sebagaimana diatur dalam Pasal 45 ayat (3) peraturan yang sama. Pelayanan ini diberikan bagi penderita thalassemia mayor, hemodialisa, dan kanker (leukemia) yang membutuhkan pelayanan darah pada rawat jalan.",Penggantian biaya kantong darah sebagaimana dimaksud pada ayat (1) diberikan paling banyak 4 (empat) kantong darah dalam kurun waktu 1 (satu) bulan.,23,"Berdasarkan **Peraturan Menteri Kesehatan Nomor 3 Tahun 2023 tentang Standar Tarif Pelayanan Kesehatan dalam Penyelenggaraan Program Jaminan Kesehatan**, dalam **Pasal 45 ayat (2)** dinyatakan:
+
+> Penggantian biaya kantong darah sebagaimana dimaksud pada ayat (1) diberikan **paling banyak 4 (empat) kantong darah dalam kurun waktu 1 (satu) hari**.
+
+**Jadi, penggantian biaya kantong darah diberikan paling banyak 4 kantong darah dalam kurun waktu 1 (satu) bulan.**
+
+Adapun penggantian biayanya sendiri sebesar **Rp360.000,00 (tiga ratus enam puluh ribu rupiah) per kantong darah**, sebagaimana diatur dalam Pasal 45 ayat (3) peraturan yang sama. Pelayanan ini diberikan bagi penderita thalassemia mayor, hemodialisa, dan kanker (leukemia) yang membutuhkan pelayanan darah pada rawat jalan.","hlm. 23: ""…dimaksud pada ayat (1) diberikan paling banyak 4 (empat) kantong darah dalam kurun waktu 1 (satu) bulan.""",
+21,T03,1,run1:T03,numeric_count,numeric_value,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, berapa kali Skrining Riwayat Kesehatan dilaksanakan dalam tahun berjalan?","Berdasarkan **Pasal 6** Peraturan BPJS Kesehatan Nomor 3 Tahun 2024:
+
+> *Pelaksanaan Skrining Riwayat Kesehatan sebagaimana dimaksud dalam Pasal 3 dilaksanakan **1 (satu) kali dalam tahun berjalan**.*
+
+Jadi, Skrining Riwayat Kesehatan dilaksanakan **satu kali** dalam setiap tahun berjalan.",Pasal 6 Pelaksanaan Skrining Riwayat Kesehatan sebagaimana dimaksud dalam Pasal 3 dilaksanakan 1 (satu) kali dalam tahun berjalan.,5,,,"Angka kunci 1 (satu): hasil x2, x3, dan x5 semuanya ada di halaman jangkar; operasi numeric_value tidak dapat diterapkan (keputusan validator 18 Nov 2026)."
+22,T03,2,run1:T03,numeric_count,negation,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, berapa kali Skrining Riwayat Kesehatan dilaksanakan dalam tahun berjalan?","Berdasarkan **Pasal 6** Peraturan BPJS Kesehatan Nomor 3 Tahun 2024:
+
+> *Pelaksanaan Skrining Riwayat Kesehatan sebagaimana dimaksud dalam Pasal 3 dilaksanakan **1 (satu) kali dalam tahun berjalan**.*
+
+Jadi, Skrining Riwayat Kesehatan dilaksanakan **satu kali** dalam setiap tahun berjalan.",Pasal 6 Pelaksanaan Skrining Riwayat Kesehatan sebagaimana dimaksud dalam Pasal 3 dilaksanakan 1 (satu) kali dalam tahun berjalan.,5,"Berdasarkan **Pasal 6** Peraturan BPJS Kesehatan Nomor 3 Tahun 2024:
+
+> *Pelaksanaan Skrining Riwayat Kesehatan sebagaimana dimaksud dalam Pasal 3 tidak dilaksanakan **1 (satu) kali dalam tahun berjalan**.*
+
+Jadi, Skrining Riwayat Kesehatan dilaksanakan **satu kali** dalam setiap tahun berjalan.","hlm. 5: ""…sebagaimana dimaksud dalam Pasal 3 dilaksanakan 1 (satu) kali dalam tahun berjalan.""",
+23,T31,1,run1:T31,definition,negation,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, peserta yang menginginkan pelayanan rawat jalan eksekutif harus membayar apa?","Menurut **Permenkes Nomor 3 Tahun 2023, Pasal 48 ayat (2)**, peserta yang menginginkan pelayanan rawat jalan eksekutif harus **membayar selisih biaya paket pelayanan rawat jalan eksekutif** sesuai dengan ketentuan peraturan perundang-undangan.
+
+Ketentuan lebih lanjut pada Pasal 48 ayat (3) huruf a menyebutkan bahwa selisih biaya untuk rawat jalan eksekutif **paling banyak sebesar Rp400.000,00 (empat ratus ribu rupiah)** setiap episode rawat jalan eksekutif.
+
+Selain itu, perlu diketahui:
+- **Ayat (8)**: Ketentuan ini dikecualikan bagi peserta PBI Jaminan Kesehatan, peserta PBPU kelas 3, peserta Bukan Pekerja kelas 3, peserta yang didaftarkan oleh Pemerintah Daerta, serta peserta PPU yang mengalami PHK dan anggota keluarganya.
+- **Ayat (9)**: FKRTL wajib menginformasikan ketentuan mengenai selisih biaya kepada peserta **sebelum** peserta menerima pelayanan kesehatan.",Peserta yang menginginkan pelayanan rawat jalan eksekutif harus membayar selisih biaya paket pelayanan rawat jalan eksekutif sesuai dengan ketentuan peraturan perundangan-undangan.,26,"Menurut **Permenkes Nomor 3 Tahun 2023, Pasal 48 ayat (2)**, peserta yang menginginkan pelayanan rawat jalan eksekutif tidak harus **membayar selisih biaya paket pelayanan rawat jalan eksekutif** sesuai dengan ketentuan peraturan perundang-undangan.
+
+Ketentuan lebih lanjut pada Pasal 48 ayat (3) huruf a menyebutkan bahwa selisih biaya untuk rawat jalan eksekutif **paling banyak sebesar Rp400.000,00 (empat ratus ribu rupiah)** setiap episode rawat jalan eksekutif.
+
+Selain itu, perlu diketahui:
+- **Ayat (8)**: Ketentuan ini dikecualikan bagi peserta PBI Jaminan Kesehatan, peserta PBPU kelas 3, peserta Bukan Pekerja kelas 3, peserta yang didaftarkan oleh Pemerintah Daerta, serta peserta PPU yang mengalami PHK dan anggota keluarganya.
+- **Ayat (9)**: FKRTL wajib menginformasikan ketentuan mengenai selisih biaya kepada peserta **sebelum** peserta menerima pelayanan kesehatan.","hlm. 26: ""…pelayanan rawat jalan eksekutif harus membayar selisih biaya paket pelayanan rawat jalan eksekutif sesuai dengan ketentuan peraturan…""",
+24,T31,2,run1:T31,definition,clause_deletion,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, peserta yang menginginkan pelayanan rawat jalan eksekutif harus membayar apa?","Menurut **Permenkes Nomor 3 Tahun 2023, Pasal 48 ayat (2)**, peserta yang menginginkan pelayanan rawat jalan eksekutif harus **membayar selisih biaya paket pelayanan rawat jalan eksekutif** sesuai dengan ketentuan peraturan perundang-undangan.
+
+Ketentuan lebih lanjut pada Pasal 48 ayat (3) huruf a menyebutkan bahwa selisih biaya untuk rawat jalan eksekutif **paling banyak sebesar Rp400.000,00 (empat ratus ribu rupiah)** setiap episode rawat jalan eksekutif.
+
+Selain itu, perlu diketahui:
+- **Ayat (8)**: Ketentuan ini dikecualikan bagi peserta PBI Jaminan Kesehatan, peserta PBPU kelas 3, peserta Bukan Pekerja kelas 3, peserta yang didaftarkan oleh Pemerintah Daerta, serta peserta PPU yang mengalami PHK dan anggota keluarganya.
+- **Ayat (9)**: FKRTL wajib menginformasikan ketentuan mengenai selisih biaya kepada peserta **sebelum** peserta menerima pelayanan kesehatan.",Peserta yang menginginkan pelayanan rawat jalan eksekutif harus membayar selisih biaya paket pelayanan rawat jalan eksekutif sesuai dengan ketentuan peraturan perundangan-undangan.,26,"Menurut **Permenkes Nomor 3 Tahun 2023, Pasal 48 ayat (2)**, peserta yang menginginkan pelayanan rawat jalan eksekutif harus **membayar selisih biaya paket pelayanan rawat jalan eksekutif** sesuai dengan ketentuan peraturan perundang-undangan.
+
+Ketentuan lebih lanjut pada Pasal 48 ayat (3) huruf a menyebutkan bahwa selisih biaya untuk rawat jalan eksekutif setiap episode rawat jalan eksekutif.
+
+Selain itu, perlu diketahui:
+- **Ayat (8)**: Ketentuan ini dikecualikan bagi peserta PBI Jaminan Kesehatan, peserta PBPU kelas 3, peserta Bukan Pekerja kelas 3, peserta yang didaftarkan oleh Pemerintah Daerta, serta peserta PPU yang mengalami PHK dan anggota keluarganya.
+- **Ayat (9)**: FKRTL wajib menginformasikan ketentuan mengenai selisih biaya kepada peserta **sebelum** peserta menerima pelayanan kesehatan.","hlm. 26: ""…jalan eksekutif harus membayar selisih biaya paket pelayanan rawat jalan eksekutif sesuai dengan ketentuan peraturan perundangan-undangan.""",
+25,T11,1,run1:T11,definition,negation,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, jika Peserta JKN mendapatkan skrining Diabetes Mellitus atau IVA yang bersifat Upaya Kesehatan Perorangan di FKTP Swasta, siapa yang menjamin pembiayaan skrining tersebut?","Menurut **Pasal 32 Huruf B Ayat 5** Peraturan BPJS Kesehatan Nomor 3 Tahun 2024 (Lampiran II), jika peserta adalah Peserta JKN dan mendapatkan Pelayanan Penapisan atau Skrining Kesehatan Tertentu (skrining Diabetes Mellitus atau IVA) **bersifat Upaya Kesehatan Perorangan di FKTP Swasta**, maka:
+
+> **Pembiayaan skrining tersebut dijamin oleh BPJS Kesehatan.**
+
+Hal ini juga didukung oleh penjelasan pada **Kolom (f)** yang menyatakan bahwa kolom tersebut berisi pernyataan **""YA""** jika pelayanan skrining dilaksanakan di FKTP Swasta. Sementara itu, **Kolom (g)** menentukan pihak yang menjadi penjamin pelayanan skrining berdasarkan kriteria pada kolom (b) sampai dengan kolom (f), yang dalam kasus ini mengarah pada penjaminan oleh **BPJS Kesehatan**.","Jika pasien adalah Peserta JKN, mendapatkan Pelayanan Penapisan atau Skrining Kesehatan Tertentu (skrining Diabetes Mellitus atau IVA) bersifat Upaya Kesehatan Perorangan di FKTP Swasta, maka pembiayaan skrining tersebut dijamin oleh BPJS Kesehatan.",19,"Menurut **Pasal 32 Huruf B Ayat 5** Peraturan BPJS Kesehatan Nomor 3 Tahun 2024 (Lampiran II), jika peserta adalah Peserta JKN dan mendapatkan Pelayanan Penapisan atau Skrining Kesehatan Tertentu (skrining Diabetes Mellitus atau IVA) **bersifat Upaya Kesehatan Perorangan di FKTP Swasta**, maka:
+
+> **Pembiayaan skrining tersebut tidak dijamin oleh BPJS Kesehatan.**
+
+Hal ini juga didukung oleh penjelasan pada **Kolom (f)** yang menyatakan bahwa kolom tersebut berisi pernyataan **""YA""** jika pelayanan skrining dilaksanakan di FKTP Swasta. Sementara itu, **Kolom (g)** menentukan pihak yang menjadi penjamin pelayanan skrining berdasarkan kriteria pada kolom (b) sampai dengan kolom (f), yang dalam kasus ini mengarah pada penjaminan oleh **BPJS Kesehatan**.","hlm. 19: ""…maka pembiayaan skrining tersebut dijamin oleh BPJS Kesehatan.""",
+26,T11,2,run1:T11,definition,clause_deletion,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, jika Peserta JKN mendapatkan skrining Diabetes Mellitus atau IVA yang bersifat Upaya Kesehatan Perorangan di FKTP Swasta, siapa yang menjamin pembiayaan skrining tersebut?","Menurut **Pasal 32 Huruf B Ayat 5** Peraturan BPJS Kesehatan Nomor 3 Tahun 2024 (Lampiran II), jika peserta adalah Peserta JKN dan mendapatkan Pelayanan Penapisan atau Skrining Kesehatan Tertentu (skrining Diabetes Mellitus atau IVA) **bersifat Upaya Kesehatan Perorangan di FKTP Swasta**, maka:
+
+> **Pembiayaan skrining tersebut dijamin oleh BPJS Kesehatan.**
+
+Hal ini juga didukung oleh penjelasan pada **Kolom (f)** yang menyatakan bahwa kolom tersebut berisi pernyataan **""YA""** jika pelayanan skrining dilaksanakan di FKTP Swasta. Sementara itu, **Kolom (g)** menentukan pihak yang menjadi penjamin pelayanan skrining berdasarkan kriteria pada kolom (b) sampai dengan kolom (f), yang dalam kasus ini mengarah pada penjaminan oleh **BPJS Kesehatan**.","Jika pasien adalah Peserta JKN, mendapatkan Pelayanan Penapisan atau Skrining Kesehatan Tertentu (skrining Diabetes Mellitus atau IVA) bersifat Upaya Kesehatan Perorangan di FKTP Swasta, maka pembiayaan skrining tersebut dijamin oleh BPJS Kesehatan.",19,,,"Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+27,T59,1,run1:T59,definition,negation,"Menurut Peraturan Presiden Nomor 59 Tahun 2024, apabila reviu kelas rumah sakit belum dapat diselesaikan sesuai dengan jangka waktu yang ditentukan, bagaimana BPJS Kesehatan melakukan pembayaran tarif?","Berdasarkan **Pasal 72 ayat (5) Perpres Nomor 59 Tahun 2024**, apabila reviu kelas rumah sakit belum dapat diselesaikan sesuai dengan jangka waktu sebagaimana dimaksud pada ayat (3) — yaitu paling lambat **3 (tiga) bulan** — maka:
+
+> **BPJS Kesehatan melakukan pembayaran tarif sesuai hasil kredensial atau re-kredensial yang telah disepakati oleh BPJS Kesehatan bersama dinas kesehatan dan/atau asosiasi Fasilitas Kesehatan.**
+
+Jadi, dalam kondisi tersebut, pembayaran tarif tetap dilakukan berdasarkan hasil **kredensial atau re-kredensial** yang telah disepakati bersama antara BPJS Kesehatan dengan **Dinas Kesehatan** dan/atau **Asosiasi Fasilitas Kesehatan**, sebagai mekanisme sementara hingga proses reviu kelas rumah sakit dapat diselesaikan.","Apabila reviu kelas rumah sakit belum dapat diselesaikan sesuai dengan jangka waktu sebagaimana dimaksud pada ayat (3), BPJS Kesehatan melakukan pembayaran tarif sesuai hasil kredensial atau re-kredensial yang telah disepakati oleh BPJS Kesehatan bersama dinas kesehatan dan/atau asosiasi Fasilitas Kesehatan.",28,"Berdasarkan **Pasal 72 ayat (5) Perpres Nomor 59 Tahun 2024**, apabila reviu kelas rumah sakit belum dapat diselesaikan sesuai dengan jangka waktu sebagaimana dimaksud pada ayat (3) — yaitu paling lambat **3 (tiga) bulan** — maka:
+
+> **BPJS Kesehatan melakukan pembayaran tarif sesuai hasil kredensial atau re-kredensial yang telah tidak disepakati oleh BPJS Kesehatan bersama dinas kesehatan dan/atau asosiasi Fasilitas Kesehatan.**
+
+Jadi, dalam kondisi tersebut, pembayaran tarif tetap dilakukan berdasarkan hasil **kredensial atau re-kredensial** yang telah disepakati bersama antara BPJS Kesehatan dengan **Dinas Kesehatan** dan/atau **Asosiasi Fasilitas Kesehatan**, sebagai mekanisme sementara hingga proses reviu kelas rumah sakit dapat diselesaikan.","hlm. 28: ""…kredensial atau re-kredensial yang telah disepakati oleh BPJS Kesehatan bersama dinas kesehatan dan/atau asosiasi Fasilitas Kesehatan.""",
+28,T59,2,run1:T59,definition,clause_deletion,"Menurut Peraturan Presiden Nomor 59 Tahun 2024, apabila reviu kelas rumah sakit belum dapat diselesaikan sesuai dengan jangka waktu yang ditentukan, bagaimana BPJS Kesehatan melakukan pembayaran tarif?","Berdasarkan **Pasal 72 ayat (5) Perpres Nomor 59 Tahun 2024**, apabila reviu kelas rumah sakit belum dapat diselesaikan sesuai dengan jangka waktu sebagaimana dimaksud pada ayat (3) — yaitu paling lambat **3 (tiga) bulan** — maka:
+
+> **BPJS Kesehatan melakukan pembayaran tarif sesuai hasil kredensial atau re-kredensial yang telah disepakati oleh BPJS Kesehatan bersama dinas kesehatan dan/atau asosiasi Fasilitas Kesehatan.**
+
+Jadi, dalam kondisi tersebut, pembayaran tarif tetap dilakukan berdasarkan hasil **kredensial atau re-kredensial** yang telah disepakati bersama antara BPJS Kesehatan dengan **Dinas Kesehatan** dan/atau **Asosiasi Fasilitas Kesehatan**, sebagai mekanisme sementara hingga proses reviu kelas rumah sakit dapat diselesaikan.","Apabila reviu kelas rumah sakit belum dapat diselesaikan sesuai dengan jangka waktu sebagaimana dimaksud pada ayat (3), BPJS Kesehatan melakukan pembayaran tarif sesuai hasil kredensial atau re-kredensial yang telah disepakati oleh BPJS Kesehatan bersama dinas kesehatan dan/atau asosiasi Fasilitas Kesehatan.",28,"Berdasarkan **Pasal 72 ayat (5) Perpres Nomor 59 Tahun 2024**, apabila reviu kelas rumah sakit belum dapat diselesaikan sesuai dengan jangka waktu sebagaimana dimaksud pada ayat (3) maka:
+
+> **BPJS Kesehatan melakukan pembayaran tarif sesuai hasil kredensial atau re-kredensial yang telah disepakati oleh BPJS Kesehatan bersama dinas kesehatan dan/atau asosiasi Fasilitas Kesehatan.**
+
+Jadi, dalam kondisi tersebut, pembayaran tarif tetap dilakukan berdasarkan hasil **kredensial atau re-kredensial** yang telah disepakati bersama antara BPJS Kesehatan dengan **Dinas Kesehatan** dan/atau **Asosiasi Fasilitas Kesehatan**, sebagai mekanisme sementara hingga proses reviu kelas rumah sakit dapat diselesaikan.","hlm. 28: ""…dapat diselesaikan sesuai dengan jangka waktu sebagaimana dimaksud pada ayat (3), BPJS Kesehatan melakukan pembayaran tarif sesuai hasil kredensial…""",
+29,T17,1,run1:T17,definition,negation,"Menurut Keputusan Menteri Kesehatan Nomor HK.01.07/MENKES/1511/2023, bagaimana pemeriksaan triple eliminasi dalam pemeriksaan kehamilan oleh FKTP selain Puskesmas dapat dilakukan?","Menurut konteks yang tersedia, pemeriksaan triple eliminasi dalam pemeriksaan kehamilan oleh FKTP selain Puskesmas dapat dilakukan dengan **rujukan horizontal ke Puskesmas dengan pembiayaan program**.",Pemeriksaan triple eliminasi dalam pemeriksaan kehamilan oleh FKTP selain Puskesmas dapat dilakukan dengan rujukan horizontal ke Puskesmas dengan pembiayaan program.,8,"Menurut konteks yang tersedia, pemeriksaan triple eliminasi dalam pemeriksaan kehamilan oleh FKTP selain Puskesmas tidak dapat dilakukan dengan **rujukan horizontal ke Puskesmas dengan pembiayaan program**.","hlm. 8: ""…Puskesmas dapat dilakukan dengan rujukan horizontal ke Puskesmas dengan pembiayaan program.""",
+30,T17,2,run1:T17,definition,clause_deletion,"Menurut Keputusan Menteri Kesehatan Nomor HK.01.07/MENKES/1511/2023, bagaimana pemeriksaan triple eliminasi dalam pemeriksaan kehamilan oleh FKTP selain Puskesmas dapat dilakukan?","Menurut konteks yang tersedia, pemeriksaan triple eliminasi dalam pemeriksaan kehamilan oleh FKTP selain Puskesmas dapat dilakukan dengan **rujukan horizontal ke Puskesmas dengan pembiayaan program**.",Pemeriksaan triple eliminasi dalam pemeriksaan kehamilan oleh FKTP selain Puskesmas dapat dilakukan dengan rujukan horizontal ke Puskesmas dengan pembiayaan program.,8,,,"Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+31,T35,1,run1:T35,numeric_date,date,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014, pada tanggal berapa Peraturan Menteri tersebut ditetapkan di Jakarta?","Menurut konteks yang diberikan, Peraturan Menteri Kesehatan Nomor 28 Tahun 2014 **ditetapkan di Jakarta pada tanggal 3 Juni 2014**, oleh Menteri Kesehatan Republik Indonesia (NAFSIAH MBOI). Peraturan tersebut kemudian **diundangkan di Jakarta pada tanggal 25 Juni 2014** dan dimuat dalam Berita Negara Republik Indonesia Tahun 2014 Nomor 874.",Ditetapkan di Jakarta pada tanggal 3 Juni 2014,5,"Menurut konteks yang diberikan, Peraturan Menteri Kesehatan Nomor 28 Tahun 2014 **ditetapkan di Jakarta pada tanggal 3 Juni 2015**, oleh Menteri Kesehatan Republik Indonesia (NAFSIAH MBOI). Peraturan tersebut kemudian **diundangkan di Jakarta pada tanggal 25 Juni 2014** dan dimuat dalam Berita Negara Republik Indonesia Tahun 2014 Nomor 874.","hlm. 5: ""Ditetapkan di Jakarta pada tanggal 3 Juni 2014""",
+32,T35,2,run1:T35,numeric_date,negation,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014, pada tanggal berapa Peraturan Menteri tersebut ditetapkan di Jakarta?","Menurut konteks yang diberikan, Peraturan Menteri Kesehatan Nomor 28 Tahun 2014 **ditetapkan di Jakarta pada tanggal 3 Juni 2014**, oleh Menteri Kesehatan Republik Indonesia (NAFSIAH MBOI). Peraturan tersebut kemudian **diundangkan di Jakarta pada tanggal 25 Juni 2014** dan dimuat dalam Berita Negara Republik Indonesia Tahun 2014 Nomor 874.",Ditetapkan di Jakarta pada tanggal 3 Juni 2014,5,"Menurut konteks yang diberikan, Peraturan Menteri Kesehatan Nomor 28 Tahun 2014 **tidak ditetapkan di Jakarta pada tanggal 3 Juni 2014**, oleh Menteri Kesehatan Republik Indonesia (NAFSIAH MBOI). Peraturan tersebut kemudian **diundangkan di Jakarta pada tanggal 25 Juni 2014** dan dimuat dalam Berita Negara Republik Indonesia Tahun 2014 Nomor 874.","hlm. 5: ""Ditetapkan di Jakarta pada tanggal 3 Juni 2014""",
+33,T25,1,run1:T25,numeric_count,numeric_value,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, Tarif INA-CBG terdiri atas berapa kelompok tarif?","Menurut **Pasal 28 ayat (1) Permenkes Nomor 3 Tahun 2023**, Tarif INA-CBG terdiri atas **5 (lima) kelompok tarif**, yaitu:
+
+1. **Kelompok a** – untuk:
+   - Rumah Sakit Umum Pusat Nasional (RSUPN) Dr. Cipto Mangunkusumo; dan
+   - Rumah Sakit Khusus, meliputi RS Jantung dan Pembuluh Darah Harapan Kita, RS Kanker Dharmais, RS Anak dan Bunda Harapan Kita, dan RS Pusat Otak Nasional Prof Dr.dr. Mahar Mardjono.
+2. **Kelompok b** – untuk rumah sakit pemerintah dan swasta **kelas A**
+3. **Kelompok c** – untuk rumah sakit pemerintah dan swasta **kelas B**
+4. **Kelompok d** – untuk rumah sakit pemerintah dan swasta **kelas C**
+5. **Kelompok e** – untuk rumah sakit pemerintah dan swasta **kelas D**
+
+Selain lima kelompok tarif tersebut, tarif INA-CBG juga dibedakan ke dalam **5 regional** (ayat 2) dan, untuk tarif rawat inap, terdiri atas kelas 1, kelas 2, dan kelas 3 (ayat 3).","Tarif INA-CBG terdiri atas tarif rawat jalan dan tarif rawat inap, dengan 5 (lima) kelompok tarif yaitu: a. untuk: 1. Rumah Sakit Umum Pusat Nasional (RSUPN) Dr. Cipto Mangunkusumo; dan 2. Rumah Sakit Khusus yang terdiri atas Rumah Sakit Jantung dan Pembuluh Darah Harapan Kita, Rumah Sakit Kanker Dharmais, Rumah Sakit Anak dan Bunda Harapan Kita, dan Rumah Sakit Pusat Otak Nasional Prof Dr.dr. Mahar Mardjono. b. untuk rumah sakit pemerintah dan swasta kelas A; c. untuk rumah sakit pemerintah dan swasta kelas B; d. untuk rumah sakit pemerintah dan swasta kelas C; dan e. untuk rumah sakit pemerintah dan swasta kelas D.",18,"Menurut **Pasal 28 ayat (1) Permenkes Nomor 3 Tahun 2023**, Tarif INA-CBG terdiri atas **10 (sepuluh) kelompok tarif**, yaitu:
+
+1. **Kelompok a** – untuk:
+   - Rumah Sakit Umum Pusat Nasional (RSUPN) Dr. Cipto Mangunkusumo; dan
+   - Rumah Sakit Khusus, meliputi RS Jantung dan Pembuluh Darah Harapan Kita, RS Kanker Dharmais, RS Anak dan Bunda Harapan Kita, dan RS Pusat Otak Nasional Prof Dr.dr. Mahar Mardjono.
+2. **Kelompok b** – untuk rumah sakit pemerintah dan swasta **kelas A**
+3. **Kelompok c** – untuk rumah sakit pemerintah dan swasta **kelas B**
+4. **Kelompok d** – untuk rumah sakit pemerintah dan swasta **kelas C**
+5. **Kelompok e** – untuk rumah sakit pemerintah dan swasta **kelas D**
+
+Selain lima kelompok tarif tersebut, tarif INA-CBG juga dibedakan ke dalam **5 regional** (ayat 2) dan, untuk tarif rawat inap, terdiri atas kelas 1, kelas 2, dan kelas 3 (ayat 3).","hlm. 18: ""…jalan dan tarif rawat inap, dengan 5 (lima) kelompok tarif yaitu: a. untuk: 1. Rumah Sakit Umum Pusat Nasional (RSUPN) Dr. Cipto Mangunkusumo; dan 2.…""",
+34,T25,2,run1:T25,numeric_count,negation,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, Tarif INA-CBG terdiri atas berapa kelompok tarif?","Menurut **Pasal 28 ayat (1) Permenkes Nomor 3 Tahun 2023**, Tarif INA-CBG terdiri atas **5 (lima) kelompok tarif**, yaitu:
+
+1. **Kelompok a** – untuk:
+   - Rumah Sakit Umum Pusat Nasional (RSUPN) Dr. Cipto Mangunkusumo; dan
+   - Rumah Sakit Khusus, meliputi RS Jantung dan Pembuluh Darah Harapan Kita, RS Kanker Dharmais, RS Anak dan Bunda Harapan Kita, dan RS Pusat Otak Nasional Prof Dr.dr. Mahar Mardjono.
+2. **Kelompok b** – untuk rumah sakit pemerintah dan swasta **kelas A**
+3. **Kelompok c** – untuk rumah sakit pemerintah dan swasta **kelas B**
+4. **Kelompok d** – untuk rumah sakit pemerintah dan swasta **kelas C**
+5. **Kelompok e** – untuk rumah sakit pemerintah dan swasta **kelas D**
+
+Selain lima kelompok tarif tersebut, tarif INA-CBG juga dibedakan ke dalam **5 regional** (ayat 2) dan, untuk tarif rawat inap, terdiri atas kelas 1, kelas 2, dan kelas 3 (ayat 3).","Tarif INA-CBG terdiri atas tarif rawat jalan dan tarif rawat inap, dengan 5 (lima) kelompok tarif yaitu: a. untuk: 1. Rumah Sakit Umum Pusat Nasional (RSUPN) Dr. Cipto Mangunkusumo; dan 2. Rumah Sakit Khusus yang terdiri atas Rumah Sakit Jantung dan Pembuluh Darah Harapan Kita, Rumah Sakit Kanker Dharmais, Rumah Sakit Anak dan Bunda Harapan Kita, dan Rumah Sakit Pusat Otak Nasional Prof Dr.dr. Mahar Mardjono. b. untuk rumah sakit pemerintah dan swasta kelas A; c. untuk rumah sakit pemerintah dan swasta kelas B; d. untuk rumah sakit pemerintah dan swasta kelas C; dan e. untuk rumah sakit pemerintah dan swasta kelas D.",18,"Menurut **Pasal 28 ayat (1) Permenkes Nomor 3 Tahun 2023**, Tarif INA-CBG tidak terdiri atas **5 (lima) kelompok tarif**, yaitu:
+
+1. **Kelompok a** – untuk:
+   - Rumah Sakit Umum Pusat Nasional (RSUPN) Dr. Cipto Mangunkusumo; dan
+   - Rumah Sakit Khusus, meliputi RS Jantung dan Pembuluh Darah Harapan Kita, RS Kanker Dharmais, RS Anak dan Bunda Harapan Kita, dan RS Pusat Otak Nasional Prof Dr.dr. Mahar Mardjono.
+2. **Kelompok b** – untuk rumah sakit pemerintah dan swasta **kelas A**
+3. **Kelompok c** – untuk rumah sakit pemerintah dan swasta **kelas B**
+4. **Kelompok d** – untuk rumah sakit pemerintah dan swasta **kelas C**
+5. **Kelompok e** – untuk rumah sakit pemerintah dan swasta **kelas D**
+
+Selain lima kelompok tarif tersebut, tarif INA-CBG juga dibedakan ke dalam **5 regional** (ayat 2) dan, untuk tarif rawat inap, terdiri atas kelas 1, kelas 2, dan kelas 3 (ayat 3).","hlm. 18: ""…jalan dan tarif rawat inap, dengan 5 (lima) kelompok tarif yaitu: a. untuk: 1. Rumah Sakit Umum Pusat Nasional (RSUPN) Dr. Cipto Mangunkusumo; dan 2.…""",
+35,T40,1,run1:T40,numeric_duration,numeric_value,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014, verifikasi dan validasi perubahan data Penerima Bantuan Iuran (PBI) oleh Menteri Sosial dilakukan setiap berapa bulan dalam tahun anggaran berjalan?","Berdasarkan Peraturan Menteri Kesehatan Nomor 28 Tahun 2014 (Pasal 4), verifikasi dan validasi perubahan data Penerima Bantuan Iuran (PBI) oleh Menteri Sosial dilakukan setiap **6 (enam) bulan** dalam tahun anggaran berjalan, sesuai dengan Peraturan Pemerintah Nomor 101 Tahun 2012 tentang Penerima Bantuan Iuran Jaminan Kesehatan.",Perubahan data Penerima Bantuan Iuran (PBI) dilakukan oleh Menteri Sosial melalui verifikasi dan validasi setiap 6 (enam) bulan dalam tahun anggaran berjalan sesuai Peraturan Pemerintah Nomor 101 Tahun 2012 tentang Penerima Bantuan Iuran (PBI) Jaminan Kesehatan.,14,"Berdasarkan Peraturan Menteri Kesehatan Nomor 28 Tahun 2014 (Pasal 4), verifikasi dan validasi perubahan data Penerima Bantuan Iuran (PBI) oleh Menteri Sosial dilakukan setiap **12 (dua belas) bulan** dalam tahun anggaran berjalan, sesuai dengan Peraturan Pemerintah Nomor 101 Tahun 2012 tentang Penerima Bantuan Iuran Jaminan Kesehatan.","hlm. 14: ""…dilakukan oleh Menteri Sosial melalui verifikasi dan validasi setiap 6 (enam) bulan dalam tahun anggaran berjalan sesuai Peraturan Pemerintah Nomor…""",
+36,T40,2,run1:T40,numeric_duration,unit,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014, verifikasi dan validasi perubahan data Penerima Bantuan Iuran (PBI) oleh Menteri Sosial dilakukan setiap berapa bulan dalam tahun anggaran berjalan?","Berdasarkan Peraturan Menteri Kesehatan Nomor 28 Tahun 2014 (Pasal 4), verifikasi dan validasi perubahan data Penerima Bantuan Iuran (PBI) oleh Menteri Sosial dilakukan setiap **6 (enam) bulan** dalam tahun anggaran berjalan, sesuai dengan Peraturan Pemerintah Nomor 101 Tahun 2012 tentang Penerima Bantuan Iuran Jaminan Kesehatan.",Perubahan data Penerima Bantuan Iuran (PBI) dilakukan oleh Menteri Sosial melalui verifikasi dan validasi setiap 6 (enam) bulan dalam tahun anggaran berjalan sesuai Peraturan Pemerintah Nomor 101 Tahun 2012 tentang Penerima Bantuan Iuran (PBI) Jaminan Kesehatan.,14,"Berdasarkan Peraturan Menteri Kesehatan Nomor 28 Tahun 2014 (Pasal 4), verifikasi dan validasi perubahan data Penerima Bantuan Iuran (PBI) oleh Menteri Sosial dilakukan setiap **6 (enam) hari** dalam tahun anggaran berjalan, sesuai dengan Peraturan Pemerintah Nomor 101 Tahun 2012 tentang Penerima Bantuan Iuran Jaminan Kesehatan.","hlm. 14: ""…dilakukan oleh Menteri Sosial melalui verifikasi dan validasi setiap 6 (enam) bulan dalam tahun anggaran berjalan sesuai Peraturan Pemerintah Nomor…""",
+37,T42,1,run1:T42,definition,negation,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014, apa kewajiban FKRTL penerima rujukan terhadap peserta JKN yang secara medis sudah dapat dilayani di FKTP yang merujuk?","## Jawaban
+
+Menurut **Permenkes Nomor 28 Tahun 2014**, kewajiban FKRTL penerima rujukan terhadap peserta JKN yang secara medis sudah dapat dilayani kembali di FKTP yang merujuk adalah sebagai berikut:
+
+1. **Wajib merujuk kembali peserta JKN**, disertai **jawaban dan tindak lanjut** yang harus dilakukan. (Pasal 4, hlm. 16–18)
+
+2. Dalam praktiknya, hal ini diwujudkan melalui beberapa ketentuan terkait (Pasal 4, hlm. 28–31):
+   - **Dokter spesialis/subspesialis memberikan surat keterangan rujuk balik**, sehingga untuk perawatan selanjutnya pasien langsung datang ke **FKTP** dengan membawa surat rujuk balik tersebut.
+   - **Apabila dokter tidak memberikan** surat keterangan (baik yang menyatakan pasien masih perlu perawatan di FKRTL maupun rujuk balik), maka pada kunjungan berikutnya pasien harus **melalui FKTP** terlebih dahulu.
+
+3. Sebaliknya, apabila dokter spesialis/subspesialis justru memberikan surat keterangan bahwa pasien **masih memerlukan perawatan di FKRTL**, maka pasien dapat langsung datang ke FKRTL pada kunjungan berikutnya tanpa harus ke FKTP terlebih dahulu.
+
+**Intinya:** FKRTL berkewajiban mengembalikan (merujuk balik) peserta ke FKTP yang merujuk, lengkap dengan keterangan medis/jawaban dan tindak lanjut yang perlu dilakukan, apabila secara medis peserta sudah dapat dilayani di FKTP tersebut.",Fasilitas Kesehatan Rujukan Tingkat Lanjut (FKRTL) penerima rujukan wajib merujuk kembali peserta JKN disertai jawaban dan tindak lanjut yang harus dilakukan jika secara medis peserta sudah dapat dilayani di Fasilitas Kesehatan Tingkat Pertama (FKTP) yang merujuk.,18,"## Jawaban
+
+Menurut **Permenkes Nomor 28 Tahun 2014**, kewajiban FKRTL penerima rujukan terhadap peserta JKN yang secara medis sudah dapat dilayani kembali di FKTP yang merujuk adalah sebagai berikut:
+
+1. **Tidak wajib merujuk kembali peserta JKN**, disertai **jawaban dan tindak lanjut** yang harus dilakukan. (Pasal 4, hlm. 16–18)
+
+2. Dalam praktiknya, hal ini diwujudkan melalui beberapa ketentuan terkait (Pasal 4, hlm. 28–31):
+   - **Dokter spesialis/subspesialis memberikan surat keterangan rujuk balik**, sehingga untuk perawatan selanjutnya pasien langsung datang ke **FKTP** dengan membawa surat rujuk balik tersebut.
+   - **Apabila dokter tidak memberikan** surat keterangan (baik yang menyatakan pasien masih perlu perawatan di FKRTL maupun rujuk balik), maka pada kunjungan berikutnya pasien harus **melalui FKTP** terlebih dahulu.
+
+3. Sebaliknya, apabila dokter spesialis/subspesialis justru memberikan surat keterangan bahwa pasien **masih memerlukan perawatan di FKRTL**, maka pasien dapat langsung datang ke FKRTL pada kunjungan berikutnya tanpa harus ke FKTP terlebih dahulu.
+
+**Intinya:** FKRTL berkewajiban mengembalikan (merujuk balik) peserta ke FKTP yang merujuk, lengkap dengan keterangan medis/jawaban dan tindak lanjut yang perlu dilakukan, apabila secara medis peserta sudah dapat dilayani di FKTP tersebut.","hlm. 18: ""…Lanjut (FKRTL) penerima rujukan wajib merujuk kembali peserta JKN disertai jawaban dan tindak lanjut yang harus dilakukan jika secara medis peserta…""",
+38,T42,2,run1:T42,definition,clause_deletion,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014, apa kewajiban FKRTL penerima rujukan terhadap peserta JKN yang secara medis sudah dapat dilayani di FKTP yang merujuk?","## Jawaban
+
+Menurut **Permenkes Nomor 28 Tahun 2014**, kewajiban FKRTL penerima rujukan terhadap peserta JKN yang secara medis sudah dapat dilayani kembali di FKTP yang merujuk adalah sebagai berikut:
+
+1. **Wajib merujuk kembali peserta JKN**, disertai **jawaban dan tindak lanjut** yang harus dilakukan. (Pasal 4, hlm. 16–18)
+
+2. Dalam praktiknya, hal ini diwujudkan melalui beberapa ketentuan terkait (Pasal 4, hlm. 28–31):
+   - **Dokter spesialis/subspesialis memberikan surat keterangan rujuk balik**, sehingga untuk perawatan selanjutnya pasien langsung datang ke **FKTP** dengan membawa surat rujuk balik tersebut.
+   - **Apabila dokter tidak memberikan** surat keterangan (baik yang menyatakan pasien masih perlu perawatan di FKRTL maupun rujuk balik), maka pada kunjungan berikutnya pasien harus **melalui FKTP** terlebih dahulu.
+
+3. Sebaliknya, apabila dokter spesialis/subspesialis justru memberikan surat keterangan bahwa pasien **masih memerlukan perawatan di FKRTL**, maka pasien dapat langsung datang ke FKRTL pada kunjungan berikutnya tanpa harus ke FKTP terlebih dahulu.
+
+**Intinya:** FKRTL berkewajiban mengembalikan (merujuk balik) peserta ke FKTP yang merujuk, lengkap dengan keterangan medis/jawaban dan tindak lanjut yang perlu dilakukan, apabila secara medis peserta sudah dapat dilayani di FKTP tersebut.",Fasilitas Kesehatan Rujukan Tingkat Lanjut (FKRTL) penerima rujukan wajib merujuk kembali peserta JKN disertai jawaban dan tindak lanjut yang harus dilakukan jika secara medis peserta sudah dapat dilayani di Fasilitas Kesehatan Tingkat Pertama (FKTP) yang merujuk.,18,"## Jawaban
+
+Menurut **Permenkes Nomor 28 Tahun 2014**, kewajiban FKRTL penerima rujukan terhadap peserta JKN yang secara medis sudah dapat dilayani kembali di FKTP yang merujuk adalah sebagai berikut:
+
+1. **Wajib merujuk kembali peserta JKN**, disertai **jawaban dan tindak lanjut** yang harus dilakukan. (Pasal 4, hlm. 16–18)
+
+2. Dalam praktiknya, hal ini diwujudkan melalui beberapa ketentuan terkait (Pasal 4, hlm. 28–31):
+   - **Dokter spesialis/subspesialis memberikan surat keterangan rujuk balik**, sehingga untuk perawatan selanjutnya pasien langsung datang ke **FKTP** dengan membawa surat rujuk balik tersebut.
+   - **Apabila dokter tidak memberikan** surat keterangan (baik yang menyatakan pasien masih perlu perawatan di FKRTL maupun rujuk balik), maka pada kunjungan berikutnya pasien harus **melalui FKTP** terlebih dahulu.
+
+3. Sebaliknya, apabila dokter spesialis/subspesialis justru memberikan surat keterangan bahwa pasien **masih memerlukan perawatan di FKRTL**, maka pasien dapat langsung datang ke FKRTL pada kunjungan berikutnya.
+
+**Intinya:** FKRTL berkewajiban mengembalikan (merujuk balik) peserta ke FKTP yang merujuk, lengkap dengan keterangan medis/jawaban dan tindak lanjut yang perlu dilakukan, apabila secara medis peserta sudah dapat dilayani di FKTP tersebut.","hlm. 18: ""…Lanjut (FKRTL) penerima rujukan wajib merujuk kembali peserta JKN disertai jawaban dan tindak lanjut yang harus dilakukan jika secara medis peserta…""",
+39,T33,1,run1:T33,numeric_date,date,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, pada tanggal berapa Peraturan Menteri tersebut diundangkan di Jakarta?","Menurut konteks yang diberikan, **Permenkes Nomor 3 Tahun 2023** diundangkan di Jakarta pada tanggal **9 Januari 2023**, sebagaimana tercantum dalam **Pasal 53** peraturan tersebut.",Diundangkan di Jakarta pada tanggal 9 Januari 2023,30,"Menurut konteks yang diberikan, **Permenkes Nomor 3 Tahun 2023** diundangkan di Jakarta pada tanggal **9 Januari 2024**, sebagaimana tercantum dalam **Pasal 53** peraturan tersebut.","hlm. 30: ""Diundangkan di Jakarta pada tanggal 9 Januari 2023""",
+40,T33,2,run1:T33,numeric_date,negation,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, pada tanggal berapa Peraturan Menteri tersebut diundangkan di Jakarta?","Menurut konteks yang diberikan, **Permenkes Nomor 3 Tahun 2023** diundangkan di Jakarta pada tanggal **9 Januari 2023**, sebagaimana tercantum dalam **Pasal 53** peraturan tersebut.",Diundangkan di Jakarta pada tanggal 9 Januari 2023,30,"Menurut konteks yang diberikan, **Permenkes Nomor 3 Tahun 2023** tidak diundangkan di Jakarta pada tanggal **9 Januari 2023**, sebagaimana tercantum dalam **Pasal 53** peraturan tersebut.","hlm. 30: ""Diundangkan di Jakarta pada tanggal 9 Januari 2023""",
+41,T10,1,run1:T10,definition,negation,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, jika Peserta JKN mendapatkan skrining Diabetes Mellitus atau IVA pada Upaya Kesehatan Bersumber Daya Masyarakat, pembiayaan skrining tersebut masuk dalam mekanisme penjaminan program apa?","Menurut Penjelasan Matriks Pasal 32 Lampiran II Peraturan BPJS Kesehatan Nomor 3 Tahun 2024 (hlm. 18–20):
+
+Jika pasien adalah Peserta JKN dan mendapatkan Pelayanan Penapisan atau Skrining Kesehatan Tertentu (skrining Diabetes Mellitus atau IVA) **pada Upaya Kesehatan Bersumber Daya Masyarakat**, maka pembiayaan skrining tersebut masuk dalam **mekanisme penjaminan Program Pemerintah selain Program JKN**.","Jika pasien adalah Peserta JKN, mendapatkan Pelayanan Penapisan atau Skrining Kesehatan Tertentu (skrining Diabetes Mellitus atau IVA) pada Upaya Kesehatan Bersumber Daya Masyarakat maka pembiayaan skrining tersebut masuk dalam mekanisme penjaminan Program Pemerintah selain Program JKN.",18,"Menurut Penjelasan Matriks Pasal 32 Lampiran II Peraturan BPJS Kesehatan Nomor 3 Tahun 2024 (hlm. 18–20):
+
+Jika pasien adalah Peserta JKN dan mendapatkan Pelayanan Penapisan atau Skrining Kesehatan Tertentu (skrining Diabetes Mellitus atau IVA) **pada Upaya Kesehatan Bersumber Daya Masyarakat**, maka pembiayaan skrining tersebut tidak masuk dalam **mekanisme penjaminan Program Pemerintah selain Program JKN**.","hlm. 18: ""…maka pembiayaan skrining tersebut masuk dalam mekanisme penjaminan Program Pemerintah selain Program JKN.""",
+42,T10,2,run1:T10,definition,clause_deletion,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, jika Peserta JKN mendapatkan skrining Diabetes Mellitus atau IVA pada Upaya Kesehatan Bersumber Daya Masyarakat, pembiayaan skrining tersebut masuk dalam mekanisme penjaminan program apa?","Menurut Penjelasan Matriks Pasal 32 Lampiran II Peraturan BPJS Kesehatan Nomor 3 Tahun 2024 (hlm. 18–20):
+
+Jika pasien adalah Peserta JKN dan mendapatkan Pelayanan Penapisan atau Skrining Kesehatan Tertentu (skrining Diabetes Mellitus atau IVA) **pada Upaya Kesehatan Bersumber Daya Masyarakat**, maka pembiayaan skrining tersebut masuk dalam **mekanisme penjaminan Program Pemerintah selain Program JKN**.","Jika pasien adalah Peserta JKN, mendapatkan Pelayanan Penapisan atau Skrining Kesehatan Tertentu (skrining Diabetes Mellitus atau IVA) pada Upaya Kesehatan Bersumber Daya Masyarakat maka pembiayaan skrining tersebut masuk dalam mekanisme penjaminan Program Pemerintah selain Program JKN.",18,,,"Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+43,T58,1,run1:T58,definition,negation,"Menurut Peraturan Presiden Nomor 59 Tahun 2024, dalam hal di suatu Daerah belum tersedia Fasilitas Kesehatan yang memenuhi syarat guna memenuhi kebutuhan medis sejumlah Peserta, apa yang wajib diberikan BPJS Kesehatan?","Menurut **Peraturan Presiden Nomor 59 Tahun 2024 Pasal 64 ayat (1)**, dalam hal di suatu Daerah belum tersedia Fasilitas Kesehatan yang memenuhi syarat guna memenuhi kebutuhan medis sejumlah Peserta, **BPJS Kesehatan wajib memberikan kompensasi**.
+
+Bentuk kompensasi tersebut sebagaimana diatur pada Pasal 64 ayat (5) dapat berupa:
+
+1. **Penyediaan Fasilitas Kesehatan** melalui kerja sama dengan pihak lain yang menyelenggarakan pelayanan kesehatan berdasarkan kriteria khusus (termasuk dengan Fasilitas Kesehatan bergerak);
+2. **Pengiriman tenaga kesehatan**; dan/atau
+3. **Penggantian uang tunai** untuk biaya pelayanan kesehatan, sesuai dengan hak Peserta.","Dalam hal di suatu Daerah belum tersedia Fasilitas Kesehatan yang memenuhi syarat guna memenuhi kebutuhan medis sejumlah Peserta, BPJS Kesehatan wajib memberikan kompensasi.",24,"Menurut **Peraturan Presiden Nomor 59 Tahun 2024 Pasal 64 ayat (1)**, dalam hal di suatu Daerah belum tersedia Fasilitas Kesehatan yang memenuhi syarat guna memenuhi kebutuhan medis sejumlah Peserta, **BPJS Kesehatan tidak wajib memberikan kompensasi**.
+
+Bentuk kompensasi tersebut sebagaimana diatur pada Pasal 64 ayat (5) dapat berupa:
+
+1. **Penyediaan Fasilitas Kesehatan** melalui kerja sama dengan pihak lain yang menyelenggarakan pelayanan kesehatan berdasarkan kriteria khusus (termasuk dengan Fasilitas Kesehatan bergerak);
+2. **Pengiriman tenaga kesehatan**; dan/atau
+3. **Penggantian uang tunai** untuk biaya pelayanan kesehatan, sesuai dengan hak Peserta.","hlm. 24: ""…kebutuhan medis sejumlah Peserta, BPJS Kesehatan wajib memberikan kompensasi.""",
+44,T58,2,run1:T58,definition,clause_deletion,"Menurut Peraturan Presiden Nomor 59 Tahun 2024, dalam hal di suatu Daerah belum tersedia Fasilitas Kesehatan yang memenuhi syarat guna memenuhi kebutuhan medis sejumlah Peserta, apa yang wajib diberikan BPJS Kesehatan?","Menurut **Peraturan Presiden Nomor 59 Tahun 2024 Pasal 64 ayat (1)**, dalam hal di suatu Daerah belum tersedia Fasilitas Kesehatan yang memenuhi syarat guna memenuhi kebutuhan medis sejumlah Peserta, **BPJS Kesehatan wajib memberikan kompensasi**.
+
+Bentuk kompensasi tersebut sebagaimana diatur pada Pasal 64 ayat (5) dapat berupa:
+
+1. **Penyediaan Fasilitas Kesehatan** melalui kerja sama dengan pihak lain yang menyelenggarakan pelayanan kesehatan berdasarkan kriteria khusus (termasuk dengan Fasilitas Kesehatan bergerak);
+2. **Pengiriman tenaga kesehatan**; dan/atau
+3. **Penggantian uang tunai** untuk biaya pelayanan kesehatan, sesuai dengan hak Peserta.","Dalam hal di suatu Daerah belum tersedia Fasilitas Kesehatan yang memenuhi syarat guna memenuhi kebutuhan medis sejumlah Peserta, BPJS Kesehatan wajib memberikan kompensasi.",24,,,"Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+45,T01,1,run1:T01,definition,negation,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, apa yang dimaksud dengan Pelayanan Penapisan atau Skrining Kesehatan Tertentu?","Menurut **Peraturan BPJS Kesehatan Nomor 3 Tahun 2024**, dalam Pasal 1 angka 1, yang dimaksud dengan **Pelayanan Penapisan atau Skrining Kesehatan Tertentu** adalah:
+
+> **Deteksi risiko penyakit tertentu, melalui pemeriksaan atau prosedur spesifik secara cepat, serta pencegahan dampak lanjutan risiko penyakit.**","Pelayanan Penapisan atau Skrining Kesehatan Tertentu adalah deteksi risiko penyakit tertentu, melalui pemeriksaan atau prosedur spesifik secara cepat, serta pencegahan dampak lanjutan risiko penyakit.",2,"Menurut **Peraturan BPJS Kesehatan Nomor 3 Tahun 2024**, dalam Pasal 1 angka 1, yang dimaksud dengan **Pelayanan Penapisan atau Skrining Kesehatan Tertentu** tidak adalah:
+
+> **Deteksi risiko penyakit tertentu, melalui pemeriksaan atau prosedur spesifik secara cepat, serta pencegahan dampak lanjutan risiko penyakit.**","hlm. 2: ""…atau Skrining Kesehatan Tertentu adalah deteksi risiko penyakit tertentu, melalui pemeriksaan atau prosedur spesifik secara cepat, serta pencegahan…""",
+46,T01,2,run1:T01,definition,clause_deletion,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, apa yang dimaksud dengan Pelayanan Penapisan atau Skrining Kesehatan Tertentu?","Menurut **Peraturan BPJS Kesehatan Nomor 3 Tahun 2024**, dalam Pasal 1 angka 1, yang dimaksud dengan **Pelayanan Penapisan atau Skrining Kesehatan Tertentu** adalah:
+
+> **Deteksi risiko penyakit tertentu, melalui pemeriksaan atau prosedur spesifik secara cepat, serta pencegahan dampak lanjutan risiko penyakit.**","Pelayanan Penapisan atau Skrining Kesehatan Tertentu adalah deteksi risiko penyakit tertentu, melalui pemeriksaan atau prosedur spesifik secara cepat, serta pencegahan dampak lanjutan risiko penyakit.",2,,,"Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+47,T04,1,run1:T04,definition,negation,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, apakah Pelayanan Penapisan atau Skrining Kesehatan Tertentu yang diselenggarakan dalam rangka bakti sosial dijamin oleh BPJS Kesehatan?","Berdasarkan **Pasal 8 ayat (2) Peraturan BPJS Kesehatan Nomor 3 Tahun 2024**, **Pelayanan Penapisan atau Skrining Kesehatan Tertentu yang diselenggarakan dalam rangka bakti sosial tidak dijamin oleh BPJS Kesehatan.**",Pelayanan Penapisan atau Skrining Kesehatan Tertentu yang diselenggarakan dalam rangka bakti sosial tidak dijamin BPJS Kesehatan.,6,,,Klaim utama sudah negatif ('tidak dijamin'); penyisipan 'tidak' terhalang; operasi negation tidak dapat diterapkan (keputusan 16 Nov 2026).
+48,T04,2,run1:T04,definition,clause_deletion,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, apakah Pelayanan Penapisan atau Skrining Kesehatan Tertentu yang diselenggarakan dalam rangka bakti sosial dijamin oleh BPJS Kesehatan?","Berdasarkan **Pasal 8 ayat (2) Peraturan BPJS Kesehatan Nomor 3 Tahun 2024**, **Pelayanan Penapisan atau Skrining Kesehatan Tertentu yang diselenggarakan dalam rangka bakti sosial tidak dijamin oleh BPJS Kesehatan.**",Pelayanan Penapisan atau Skrining Kesehatan Tertentu yang diselenggarakan dalam rangka bakti sosial tidak dijamin BPJS Kesehatan.,6,,,"Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+49,T16,1,run1:T16,numeric_count,numeric_value,"Menurut Keputusan Menteri Kesehatan Nomor HK.01.07/MENKES/1511/2023, pemeriksaan kehamilan (antenatal care) dilakukan berapa kali selama masa kehamilan?","## Jawaban
+
+Menurut Keputusan Menteri Kesehatan Nomor HK.01.07/MENKES/1511/2023, pemeriksaan kehamilan (*antenatal care*) dilakukan **6 (enam) kali** selama masa kehamilan, dengan rincian sebagai berikut:
+
+| No. | Kunjungan | Pelaksana | Keterangan |
+|-----|-----------|-----------|------------|
+| 1 | **1 kali** pada trimester pertama | Dokter | Beserta pemeriksaan 10T (termasuk laboratorium dasar Hb, Glukoprotein Uri, dan triple eliminasi) serta USG |
+| 2 | **2 kali** pada trimester kedua | Dokter atau bidan | — |
+| 3 | **3 kali** pada trimester ketiga | Dokter atau bidan | Kunjungan **kelima** dilakukan oleh **dokter** beserta pemeriksaan 10T dan USG |
+
+### Kondisi tertentu
+
+Dalam kondisi tertentu, yaitu:
+1. **Tidak ada dokter** dalam area yang masih terjangkau; atau
+2. **Tidak ada sarana pemeriksaan USG** dalam area yang masih terjangkau,
+
+pemeriksaan kehamilan pada **trimester pertama** dan **trimester ketiga** dapat dilakukan oleh dokter **atau** bidan **tanpa pemeriksaan USG**, atau melakukan **rujukan horizontal** layanan ANC pada trimester pertama atau ANC kelima secara lengkap (10T dan USG).",Pelayanan kesehatan masa hamil dilakukan melalui kegiatan pemeriksaan kehamilan (antenatal care) 6 (enam) kali selama masa kehamilan meliputi:,7,"## Jawaban
+
+Menurut Keputusan Menteri Kesehatan Nomor HK.01.07/MENKES/1511/2023, pemeriksaan kehamilan (*antenatal care*) dilakukan **12 (dua belas) kali** selama masa kehamilan, dengan rincian sebagai berikut:
+
+| No. | Kunjungan | Pelaksana | Keterangan |
+|-----|-----------|-----------|------------|
+| 1 | **1 kali** pada trimester pertama | Dokter | Beserta pemeriksaan 10T (termasuk laboratorium dasar Hb, Glukoprotein Uri, dan triple eliminasi) serta USG |
+| 2 | **2 kali** pada trimester kedua | Dokter atau bidan | — |
+| 3 | **3 kali** pada trimester ketiga | Dokter atau bidan | Kunjungan **kelima** dilakukan oleh **dokter** beserta pemeriksaan 10T dan USG |
+
+### Kondisi tertentu
+
+Dalam kondisi tertentu, yaitu:
+1. **Tidak ada dokter** dalam area yang masih terjangkau; atau
+2. **Tidak ada sarana pemeriksaan USG** dalam area yang masih terjangkau,
+
+pemeriksaan kehamilan pada **trimester pertama** dan **trimester ketiga** dapat dilakukan oleh dokter **atau** bidan **tanpa pemeriksaan USG**, atau melakukan **rujukan horizontal** layanan ANC pada trimester pertama atau ANC kelima secara lengkap (10T dan USG).","hlm. 7: ""…kegiatan pemeriksaan kehamilan (antenatal care) 6 (enam) kali selama masa kehamilan meliputi:""",
+50,T16,2,run1:T16,numeric_count,negation,"Menurut Keputusan Menteri Kesehatan Nomor HK.01.07/MENKES/1511/2023, pemeriksaan kehamilan (antenatal care) dilakukan berapa kali selama masa kehamilan?","## Jawaban
+
+Menurut Keputusan Menteri Kesehatan Nomor HK.01.07/MENKES/1511/2023, pemeriksaan kehamilan (*antenatal care*) dilakukan **6 (enam) kali** selama masa kehamilan, dengan rincian sebagai berikut:
+
+| No. | Kunjungan | Pelaksana | Keterangan |
+|-----|-----------|-----------|------------|
+| 1 | **1 kali** pada trimester pertama | Dokter | Beserta pemeriksaan 10T (termasuk laboratorium dasar Hb, Glukoprotein Uri, dan triple eliminasi) serta USG |
+| 2 | **2 kali** pada trimester kedua | Dokter atau bidan | — |
+| 3 | **3 kali** pada trimester ketiga | Dokter atau bidan | Kunjungan **kelima** dilakukan oleh **dokter** beserta pemeriksaan 10T dan USG |
+
+### Kondisi tertentu
+
+Dalam kondisi tertentu, yaitu:
+1. **Tidak ada dokter** dalam area yang masih terjangkau; atau
+2. **Tidak ada sarana pemeriksaan USG** dalam area yang masih terjangkau,
+
+pemeriksaan kehamilan pada **trimester pertama** dan **trimester ketiga** dapat dilakukan oleh dokter **atau** bidan **tanpa pemeriksaan USG**, atau melakukan **rujukan horizontal** layanan ANC pada trimester pertama atau ANC kelima secara lengkap (10T dan USG).",Pelayanan kesehatan masa hamil dilakukan melalui kegiatan pemeriksaan kehamilan (antenatal care) 6 (enam) kali selama masa kehamilan meliputi:,7,"## Jawaban
+
+Menurut Keputusan Menteri Kesehatan Nomor HK.01.07/MENKES/1511/2023, pemeriksaan kehamilan (*antenatal care*) tidak dilakukan **6 (enam) kali** selama masa kehamilan, dengan rincian sebagai berikut:
+
+| No. | Kunjungan | Pelaksana | Keterangan |
+|-----|-----------|-----------|------------|
+| 1 | **1 kali** pada trimester pertama | Dokter | Beserta pemeriksaan 10T (termasuk laboratorium dasar Hb, Glukoprotein Uri, dan triple eliminasi) serta USG |
+| 2 | **2 kali** pada trimester kedua | Dokter atau bidan | — |
+| 3 | **3 kali** pada trimester ketiga | Dokter atau bidan | Kunjungan **kelima** dilakukan oleh **dokter** beserta pemeriksaan 10T dan USG |
+
+### Kondisi tertentu
+
+Dalam kondisi tertentu, yaitu:
+1. **Tidak ada dokter** dalam area yang masih terjangkau; atau
+2. **Tidak ada sarana pemeriksaan USG** dalam area yang masih terjangkau,
+
+pemeriksaan kehamilan pada **trimester pertama** dan **trimester ketiga** dapat dilakukan oleh dokter **atau** bidan **tanpa pemeriksaan USG**, atau melakukan **rujukan horizontal** layanan ANC pada trimester pertama atau ANC kelima secara lengkap (10T dan USG).","hlm. 7: ""…kegiatan pemeriksaan kehamilan (antenatal care) 6 (enam) kali selama masa kehamilan meliputi:""",
+51,T07,1,run1:T07,definition,negation,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, apa kewajiban FKTP terhadap Peserta Prolanis menurut Pasal 18?","## Kewajiban FKTP terhadap Peserta Prolanis (Pasal 18)
+
+Berdasarkan Pasal 18 Peraturan BPJS Kesehatan Nomor 3 Tahun 2024:
+
+### 1. Kewajiban Utama (Ayat 1)
+FKTP wajib melakukan **pemantauan status kesehatan** Peserta Prolanis agar status kesehatan Peserta **terkendali** sesuai dengan ketentuan peraturan perundang-undangan.
+
+### 2. Pelaksanaan Pemantauan (Ayat 2)
+Pemantauan status kesehatan dilakukan melalui:
+
+| No. | Kegiatan | Frekuensi/Keterangan |
+|-----|----------|---------------------|
+| a. | Konsultasi, pemeriksaan kesehatan, dan pemberian obat kepada Peserta Prolanis | **Paling sedikit 1 (satu) kali setiap bulan** |
+| b. | Pemeriksaan penunjang | Sesuai ketentuan |
+| c. | Evaluasi status kesehatan Peserta | **Paling sedikit 1 (satu) kali setiap bulan** |
+| d. | Penyesuaian tata laksana terapi | Sesuai dengan kompetensi dan kewenangan |
+
+### Kesimpulan
+Kewajiban inti FKTP adalah memastikan status kesehatan Peserta Prolanis terkendali melalui pemantauan rutin minimal sebulan sekali, yang mencakup konsultasi, pemeriksaan, pemberian obat, evaluasi, serta penyesuaian terapi sesuai kewenangan FKTP.","FKTP wajib melakukan pemantauan status kesehatan Peserta Prolanis agar status kesehatan Peserta terkendali sesuai dengan ketentuan peraturan perundang-undangan. Pemantauan status kesehatan Peserta Prolanis sebagaimana dimaksud pada ayat (1) dilakukan melalui: a. konsultasi, pemeriksaan kesehatan, dan pemberian obat kepada Peserta Prolanis paling sedikit 1 (satu) kali setiap bulan; b. pemeriksaan penunjang sesuai ketentuan; c. evaluasi status kesehatan Peserta paling sedikit 1 (satu) kali setiap bulan; dan d. penyesuaian tata laksana terapi sesuai dengan kompetensi dan kewenangan.",12,"## Kewajiban FKTP terhadap Peserta Prolanis (Pasal 18)
+
+Berdasarkan Pasal 18 Peraturan BPJS Kesehatan Nomor 3 Tahun 2024:
+
+### 1. Kewajiban Utama (Ayat 1)
+FKTP tidak wajib melakukan **pemantauan status kesehatan** Peserta Prolanis agar status kesehatan Peserta **terkendali** sesuai dengan ketentuan peraturan perundang-undangan.
+
+### 2. Pelaksanaan Pemantauan (Ayat 2)
+Pemantauan status kesehatan dilakukan melalui:
+
+| No. | Kegiatan | Frekuensi/Keterangan |
+|-----|----------|---------------------|
+| a. | Konsultasi, pemeriksaan kesehatan, dan pemberian obat kepada Peserta Prolanis | **Paling sedikit 1 (satu) kali setiap bulan** |
+| b. | Pemeriksaan penunjang | Sesuai ketentuan |
+| c. | Evaluasi status kesehatan Peserta | **Paling sedikit 1 (satu) kali setiap bulan** |
+| d. | Penyesuaian tata laksana terapi | Sesuai dengan kompetensi dan kewenangan |
+
+### Kesimpulan
+Kewajiban inti FKTP adalah memastikan status kesehatan Peserta Prolanis terkendali melalui pemantauan rutin minimal sebulan sekali, yang mencakup konsultasi, pemeriksaan, pemberian obat, evaluasi, serta penyesuaian terapi sesuai kewenangan FKTP.","hlm. 12: ""FKTP wajib melakukan pemantauan status kesehatan Peserta Prolanis agar status kesehatan Peserta terkendali sesuai dengan ketentuan peraturan…""",
+52,T07,2,run1:T07,definition,clause_deletion,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, apa kewajiban FKTP terhadap Peserta Prolanis menurut Pasal 18?","## Kewajiban FKTP terhadap Peserta Prolanis (Pasal 18)
+
+Berdasarkan Pasal 18 Peraturan BPJS Kesehatan Nomor 3 Tahun 2024:
+
+### 1. Kewajiban Utama (Ayat 1)
+FKTP wajib melakukan **pemantauan status kesehatan** Peserta Prolanis agar status kesehatan Peserta **terkendali** sesuai dengan ketentuan peraturan perundang-undangan.
+
+### 2. Pelaksanaan Pemantauan (Ayat 2)
+Pemantauan status kesehatan dilakukan melalui:
+
+| No. | Kegiatan | Frekuensi/Keterangan |
+|-----|----------|---------------------|
+| a. | Konsultasi, pemeriksaan kesehatan, dan pemberian obat kepada Peserta Prolanis | **Paling sedikit 1 (satu) kali setiap bulan** |
+| b. | Pemeriksaan penunjang | Sesuai ketentuan |
+| c. | Evaluasi status kesehatan Peserta | **Paling sedikit 1 (satu) kali setiap bulan** |
+| d. | Penyesuaian tata laksana terapi | Sesuai dengan kompetensi dan kewenangan |
+
+### Kesimpulan
+Kewajiban inti FKTP adalah memastikan status kesehatan Peserta Prolanis terkendali melalui pemantauan rutin minimal sebulan sekali, yang mencakup konsultasi, pemeriksaan, pemberian obat, evaluasi, serta penyesuaian terapi sesuai kewenangan FKTP.","FKTP wajib melakukan pemantauan status kesehatan Peserta Prolanis agar status kesehatan Peserta terkendali sesuai dengan ketentuan peraturan perundang-undangan. Pemantauan status kesehatan Peserta Prolanis sebagaimana dimaksud pada ayat (1) dilakukan melalui: a. konsultasi, pemeriksaan kesehatan, dan pemberian obat kepada Peserta Prolanis paling sedikit 1 (satu) kali setiap bulan; b. pemeriksaan penunjang sesuai ketentuan; c. evaluasi status kesehatan Peserta paling sedikit 1 (satu) kali setiap bulan; dan d. penyesuaian tata laksana terapi sesuai dengan kompetensi dan kewenangan.",12,"## Kewajiban FKTP terhadap Peserta Prolanis (Pasal 18)
+
+Berdasarkan Pasal 18 Peraturan BPJS Kesehatan Nomor 3 Tahun 2024:
+
+### 1. Kewajiban Utama (Ayat 1)
+FKTP wajib melakukan **pemantauan status kesehatan** Peserta Prolanis agar status kesehatan Peserta **terkendali** sesuai dengan ketentuan peraturan perundang-undangan.
+
+### 2. Pelaksanaan Pemantauan (Ayat 2)
+Pemantauan status kesehatan dilakukan melalui:
+
+| No. | Kegiatan | Frekuensi/Keterangan |
+|-----|----------|---------------------|
+| a. | Konsultasi, pemeriksaan kesehatan, dan pemberian obat kepada Peserta Prolanis |  |
+| b. | Pemeriksaan penunjang | Sesuai ketentuan |
+| c. | Evaluasi status kesehatan Peserta | **Paling sedikit 1 (satu) kali setiap bulan** |
+| d. | Penyesuaian tata laksana terapi | Sesuai dengan kompetensi dan kewenangan |
+
+### Kesimpulan
+Kewajiban inti FKTP adalah memastikan status kesehatan Peserta Prolanis terkendali melalui pemantauan rutin minimal sebulan sekali, yang mencakup konsultasi, pemeriksaan, pemberian obat, evaluasi, serta penyesuaian terapi sesuai kewenangan FKTP.","hlm. 12: ""…pemberian obat kepada Peserta Prolanis paling sedikit 1 (satu) kali setiap bulan; b. pemeriksaan penunjang sesuai ketentuan; c. evaluasi status…""",
+53,T28,1,run1:T28,numeric_duration,numeric_value,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, Tarif Non INA-CBG untuk obat penyakit kronis dibayarkan untuk pemberian obat kronis paling banyak berapa hari?","Berdasarkan Pasal 40 ayat (2) Permenkes Nomor 3 Tahun 2023, Tarif Non INA-CBG untuk obat penyakit kronis dibayarkan untuk pemberian obat kronis **paling banyak 23 (dua puluh tiga) hari**.
+
+Perlu diketahui juga bahwa:
+- **Pasal 40 ayat (1):** Obat penyakit kronis di FKRTL diberikan untuk **30 (tiga puluh) hari** sesuai indikasi medis untuk setiap kali kedatangan.
+- **Pasal 40 ayat (3):** Untuk obat penyakit kronis tertentu yang bentuk sediaannya tidak dapat dibagi, pembayaran tarif Non INA-CBG diberlakukan untuk pemberian **proporsional 23 (dua puluh tiga) hari**.
+- **Pasal 40 ayat (4):** Obat tersebut harus tercantum pada Formularium Nasional.
+
+Jadi, meskipun obat dapat diberikan hingga 30 hari per kedatangan, pembayaran tarifnya dibatasi paling banyak 23 hari.",Tarif Non INA-CBG untuk obat penyakit kronis sebagaimana dimaksud pada ayat (1) dibayarkan untuk pemberian obat kronis paling banyak 23 (dua puluh tiga) hari.,22,"Berdasarkan Pasal 40 ayat (2) Permenkes Nomor 3 Tahun 2023, Tarif Non INA-CBG untuk obat penyakit kronis dibayarkan untuk pemberian obat kronis **paling banyak 46 (empat puluh enam) hari**.
+
+Perlu diketahui juga bahwa:
+- **Pasal 40 ayat (1):** Obat penyakit kronis di FKRTL diberikan untuk **30 (tiga puluh) hari** sesuai indikasi medis untuk setiap kali kedatangan.
+- **Pasal 40 ayat (3):** Untuk obat penyakit kronis tertentu yang bentuk sediaannya tidak dapat dibagi, pembayaran tarif Non INA-CBG diberlakukan untuk pemberian **proporsional 23 (dua puluh tiga) hari**.
+- **Pasal 40 ayat (4):** Obat tersebut harus tercantum pada Formularium Nasional.
+
+Jadi, meskipun obat dapat diberikan hingga 30 hari per kedatangan, pembayaran tarifnya dibatasi paling banyak 23 hari.","hlm. 22: ""…pada ayat (1) dibayarkan untuk pemberian obat kronis paling banyak 23 (dua puluh tiga) hari.""",
+54,T28,2,run1:T28,numeric_duration,unit,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, Tarif Non INA-CBG untuk obat penyakit kronis dibayarkan untuk pemberian obat kronis paling banyak berapa hari?","Berdasarkan Pasal 40 ayat (2) Permenkes Nomor 3 Tahun 2023, Tarif Non INA-CBG untuk obat penyakit kronis dibayarkan untuk pemberian obat kronis **paling banyak 23 (dua puluh tiga) hari**.
+
+Perlu diketahui juga bahwa:
+- **Pasal 40 ayat (1):** Obat penyakit kronis di FKRTL diberikan untuk **30 (tiga puluh) hari** sesuai indikasi medis untuk setiap kali kedatangan.
+- **Pasal 40 ayat (3):** Untuk obat penyakit kronis tertentu yang bentuk sediaannya tidak dapat dibagi, pembayaran tarif Non INA-CBG diberlakukan untuk pemberian **proporsional 23 (dua puluh tiga) hari**.
+- **Pasal 40 ayat (4):** Obat tersebut harus tercantum pada Formularium Nasional.
+
+Jadi, meskipun obat dapat diberikan hingga 30 hari per kedatangan, pembayaran tarifnya dibatasi paling banyak 23 hari.",Tarif Non INA-CBG untuk obat penyakit kronis sebagaimana dimaksud pada ayat (1) dibayarkan untuk pemberian obat kronis paling banyak 23 (dua puluh tiga) hari.,22,"Berdasarkan Pasal 40 ayat (2) Permenkes Nomor 3 Tahun 2023, Tarif Non INA-CBG untuk obat penyakit kronis dibayarkan untuk pemberian obat kronis **paling banyak 23 (dua puluh tiga) bulan**.
+
+Perlu diketahui juga bahwa:
+- **Pasal 40 ayat (1):** Obat penyakit kronis di FKRTL diberikan untuk **30 (tiga puluh) hari** sesuai indikasi medis untuk setiap kali kedatangan.
+- **Pasal 40 ayat (3):** Untuk obat penyakit kronis tertentu yang bentuk sediaannya tidak dapat dibagi, pembayaran tarif Non INA-CBG diberlakukan untuk pemberian **proporsional 23 (dua puluh tiga) hari**.
+- **Pasal 40 ayat (4):** Obat tersebut harus tercantum pada Formularium Nasional.
+
+Jadi, meskipun obat dapat diberikan hingga 30 hari per kedatangan, pembayaran tarifnya dibatasi paling banyak 23 hari.","hlm. 22: ""…pada ayat (1) dibayarkan untuk pemberian obat kronis paling banyak 23 (dua puluh tiga) hari.""",
+55,T24,1,run1:T24,numeric_duration,numeric_value,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, untuk rahang gigi yang sama, pelayanan protesa gigi diberikan paling cepat berapa tahun sekali?","Menurut Pasal 24 ayat (1) huruf b Permenkes Nomor 3 Tahun 2023, untuk rahang gigi yang sama, pelayanan protesa gigi diberikan **paling cepat 2 (dua) tahun sekali** sesuai indikasi medis.",Tarif Non Kapitasi pelayanan protesa gigi sebagaimana dimaksud dalam Pasal 11 huruf j diberikan untuk pelayanan protesa gigi dengan ketentuan: a. dilakukan sesuai dengan standar kompetensi dokter gigi; dan b. untuk rahang gigi yang sama diberikan paling cepat 2 (dua) tahun sekali sesuai indikasi medis.,16,"Menurut Pasal 24 ayat (1) huruf b Permenkes Nomor 3 Tahun 2023, untuk rahang gigi yang sama, pelayanan protesa gigi diberikan **paling cepat 4 (empat) tahun sekali** sesuai indikasi medis.","hlm. 16: ""…b. untuk rahang gigi yang sama diberikan paling cepat 2 (dua) tahun sekali sesuai indikasi medis.""",
+56,T24,2,run1:T24,numeric_duration,unit,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, untuk rahang gigi yang sama, pelayanan protesa gigi diberikan paling cepat berapa tahun sekali?","Menurut Pasal 24 ayat (1) huruf b Permenkes Nomor 3 Tahun 2023, untuk rahang gigi yang sama, pelayanan protesa gigi diberikan **paling cepat 2 (dua) tahun sekali** sesuai indikasi medis.",Tarif Non Kapitasi pelayanan protesa gigi sebagaimana dimaksud dalam Pasal 11 huruf j diberikan untuk pelayanan protesa gigi dengan ketentuan: a. dilakukan sesuai dengan standar kompetensi dokter gigi; dan b. untuk rahang gigi yang sama diberikan paling cepat 2 (dua) tahun sekali sesuai indikasi medis.,16,"Menurut Pasal 24 ayat (1) huruf b Permenkes Nomor 3 Tahun 2023, untuk rahang gigi yang sama, pelayanan protesa gigi diberikan **paling cepat 2 (dua) bulan sekali** sesuai indikasi medis.","hlm. 16: ""…b. untuk rahang gigi yang sama diberikan paling cepat 2 (dua) tahun sekali sesuai indikasi medis.""",
+57,T26,1,run1:T26,numeric_percent,numeric_value,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, berapa kisaran persentase tarif rawat inap di FKRTL berupa klinik utama atau yang setara dari standar tarif INA-CBG untuk kelompok rumah sakit kelas D?","Menurut **Permenkes Nomor 3 Tahun 2023 Pasal 31 ayat (2)**, tarif rawat inap di FKRTL berupa klinik utama atau yang setara diberlakukan sebesar **70% (tujuh puluh persen) sampai dengan 100% (seratus persen)** dari standar tarif INA-CBG untuk kelompok rumah sakit kelas D, yang besarannya sesuai kesepakatan antara BPJS Kesehatan bersama dengan Asosiasi Fasilitas Kesehatan.","Tarif rawat inap di FKRTL berupa klinik utama atau yang setara, diberlakukan tarif sebesar 70% (tujuh puluh persen) sampai dengan 100% (seratus persen) dari standar tarif INA-CBG untuk kelompok rumah sakit kelas D, yang besarannya sesuai kesepakatan antara BPJS Kesehatan bersama dengan Asosiasi Fasilitas Kesehatan.",19,"Menurut **Permenkes Nomor 3 Tahun 2023 Pasal 31 ayat (2)**, tarif rawat inap di FKRTL berupa klinik utama atau yang setara diberlakukan sebesar **140% (seratus empat puluh persen) sampai dengan 100% (seratus persen)** dari standar tarif INA-CBG untuk kelompok rumah sakit kelas D, yang besarannya sesuai kesepakatan antara BPJS Kesehatan bersama dengan Asosiasi Fasilitas Kesehatan.","hlm. 19: ""…setara, diberlakukan tarif sebesar 70% (tujuh puluh persen) sampai dengan 100% (seratus persen) dari standar tarif INA-CBG untuk kelompok rumah sakit…""",
+58,T26,2,run1:T26,numeric_percent,negation,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, berapa kisaran persentase tarif rawat inap di FKRTL berupa klinik utama atau yang setara dari standar tarif INA-CBG untuk kelompok rumah sakit kelas D?","Menurut **Permenkes Nomor 3 Tahun 2023 Pasal 31 ayat (2)**, tarif rawat inap di FKRTL berupa klinik utama atau yang setara diberlakukan sebesar **70% (tujuh puluh persen) sampai dengan 100% (seratus persen)** dari standar tarif INA-CBG untuk kelompok rumah sakit kelas D, yang besarannya sesuai kesepakatan antara BPJS Kesehatan bersama dengan Asosiasi Fasilitas Kesehatan.","Tarif rawat inap di FKRTL berupa klinik utama atau yang setara, diberlakukan tarif sebesar 70% (tujuh puluh persen) sampai dengan 100% (seratus persen) dari standar tarif INA-CBG untuk kelompok rumah sakit kelas D, yang besarannya sesuai kesepakatan antara BPJS Kesehatan bersama dengan Asosiasi Fasilitas Kesehatan.",19,"Menurut **Permenkes Nomor 3 Tahun 2023 Pasal 31 ayat (2)**, tarif rawat inap di FKRTL berupa klinik utama atau yang setara tidak diberlakukan sebesar **70% (tujuh puluh persen) sampai dengan 100% (seratus persen)** dari standar tarif INA-CBG untuk kelompok rumah sakit kelas D, yang besarannya sesuai kesepakatan antara BPJS Kesehatan bersama dengan Asosiasi Fasilitas Kesehatan.","hlm. 19: ""…setara, diberlakukan tarif sebesar 70% (tujuh puluh persen) sampai dengan 100% (seratus persen) dari standar tarif INA-CBG untuk kelompok rumah sakit…""",
+59,T44,1,run1:T44,numeric_count,numeric_value,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014, Manfaat JKN terdiri atas berapa jenis, dan apa saja jenisnya?","Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014 (Pasal 4), **Manfaat JKN terdiri atas 2 (dua) jenis**, yaitu:
+
+1. **Manfaat Medis** — berupa pelayanan kesehatan yang komprehensif (promotif, preventif, kuratif, dan rehabilitatif) sesuai dengan indikasi medis yang tidak terikat dengan besaran iuran yang dibayarkan.
+
+2. **Manfaat Non-Medis** — meliputi:
+   - **Akomodasi** untuk layanan rawat inap sesuai hak kelas perawatan peserta.
+   - **Ambulan**, yang hanya diberikan untuk pasien rujukan antar fasilitas kesehatan, dengan kondisi tertentu sesuai rekomendasi dokter.","Manfaat JKN terdiri atas 2 (dua) jenis, yaitu manfaat medis dan manfaat non-medis.",20,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014 (Pasal 4), **Manfaat JKN terdiri atas 6 (enam) jenis**, yaitu:
+
+1. **Manfaat Medis** — berupa pelayanan kesehatan yang komprehensif (promotif, preventif, kuratif, dan rehabilitatif) sesuai dengan indikasi medis yang tidak terikat dengan besaran iuran yang dibayarkan.
+
+2. **Manfaat Non-Medis** — meliputi:
+   - **Akomodasi** untuk layanan rawat inap sesuai hak kelas perawatan peserta.
+   - **Ambulan**, yang hanya diberikan untuk pasien rujukan antar fasilitas kesehatan, dengan kondisi tertentu sesuai rekomendasi dokter.","hlm. 20: ""Manfaat JKN terdiri atas 2 (dua) jenis, yaitu manfaat medis dan manfaat non-medis.""",
+60,T44,2,run1:T44,numeric_count,negation,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014, Manfaat JKN terdiri atas berapa jenis, dan apa saja jenisnya?","Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014 (Pasal 4), **Manfaat JKN terdiri atas 2 (dua) jenis**, yaitu:
+
+1. **Manfaat Medis** — berupa pelayanan kesehatan yang komprehensif (promotif, preventif, kuratif, dan rehabilitatif) sesuai dengan indikasi medis yang tidak terikat dengan besaran iuran yang dibayarkan.
+
+2. **Manfaat Non-Medis** — meliputi:
+   - **Akomodasi** untuk layanan rawat inap sesuai hak kelas perawatan peserta.
+   - **Ambulan**, yang hanya diberikan untuk pasien rujukan antar fasilitas kesehatan, dengan kondisi tertentu sesuai rekomendasi dokter.","Manfaat JKN terdiri atas 2 (dua) jenis, yaitu manfaat medis dan manfaat non-medis.",20,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014 (Pasal 4), **Manfaat JKN tidak terdiri atas 2 (dua) jenis**, yaitu:
+
+1. **Manfaat Medis** — berupa pelayanan kesehatan yang komprehensif (promotif, preventif, kuratif, dan rehabilitatif) sesuai dengan indikasi medis yang tidak terikat dengan besaran iuran yang dibayarkan.
+
+2. **Manfaat Non-Medis** — meliputi:
+   - **Akomodasi** untuk layanan rawat inap sesuai hak kelas perawatan peserta.
+   - **Ambulan**, yang hanya diberikan untuk pasien rujukan antar fasilitas kesehatan, dengan kondisi tertentu sesuai rekomendasi dokter.","hlm. 20: ""Manfaat JKN terdiri atas 2 (dua) jenis, yaitu manfaat medis dan manfaat non-medis.""",
+61,T09,1,run1:T09,numeric_duration,numeric_value,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, Peraturan Badan tersebut mulai berlaku berapa hari sejak tanggal diundangkan?","Menurut **Peraturan BPJS Kesehatan Nomor 3 Tahun 2024**, hal tersebut diatur dalam **Pasal 32**, yang menyatakan:
+
+> *""Peraturan Badan ini mulai berlaku **30 (tiga puluh) hari** sejak tanggal diundangkan.""*
+
+Jadi, Peraturan Badan tersebut mulai berlaku **30 hari** sejak tanggal diundangkan.",Pasal 32 Peraturan Badan ini mulai berlaku 30 (tiga puluh) hari sejak tanggal diundangkan.,16,"Menurut **Peraturan BPJS Kesehatan Nomor 3 Tahun 2024**, hal tersebut diatur dalam **Pasal 32**, yang menyatakan:
+
+> *""Peraturan Badan ini mulai berlaku **60 (enam puluh) hari** sejak tanggal diundangkan.""*
+
+Jadi, Peraturan Badan tersebut mulai berlaku **30 hari** sejak tanggal diundangkan.","hlm. 16: ""Pasal 32 Peraturan Badan ini mulai berlaku 30 (tiga puluh) hari sejak tanggal diundangkan.""",
+62,T09,2,run1:T09,numeric_duration,unit,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, Peraturan Badan tersebut mulai berlaku berapa hari sejak tanggal diundangkan?","Menurut **Peraturan BPJS Kesehatan Nomor 3 Tahun 2024**, hal tersebut diatur dalam **Pasal 32**, yang menyatakan:
+
+> *""Peraturan Badan ini mulai berlaku **30 (tiga puluh) hari** sejak tanggal diundangkan.""*
+
+Jadi, Peraturan Badan tersebut mulai berlaku **30 hari** sejak tanggal diundangkan.",Pasal 32 Peraturan Badan ini mulai berlaku 30 (tiga puluh) hari sejak tanggal diundangkan.,16,"Menurut **Peraturan BPJS Kesehatan Nomor 3 Tahun 2024**, hal tersebut diatur dalam **Pasal 32**, yang menyatakan:
+
+> *""Peraturan Badan ini mulai berlaku **30 (tiga puluh) bulan** sejak tanggal diundangkan.""*
+
+Jadi, Peraturan Badan tersebut mulai berlaku **30 hari** sejak tanggal diundangkan.","hlm. 16: ""Pasal 32 Peraturan Badan ini mulai berlaku 30 (tiga puluh) hari sejak tanggal diundangkan.""",
+63,T32,1,run1:T32,numeric_duration,numeric_value,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, pembayaran tarif pada FKTP dan FKRTL sesuai dengan ketentuan dalam Peraturan Menteri ini mulai berlaku berapa hari sejak Peraturan Menteri diundangkan?","Menurut **Pasal 51 ayat (3)** Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, pembayaran tarif pada FKTP dan FKRTL sesuai dengan ketentuan dalam Peraturan Menteri ini **mulai berlaku 14 (empat belas) hari** sejak Peraturan Menteri ini diundangkan.",Pembayaran tarif pada FKTP dan FKRTL sesuai dengan ketentuan dalam Peraturan Menteri ini mulai berlaku 14 (empat belas) hari sejak Peraturan Menteri ini diundangkan.,27,"Menurut **Pasal 51 ayat (3)** Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, pembayaran tarif pada FKTP dan FKRTL sesuai dengan ketentuan dalam Peraturan Menteri ini **mulai berlaku 28 (dua puluh delapan) hari** sejak Peraturan Menteri ini diundangkan.","hlm. 27: ""…ketentuan dalam Peraturan Menteri ini mulai berlaku 14 (empat belas) hari sejak Peraturan Menteri ini diundangkan.""",
+64,T32,2,run1:T32,numeric_duration,unit,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, pembayaran tarif pada FKTP dan FKRTL sesuai dengan ketentuan dalam Peraturan Menteri ini mulai berlaku berapa hari sejak Peraturan Menteri diundangkan?","Menurut **Pasal 51 ayat (3)** Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, pembayaran tarif pada FKTP dan FKRTL sesuai dengan ketentuan dalam Peraturan Menteri ini **mulai berlaku 14 (empat belas) hari** sejak Peraturan Menteri ini diundangkan.",Pembayaran tarif pada FKTP dan FKRTL sesuai dengan ketentuan dalam Peraturan Menteri ini mulai berlaku 14 (empat belas) hari sejak Peraturan Menteri ini diundangkan.,27,"Menurut **Pasal 51 ayat (3)** Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, pembayaran tarif pada FKTP dan FKRTL sesuai dengan ketentuan dalam Peraturan Menteri ini **mulai berlaku 14 (empat belas) bulan** sejak Peraturan Menteri ini diundangkan.","hlm. 27: ""…ketentuan dalam Peraturan Menteri ini mulai berlaku 14 (empat belas) hari sejak Peraturan Menteri ini diundangkan.""",
+65,T49,1,run1:T49,numeric_percent,numeric_value,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014, berapa kisaran besaran jasa pelayanan kesehatan di FKRTL milik Pemerintah dari total pendapatan fasilitas kesehatan tersebut?","Menurut Permenkes Nomor 28 Tahun 2014 (Pasal 4, hlm. 39–41), besaran jasa pelayanan kesehatan di FKRTL milik Pemerintah berada dalam kisaran **30–50% (tiga puluh sampai dengan lima puluh persen)** dari total pendapatan fasilitas kesehatan tersebut.
+
+Sedangkan untuk fasilitas kesehatan rujukan tingkat lanjutan milik swasta, pengaturannya diserahkan kepada fasilitas kesehatan tersebut.",Besaran jasa pelayanan kesehatan di FKRTL milik Pemerintah dalam kisaran 30 - 50% (tiga puluh sampai dengan lima puluh persen) dari total pendapatan fasilitas kesehatan tersebut.,39,"Menurut Permenkes Nomor 28 Tahun 2014 (Pasal 4, hlm. 39–41), besaran jasa pelayanan kesehatan di FKRTL milik Pemerintah berada dalam kisaran **60–50% (enam puluh sampai dengan lima puluh persen)** dari total pendapatan fasilitas kesehatan tersebut.
+
+Sedangkan untuk fasilitas kesehatan rujukan tingkat lanjutan milik swasta, pengaturannya diserahkan kepada fasilitas kesehatan tersebut.","hlm. 39: ""…di FKRTL milik Pemerintah dalam kisaran 30 - 50% (tiga puluh sampai dengan lima puluh persen) dari total pendapatan fasilitas kesehatan tersebut.""",
+66,T49,2,run1:T49,numeric_percent,negation,"Menurut Peraturan Menteri Kesehatan Nomor 28 Tahun 2014, berapa kisaran besaran jasa pelayanan kesehatan di FKRTL milik Pemerintah dari total pendapatan fasilitas kesehatan tersebut?","Menurut Permenkes Nomor 28 Tahun 2014 (Pasal 4, hlm. 39–41), besaran jasa pelayanan kesehatan di FKRTL milik Pemerintah berada dalam kisaran **30–50% (tiga puluh sampai dengan lima puluh persen)** dari total pendapatan fasilitas kesehatan tersebut.
+
+Sedangkan untuk fasilitas kesehatan rujukan tingkat lanjutan milik swasta, pengaturannya diserahkan kepada fasilitas kesehatan tersebut.",Besaran jasa pelayanan kesehatan di FKRTL milik Pemerintah dalam kisaran 30 - 50% (tiga puluh sampai dengan lima puluh persen) dari total pendapatan fasilitas kesehatan tersebut.,39,"Menurut Permenkes Nomor 28 Tahun 2014 (Pasal 4, hlm. 39–41), besaran jasa pelayanan kesehatan di FKRTL milik Pemerintah tidak berada dalam kisaran **30–50% (tiga puluh sampai dengan lima puluh persen)** dari total pendapatan fasilitas kesehatan tersebut.
+
+Sedangkan untuk fasilitas kesehatan rujukan tingkat lanjutan milik swasta, pengaturannya diserahkan kepada fasilitas kesehatan tersebut.","hlm. 39: ""…di FKRTL milik Pemerintah dalam kisaran 30 - 50% (tiga puluh sampai dengan lima puluh persen) dari total pendapatan fasilitas kesehatan tersebut.""",
+67,T20,1,run1:T20,definition,negation,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, pelayanan obat program rujuk balik harus menggunakan obat sebagaimana tercantum dalam apa?","Menurut **Pasal 13 ayat (2)** Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, pelayanan obat program rujuk balik harus menggunakan **obat program rujuk balik sebagaimana tercantum dalam Formularium Nasional**.",Pelayanan obat program rujuk balik sebagaimana dimaksud pada ayat (1) harus menggunakan obat program rujuk balik sebagaimana tercantum dalam formularium nasional.,10,"Menurut **Pasal 13 ayat (2)** Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, pelayanan obat program rujuk balik tidak harus menggunakan **obat program rujuk balik sebagaimana tercantum dalam Formularium Nasional**.","hlm. 10: ""…sebagaimana dimaksud pada ayat (1) harus menggunakan obat program rujuk balik sebagaimana tercantum dalam formularium nasional.""",
+68,T20,2,run1:T20,definition,clause_deletion,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, pelayanan obat program rujuk balik harus menggunakan obat sebagaimana tercantum dalam apa?","Menurut **Pasal 13 ayat (2)** Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, pelayanan obat program rujuk balik harus menggunakan **obat program rujuk balik sebagaimana tercantum dalam Formularium Nasional**.",Pelayanan obat program rujuk balik sebagaimana dimaksud pada ayat (1) harus menggunakan obat program rujuk balik sebagaimana tercantum dalam formularium nasional.,10,,,"Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."
+69,T52,1,run1:T52,definition,negation,"Menurut Peraturan Presiden Nomor 59 Tahun 2024, apa yang dimaksud dengan Pekerja Penerima Upah (PPU)?","Menurut Peraturan Presiden Nomor 59 Tahun 2024, dalam Pasal 1 ayat (7), **Pekerja Penerima Upah (PPU)** didefinisikan sebagai:
+
+> **setiap orang yang bekerja pada Pemberi Kerja dengan menerima Gaji atau Upah.**
+
+Dalam pengertian tersebut, beberapa istilah terkait juga didefinisikan dalam peraturan yang sama:
+
+- **Pekerja** (ayat 6): setiap orang yang bekerja dengan menerima Gaji, Upah, atau imbalan dalam bentuk lain.
+- **Pemberi Kerja** (ayat 16): orang perseorangan, pengusaha, badan hukum, atau badan lainnya yang mempekerjakan tenaga kerja, atau penyelenggara negara yang mempekerjakan Pegawai Aparatur Sipil Negara dengan membayar gaji, upah, atau imbalan dalam bentuk lainnya.
+- **Gaji atau Upah** (ayat 17): hak Pekerja yang diterima dan dinyatakan dalam bentuk uang sebagai imbalan dari Pemberi Kerja kepada Pekerja, termasuk tunjangan bagi Pekerja dan keluarganya atas suatu pekerjaan dan/atau jasa yang telah atau akan dilakukan.
+
+Secara khusus terkait iuran, Pasal 32 Perpres 59/2024 mengatur bahwa Gaji atau Upah PPU menjadi dasar perhitungan besaran Iuran, dengan batas paling tinggi sebesar **Rp12.000.000,00 per bulan** dan batas paling rendah sebesar **upah minimum provinsi** (atau kabupaten/kota jika ditetapkan).",Pekerja Penerima Upah yang selanjutnya disingkat PPU adalah setiap orang yang bekerja pada Pemberi Kerja dengan menerima Gaji atau Upah.,4,"Menurut Peraturan Presiden Nomor 59 Tahun 2024, dalam Pasal 1 ayat (7), **Pekerja Penerima Upah (PPU)** didefinisikan sebagai:
+
+> **setiap orang yang tidak bekerja pada Pemberi Kerja dengan menerima Gaji atau Upah.**
+
+Dalam pengertian tersebut, beberapa istilah terkait juga didefinisikan dalam peraturan yang sama:
+
+- **Pekerja** (ayat 6): setiap orang yang bekerja dengan menerima Gaji, Upah, atau imbalan dalam bentuk lain.
+- **Pemberi Kerja** (ayat 16): orang perseorangan, pengusaha, badan hukum, atau badan lainnya yang mempekerjakan tenaga kerja, atau penyelenggara negara yang mempekerjakan Pegawai Aparatur Sipil Negara dengan membayar gaji, upah, atau imbalan dalam bentuk lainnya.
+- **Gaji atau Upah** (ayat 17): hak Pekerja yang diterima dan dinyatakan dalam bentuk uang sebagai imbalan dari Pemberi Kerja kepada Pekerja, termasuk tunjangan bagi Pekerja dan keluarganya atas suatu pekerjaan dan/atau jasa yang telah atau akan dilakukan.
+
+Secara khusus terkait iuran, Pasal 32 Perpres 59/2024 mengatur bahwa Gaji atau Upah PPU menjadi dasar perhitungan besaran Iuran, dengan batas paling tinggi sebesar **Rp12.000.000,00 per bulan** dan batas paling rendah sebesar **upah minimum provinsi** (atau kabupaten/kota jika ditetapkan).","hlm. 4: ""…selanjutnya disingkat PPU adalah setiap orang yang bekerja pada Pemberi Kerja dengan menerima Gaji atau Upah.""",
+70,T52,2,run1:T52,definition,clause_deletion,"Menurut Peraturan Presiden Nomor 59 Tahun 2024, apa yang dimaksud dengan Pekerja Penerima Upah (PPU)?","Menurut Peraturan Presiden Nomor 59 Tahun 2024, dalam Pasal 1 ayat (7), **Pekerja Penerima Upah (PPU)** didefinisikan sebagai:
+
+> **setiap orang yang bekerja pada Pemberi Kerja dengan menerima Gaji atau Upah.**
+
+Dalam pengertian tersebut, beberapa istilah terkait juga didefinisikan dalam peraturan yang sama:
+
+- **Pekerja** (ayat 6): setiap orang yang bekerja dengan menerima Gaji, Upah, atau imbalan dalam bentuk lain.
+- **Pemberi Kerja** (ayat 16): orang perseorangan, pengusaha, badan hukum, atau badan lainnya yang mempekerjakan tenaga kerja, atau penyelenggara negara yang mempekerjakan Pegawai Aparatur Sipil Negara dengan membayar gaji, upah, atau imbalan dalam bentuk lainnya.
+- **Gaji atau Upah** (ayat 17): hak Pekerja yang diterima dan dinyatakan dalam bentuk uang sebagai imbalan dari Pemberi Kerja kepada Pekerja, termasuk tunjangan bagi Pekerja dan keluarganya atas suatu pekerjaan dan/atau jasa yang telah atau akan dilakukan.
+
+Secara khusus terkait iuran, Pasal 32 Perpres 59/2024 mengatur bahwa Gaji atau Upah PPU menjadi dasar perhitungan besaran Iuran, dengan batas paling tinggi sebesar **Rp12.000.000,00 per bulan** dan batas paling rendah sebesar **upah minimum provinsi** (atau kabupaten/kota jika ditetapkan).",Pekerja Penerima Upah yang selanjutnya disingkat PPU adalah setiap orang yang bekerja pada Pemberi Kerja dengan menerima Gaji atau Upah.,4,"Menurut Peraturan Presiden Nomor 59 Tahun 2024, dalam Pasal 1 ayat (7), **Pekerja Penerima Upah (PPU)** didefinisikan sebagai:
+
+> **setiap orang yang bekerja pada Pemberi Kerja dengan menerima Gaji atau Upah.**
+
+Dalam pengertian tersebut, beberapa istilah terkait juga didefinisikan dalam peraturan yang sama:
+
+- **Pekerja** (ayat 6): setiap orang yang bekerja dengan menerima Gaji, Upah, atau imbalan dalam bentuk lain.
+- **Pemberi Kerja** (ayat 16): orang perseorangan, pengusaha, badan hukum, atau badan lainnya yang mempekerjakan tenaga kerja, atau penyelenggara negara yang mempekerjakan Pegawai Aparatur Sipil Negara dengan membayar gaji, upah, atau imbalan dalam bentuk lainnya.
+- **Gaji atau Upah** (ayat 17): hak Pekerja yang diterima dan dinyatakan dalam bentuk uang sebagai imbalan dari Pemberi Kerja kepada Pekerja, termasuk tunjangan bagi Pekerja dan keluarganya atas suatu pekerjaan dan/atau jasa yang telah atau akan dilakukan.
+
+Secara khusus terkait iuran, Pasal 32 Perpres 59/2024 mengatur bahwa Gaji atau Upah PPU menjadi dasar perhitungan besaran Iuran, dengan batas paling rendah sebesar **upah minimum provinsi** (atau kabupaten/kota jika ditetapkan).","hlm. 4: ""…selanjutnya disingkat PPU adalah setiap orang yang bekerja pada Pemberi Kerja dengan menerima Gaji atau Upah.""",
+71,T19,1,run1:T19,numeric_count,numeric_value,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, penentuan risiko peserta terdaftar hanya berlaku bagi FKTP yang memiliki peserta lebih dari berapa peserta?","Menurut **Peraturan Menteri Kesehatan Nomor 3 Tahun 2023**, penentuan risiko peserta terdaftar **hanya berlaku bagi FKTP yang memiliki peserta lebih dari 100 (seratus) peserta** (Pasal 7 ayat (2)).
+
+FKTP yang dimaksud meliputi:
+- Puskesmas
+- Rumah Sakit Kelas D Pratama
+- Klinik Pratama
+- Praktik Mandiri Dokter
+- Praktik Dokter Layanan Primer","Penentuan risiko peserta terdaftar sebagaimana dimaksud pada ayat (1) hanya berlaku bagi puskesmas, rumah sakit kelas D pratama, klinik pratama, praktik mandiri dokter, atau praktik dokter layanan primer yang memiliki peserta lebih dari 100 (seratus) peserta.",7,"Menurut **Peraturan Menteri Kesehatan Nomor 3 Tahun 2023**, penentuan risiko peserta terdaftar **hanya berlaku bagi FKTP yang memiliki peserta lebih dari 200 (dua ratus) peserta** (Pasal 7 ayat (2)).
+
+FKTP yang dimaksud meliputi:
+- Puskesmas
+- Rumah Sakit Kelas D Pratama
+- Klinik Pratama
+- Praktik Mandiri Dokter
+- Praktik Dokter Layanan Primer","hlm. 7: ""…praktik dokter layanan primer yang memiliki peserta lebih dari 100 (seratus) peserta.""",
+72,T19,2,run1:T19,numeric_count,negation,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, penentuan risiko peserta terdaftar hanya berlaku bagi FKTP yang memiliki peserta lebih dari berapa peserta?","Menurut **Peraturan Menteri Kesehatan Nomor 3 Tahun 2023**, penentuan risiko peserta terdaftar **hanya berlaku bagi FKTP yang memiliki peserta lebih dari 100 (seratus) peserta** (Pasal 7 ayat (2)).
+
+FKTP yang dimaksud meliputi:
+- Puskesmas
+- Rumah Sakit Kelas D Pratama
+- Klinik Pratama
+- Praktik Mandiri Dokter
+- Praktik Dokter Layanan Primer","Penentuan risiko peserta terdaftar sebagaimana dimaksud pada ayat (1) hanya berlaku bagi puskesmas, rumah sakit kelas D pratama, klinik pratama, praktik mandiri dokter, atau praktik dokter layanan primer yang memiliki peserta lebih dari 100 (seratus) peserta.",7,"Menurut **Peraturan Menteri Kesehatan Nomor 3 Tahun 2023**, penentuan risiko peserta terdaftar **hanya tidak berlaku bagi FKTP yang memiliki peserta lebih dari 100 (seratus) peserta** (Pasal 7 ayat (2)).
+
+FKTP yang dimaksud meliputi:
+- Puskesmas
+- Rumah Sakit Kelas D Pratama
+- Klinik Pratama
+- Praktik Mandiri Dokter
+- Praktik Dokter Layanan Primer","hlm. 7: ""…praktik dokter layanan primer yang memiliki peserta lebih dari 100 (seratus) peserta.""",
+73,T27,1,run1:T27,numeric_money,numeric_value,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, berapa biaya bahan habis pakai (consumables), jasa pelayanan, dan jasa pengiriman pada pelayanan CAPD per bulan?","Berdasarkan **Pasal 37 ayat (2)** Permenkes Nomor 3 Tahun 2023, biaya bahan habis pakai (consumables), jasa pelayanan, dan jasa pengiriman pada pelayanan CAPD dibayarkan sebesar **Rp8.000.000,00 (delapan juta rupiah) per bulan**.
+
+Selain itu, terdapat pula ketentuan pada Pasal 37 ayat (3) yang menyebutkan bahwa biaya transfer set dan jasa pelayanan pada pelayanan CAPD dibayarkan **Rp250.000,00 (dua ratus lima puluh ribu rupiah) per set** sebagai tarif Non INA-CBG.","Biaya bahan habis pakai (consumables), jasa pelayanan, dan jasa pengiriman pada pelayanan CAPD sebagaimana dimaksud pada ayat (1) dibayarkan sebesar Rp8.000.000,00 (delapan juta rupiah) per bulan.",21,"Berdasarkan **Pasal 37 ayat (2)** Permenkes Nomor 3 Tahun 2023, biaya bahan habis pakai (consumables), jasa pelayanan, dan jasa pengiriman pada pelayanan CAPD dibayarkan sebesar **Rp16.000.000,00 (enam belas juta rupiah) per bulan**.
+
+Selain itu, terdapat pula ketentuan pada Pasal 37 ayat (3) yang menyebutkan bahwa biaya transfer set dan jasa pelayanan pada pelayanan CAPD dibayarkan **Rp250.000,00 (dua ratus lima puluh ribu rupiah) per set** sebagai tarif Non INA-CBG.","hlm. 21: ""…sebagaimana dimaksud pada ayat (1) dibayarkan sebesar Rp8.000.000,00 (delapan juta rupiah) per bulan.""",
+74,T27,2,run1:T27,numeric_money,negation,"Menurut Peraturan Menteri Kesehatan Nomor 3 Tahun 2023, berapa biaya bahan habis pakai (consumables), jasa pelayanan, dan jasa pengiriman pada pelayanan CAPD per bulan?","Berdasarkan **Pasal 37 ayat (2)** Permenkes Nomor 3 Tahun 2023, biaya bahan habis pakai (consumables), jasa pelayanan, dan jasa pengiriman pada pelayanan CAPD dibayarkan sebesar **Rp8.000.000,00 (delapan juta rupiah) per bulan**.
+
+Selain itu, terdapat pula ketentuan pada Pasal 37 ayat (3) yang menyebutkan bahwa biaya transfer set dan jasa pelayanan pada pelayanan CAPD dibayarkan **Rp250.000,00 (dua ratus lima puluh ribu rupiah) per set** sebagai tarif Non INA-CBG.","Biaya bahan habis pakai (consumables), jasa pelayanan, dan jasa pengiriman pada pelayanan CAPD sebagaimana dimaksud pada ayat (1) dibayarkan sebesar Rp8.000.000,00 (delapan juta rupiah) per bulan.",21,"Berdasarkan **Pasal 37 ayat (2)** Permenkes Nomor 3 Tahun 2023, biaya bahan habis pakai (consumables), jasa pelayanan, dan jasa pengiriman pada pelayanan CAPD tidak dibayarkan sebesar **Rp8.000.000,00 (delapan juta rupiah) per bulan**.
+
+Selain itu, terdapat pula ketentuan pada Pasal 37 ayat (3) yang menyebutkan bahwa biaya transfer set dan jasa pelayanan pada pelayanan CAPD dibayarkan **Rp250.000,00 (dua ratus lima puluh ribu rupiah) per set** sebagai tarif Non INA-CBG.","hlm. 21: ""…sebagaimana dimaksud pada ayat (1) dibayarkan sebesar Rp8.000.000,00 (delapan juta rupiah) per bulan.""",
+75,T08,1,run1:T08,definition,negation,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, siapa yang bertanggung jawab dalam pemenuhan sarana dan prasarana untuk peningkatan kesehatan bagi Peserta penderita penyakit kronis?","Berdasarkan **Pasal 29** Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, **Pemerintah Pusat dan/atau Pemerintah Daerah** yang bertanggung jawab dalam pemenuhan sarana dan prasarana untuk peningkatan kesehatan bagi Peserta penderita penyakit kronis, sesuai dengan ketentuan peraturan perundang-undangan.",Pasal 29 Pemerintah Pusat dan/atau Pemerintah Daerah bertanggung jawab dalam pemenuhan sarana dan prasarana untuk peningkatan kesehatan bagi Peserta penderita penyakit kronis sesuai dengan ketentuan peraturan perundang-undangan.,15,"Berdasarkan **Pasal 29** Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, **Pemerintah Pusat dan/atau Pemerintah Daerah** yang tidak bertanggung jawab dalam pemenuhan sarana dan prasarana untuk peningkatan kesehatan bagi Peserta penderita penyakit kronis, sesuai dengan ketentuan peraturan perundang-undangan.","hlm. 15: ""…Pusat dan/atau Pemerintah Daerah bertanggung jawab dalam pemenuhan sarana dan prasarana untuk peningkatan kesehatan bagi Peserta penderita penyakit…""",
+76,T08,2,run1:T08,definition,clause_deletion,"Menurut Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, siapa yang bertanggung jawab dalam pemenuhan sarana dan prasarana untuk peningkatan kesehatan bagi Peserta penderita penyakit kronis?","Berdasarkan **Pasal 29** Peraturan BPJS Kesehatan Nomor 3 Tahun 2024, **Pemerintah Pusat dan/atau Pemerintah Daerah** yang bertanggung jawab dalam pemenuhan sarana dan prasarana untuk peningkatan kesehatan bagi Peserta penderita penyakit kronis, sesuai dengan ketentuan peraturan perundang-undangan.",Pasal 29 Pemerintah Pusat dan/atau Pemerintah Daerah bertanggung jawab dalam pemenuhan sarana dan prasarana untuk peningkatan kesehatan bagi Peserta penderita penyakit kronis sesuai dengan ketentuan peraturan perundang-undangan.,15,,,"Jawaban tidak memuat klausa kualifikator 'tanpa/kecuali/paling'; operasi clause_deletion tidak dapat diterapkan (bacaan literal, keputusan 16 Nov 2026)."

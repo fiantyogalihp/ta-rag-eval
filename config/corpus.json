@@ -1,0 +1,472 @@
+{
+  "_comment": "Dihasilkan dari audit zip JKN_PDF_Terverifikasi_Terseleksi_Siap_Parsing_2026-11-01 (SHA256+halaman cocok dengan CSV audit pengguna). eval_role/index_page_scope = KEPUTUSAN PENELITI yang harus dikunci sebelum melihat skor evaluator (D5).",
+  "corpus_zip": "JKN_PDF_Terverifikasi_Terseleksi_Siap_Parsing_2026-11-01.zip",
+  "audit_date_user": "2026-11-01",
+  "authenticity_note": "SHA256 belum dicocokkan dengan berkas server resmi (akses unduh terblokir saat audit pengguna). Verifikasi identitas/struktur != autentikasi penerbit.",
+  "permenkes_03_2023_page_map": {
+    "1-31": "prosa (pertimbangan, batang tubuh)",
+    "32-83": "tabel (kelompok khusus, kode ICD, kode grup INA-CBG)",
+    "84-91": "prosa (perhitungan tarif sub-akut dan kronis)",
+    "92-721": "tabel tarif INA-CBG per regional dan kelas RS"
+  },
+  "question_evidence_page_policy": {
+    "permenkes_03_2023": "pertanyaan hanya boleh berjangkar pada hlm. 1-31 dan 84-91 sampai QA tabel selesai",
+    "all": "tidak ada pertanyaan yang mengandalkan aturan 'berlaku sekarang' hasil konsolidasi pasal (induk/amandemen belum lengkap)"
+  },
+  "missing_parent_documents": [
+    "Perpres 82/2018",
+    "Perpres 75/2019",
+    "Permenkes 99/2015",
+    "Kepmenkes 34/2025"
+  ],
+  "documents": [
+    {
+      "doc_id": "bpjs_03_2024_skrining_peserta_jkn",
+      "file": "BPJS_03_2024_Skrining_Peserta_JKN.pdf",
+      "sha256": "eafd44f4a8d676c8c77b64ef40cc1d9dd068434db3b732804ee531d78d948848",
+      "bytes": 627810,
+      "pages": 21,
+      "status_seleksi": "UTAMA",
+      "title": "Peraturan BPJS Kesehatan 3/2024: skrining dan pengelolaan penyakit kronis",
+      "legal_or_data_status": "Berlaku (DJSN JDIH)",
+      "period": null,
+      "doc_type": "peraturan",
+      "provenance": {
+        "class": "digital_asli",
+        "image_dominant_ratio_sampled": 0.0,
+        "sampled_pages": 21,
+        "fonts_first10_pages": [
+          "ArialMT",
+          "BookmanOldStyle",
+          "BookmanOldStyle-Italic",
+          "Calibri"
+        ],
+        "digit_ratio_text_layer": 0.018
+      },
+      "eval_role": "evidence_source",
+      "index_page_scope": "1-21",
+      "official_ref": "https://jdih.djsn.go.id/produk-hukum/daftar-peraturan-lainnya",
+      "selection_note": "Peraturan BPJS berlaku; cek pembaruan sebelum publikasi.",
+      "pilot_pages": 21,
+      "question_page_ranges": [
+        [
+          1,
+          21
+        ]
+      ]
+    },
+    {
+      "doc_id": "kepmenkes_1511_2023_layanan_kebidanan_neonatal_jkn",
+      "file": "Kepmenkes_1511_2023_Layanan_Kebidanan_Neonatal_JKN.pdf",
+      "sha256": "8ce2e4686a493ae262ce6a4fbde70d8569a56785116f316ff1d80189676824c3",
+      "bytes": 472309,
+      "pages": 16,
+      "status_seleksi": "UTAMA",
+      "title": "Kepmenkes 1511/2023 teknis kebidanan dan neonatal JKN",
+      "legal_or_data_status": "Berlaku (JDIH)",
+      "period": null,
+      "doc_type": "peraturan",
+      "provenance": {
+        "class": "digital_asli",
+        "image_dominant_ratio_sampled": 0.0,
+        "sampled_pages": 16,
+        "fonts_first10_pages": [
+          "ArialMT",
+          "BookmanOldStyle",
+          "BookmanOldStyle,BoldItalic",
+          "BookmanOldStyle-Italic"
+        ],
+        "digit_ratio_text_layer": 0.028
+      },
+      "eval_role": "evidence_source",
+      "index_page_scope": "1-16",
+      "official_ref": "https://jdih.kemkes.go.id/documents/keputusan-menteri-kesehatan-nomor-hk0107menkes15112023",
+      "selection_note": "Relevan langsung dengan manfaat layanan kebidanan dan neonatal peserta JKN.",
+      "pilot_pages": 16,
+      "question_page_ranges": [
+        [
+          1,
+          16
+        ]
+      ]
+    },
+    {
+      "doc_id": "permenkes_03_2023_standar_tarif_jkn",
+      "file": "Permenkes_03_2023_Standar_Tarif_JKN.pdf",
+      "sha256": "9ad3c8ce7e6de0de246c294267502712354e958e835b9030ca9234754f389ee7",
+      "bytes": 20807809,
+      "pages": 721,
+      "status_seleksi": "UTAMA",
+      "title": "Permenkes 3/2023 standar tarif layanan JKN",
+      "legal_or_data_status": "Berlaku (JDIH)",
+      "period": null,
+      "doc_type": "peraturan+lampiran_tabel",
+      "provenance": {
+        "class": "digital_asli",
+        "image_dominant_ratio_sampled": 0.008,
+        "sampled_pages": 120,
+        "fonts_first10_pages": [
+          "ArialMT",
+          "BookmanOldStyle",
+          "BookmanOldStyle,BoldItalic",
+          "BookmanOldStyle-Bold",
+          "BookmanOldStyle-Italic",
+          "Calibri"
+        ],
+        "digit_ratio_text_layer": 0.385
+      },
+      "eval_role": "evidence_source",
+      "index_page_scope": "1-91",
+      "official_ref": "https://jdih.kemkes.go.id/documents/peraturan-menteri-kesehatan-nomor-3-tahun-2023",
+      "selection_note": "721 halaman dengan lampiran tabel; butuh parsing tabel terstruktur dan verifikasi manual.",
+      "pilot_pages": 91,
+      "question_page_ranges": [
+        [
+          1,
+          31
+        ],
+        [
+          84,
+          91
+        ]
+      ],
+      "index_page_roles": [
+        {
+          "pages": [
+            1,
+            31
+          ],
+          "role": "evidence_and_anchor"
+        },
+        {
+          "pages": [
+            32,
+            83
+          ],
+          "role": "in_document_distractor_not_anchored"
+        },
+        {
+          "pages": [
+            84,
+            91
+          ],
+          "role": "evidence_and_anchor"
+        }
+      ]
+    },
+    {
+      "doc_id": "permenkes_28_2014_pedoman_jkn",
+      "file": "Permenkes_28_2014_Pedoman_JKN.pdf",
+      "sha256": "641e7766d33cbb221e97c8d89f155f6d19aba8d398940cf6896eda0bac23a649",
+      "bytes": 1345953,
+      "pages": 48,
+      "status_seleksi": "UTAMA",
+      "title": "Permenkes 28/2014 pedoman pelaksanaan JKN",
+      "legal_or_data_status": "Berlaku menurut JDIH",
+      "period": null,
+      "doc_type": "peraturan",
+      "provenance": {
+        "class": "digital_asli",
+        "image_dominant_ratio_sampled": 0.0,
+        "sampled_pages": 48,
+        "fonts_first10_pages": [
+          "ArialMT",
+          "BookmanOldStyle",
+          "BookmanOldStyle-Bold",
+          "BookmanOldStyle-Italic",
+          "Calibri"
+        ],
+        "digit_ratio_text_layer": 0.013
+      },
+      "eval_role": "evidence_source",
+      "index_page_scope": "1-48",
+      "official_ref": "https://jdih.kemkes.go.id/documents/peraturan-menteri-kesehatan-nomor-28-tahun-2014",
+      "selection_note": "Aturan lama walaupun tercatat berlaku; jangan mengesampingkan aturan baru yang lebih spesifik.",
+      "pilot_pages": 48,
+      "question_page_ranges": [
+        [
+          1,
+          48
+        ]
+      ]
+    },
+    {
+      "doc_id": "perpres_59_2024_perubahan_ketiga_jaminan_kesehatan",
+      "file": "Perpres_59_2024_Perubahan_Ketiga_Jaminan_Kesehatan.pdf",
+      "sha256": "2063435307ca083c6b1a4d0b676bd3d2982cfb064257c8005eeea05665f728b5",
+      "bytes": 3394871,
+      "pages": 33,
+      "status_seleksi": "UTAMA",
+      "title": "Perpres 59/2024 perubahan ketiga Perpres 82/2018",
+      "legal_or_data_status": "Berlaku menurut BPK",
+      "period": null,
+      "doc_type": "peraturan",
+      "provenance": {
+        "class": "scan_dengan_OCR_bawaan_tak_kasatmata",
+        "image_dominant_ratio_sampled": 1.0,
+        "sampled_pages": 33,
+        "fonts_first10_pages": [
+          "Helvetica"
+        ],
+        "digit_ratio_text_layer": 0.031
+      },
+      "eval_role": "evidence_source",
+      "index_page_scope": "1-33",
+      "official_ref": "https://peraturan.bpk.go.id/details/285181/perpres-no-59-tahun-2024",
+      "selection_note": "Tidak berisi seluruh aturan induk; perlu Perpres 82/2018 dan perubahan sebelumnya untuk konsolidasi.",
+      "pilot_pages": 33,
+      "question_page_ranges": [
+        [
+          1,
+          33
+        ]
+      ]
+    },
+    {
+      "doc_id": "laporan_tahunan_jkn_2023_djsn",
+      "file": "Laporan_Tahunan_JKN_2023_DJSN.pdf",
+      "sha256": "6338bf276a72e577b773767fa2bb5c75e9fa390e726c7b5775920af16265fc09",
+      "bytes": 5668515,
+      "pages": 33,
+      "status_seleksi": "HISTORIS",
+      "title": "Laporan tahunan JKN 2023",
+      "legal_or_data_status": "Laporan historis 2023",
+      "period": "2023",
+      "doc_type": "statistik_laporan",
+      "provenance": {
+        "class": "halaman_didominasi_gambar_dengan_font_asli",
+        "image_dominant_ratio_sampled": 1.0,
+        "sampled_pages": 33,
+        "fonts_first10_pages": [
+          "ArialMT",
+          "Bahnschrift-SemiCondensed",
+          "Calibri",
+          "Calibri-Bold",
+          "Calibri-BoldItalic",
+          "Calibri-Italic",
+          "Calibri-Light",
+          "TimesNewRomanPS-BoldMT",
+          "TimesNewRomanPSMT",
+          "Wingdings-Regular"
+        ],
+        "digit_ratio_text_layer": 0.106
+      },
+      "eval_role": "deferred",
+      "index_page_scope": null,
+      "official_ref": "https://kesehatan.djsn.go.id/kesehatan/doc/laporan-tahunan/Laporan_Tahunan_JKN_2023.pdf",
+      "selection_note": "Rujukan situs resmi teridentifikasi; identitas byte belum dicocokkan. Gunakan untuk data 2023 saja.",
+      "pilot_pages": 0
+    },
+    {
+      "doc_id": "statistik_jkn_2015_2019_djsn",
+      "file": "Statistik_JKN_2015-2019_DJSN.pdf",
+      "sha256": "27c4e1f28127b7fe0a7c473d488923feffdf32c2951305a5eecd40f589b1b870",
+      "bytes": 1292553,
+      "pages": 164,
+      "status_seleksi": "HISTORIS",
+      "title": "Statistik JKN 2015-2019 oleh DJSN/BPJS Kesehatan",
+      "legal_or_data_status": "Data historis 2015-2019",
+      "period": "2015-2019",
+      "doc_type": "statistik_laporan",
+      "provenance": {
+        "class": "digital_asli",
+        "image_dominant_ratio_sampled": 0.067,
+        "sampled_pages": 120,
+        "fonts_first10_pages": [
+          "ArnoPro-Bold",
+          "ArnoPro-BoldDisplay",
+          "ArnoPro-Display",
+          "Gotham-Black",
+          "Metropolis-Bold",
+          "Metropolis-ExtraBold",
+          "Metropolis-Medium",
+          "OpenSans",
+          "OpenSans-Bold",
+          "OpenSans-Italic",
+          "OpenSans-Semibold",
+          "Raleway-Black",
+          "Raleway-Medium"
+        ],
+        "digit_ratio_text_layer": 0.298
+      },
+      "eval_role": "deferred",
+      "index_page_scope": null,
+      "official_ref": "https://djsn.go.id/files/dokumen/Dokumen%20Kajian/202206291050Buku%20Statistik%20JKN%202015-2019.pdf",
+      "selection_note": "Periode tumpang tindih dengan Statistik 2016-2021; gunakan tahun sebagai filter.",
+      "pilot_pages": 0
+    },
+    {
+      "doc_id": "statistik_jkn_2016_2021_djsn",
+      "file": "Statistik_JKN_2016-2021_DJSN.pdf",
+      "sha256": "6514d400e08ba769571cb1556831e377f50ca69034bfcbb49abb2bcdf1c4c646",
+      "bytes": 1818660,
+      "pages": 252,
+      "status_seleksi": "HISTORIS",
+      "title": "Statistik JKN 2016-2021 oleh DJSN/BPJS Kesehatan",
+      "legal_or_data_status": "Data historis 2016-2021",
+      "period": "2016-2021",
+      "doc_type": "statistik_laporan",
+      "provenance": {
+        "class": "digital_asli",
+        "image_dominant_ratio_sampled": 0.033,
+        "sampled_pages": 120,
+        "fonts_first10_pages": [
+          "Gabriola",
+          "Montserrat-Bold",
+          "Montserrat-BoldItalic",
+          "Montserrat-Italic",
+          "Montserrat-Light",
+          "Montserrat-Regular",
+          "Montserrat-SemiBold",
+          "Roboto-Light",
+          "Roboto-Regular"
+        ],
+        "digit_ratio_text_layer": 0.396
+      },
+      "eval_role": "deferred",
+      "index_page_scope": null,
+      "official_ref": "https://djsn.go.id/files/dokumen/Dokumen%20Kajian/202212131425Buku%20Statistik%20JKN%202016-2021.pdf",
+      "selection_note": "Gunakan untuk pertanyaan statistik historis saja; jangan infer data terbaru.",
+      "pilot_pages": 0
+    },
+    {
+      "doc_id": "permenkes_05_2018_perubahan_ketiga_permenkes_71_2013",
+      "file": "Permenkes_05_2018_Perubahan_Ketiga_Permenkes_71_2013.pdf",
+      "sha256": "e5b8e31972134c9c1c00024b7b629b2f88ace8fbca0c8bfa06cee4057e7f5c70",
+      "bytes": 425630,
+      "pages": 7,
+      "status_seleksi": "RIWAYAT",
+      "title": "Permenkes 5/2018 perubahan ketiga layanan JKN",
+      "legal_or_data_status": "Diubah Permenkes 7/2021",
+      "period": null,
+      "doc_type": "peraturan_riwayat",
+      "provenance": {
+        "class": "digital_asli",
+        "image_dominant_ratio_sampled": 0.0,
+        "sampled_pages": 7,
+        "fonts_first10_pages": [
+          "ArialMT",
+          "BookmanOldStyle",
+          "BookmanOldStyle-Italic",
+          "Calibri"
+        ],
+        "digit_ratio_text_layer": 0.049
+      },
+      "eval_role": "distractor_only",
+      "index_page_scope": "1-7",
+      "official_ref": "https://jdih.kemkes.go.id/documents/peraturan-menteri-kesehatan-nomor-5-tahun-2018",
+      "selection_note": "Khusus pertanyaan historis atau rekonstruksi pasal berlaku; hindari jawaban standalone.",
+      "pilot_pages": 7
+    },
+    {
+      "doc_id": "permenkes_07_2021_perubahan_keempat_permenkes_71_2013",
+      "file": "Permenkes_07_2021_Perubahan_Keempat_Permenkes_71_2013.pdf",
+      "sha256": "ebf8283f76f827184f6ed82c685093ef15b141df6f466702a46c7c4f90c85335",
+      "bytes": 350582,
+      "pages": 7,
+      "status_seleksi": "RIWAYAT",
+      "title": "Permenkes 7/2021 perubahan keempat aturan layanan JKN",
+      "legal_or_data_status": "Berlaku; mengubah Permenkes 71/2013",
+      "period": null,
+      "doc_type": "peraturan_riwayat",
+      "provenance": {
+        "class": "digital_asli",
+        "image_dominant_ratio_sampled": 0.0,
+        "sampled_pages": 7,
+        "fonts_first10_pages": [
+          "ArialMT",
+          "BookmanOldStyle",
+          "BookmanOldStyle,BoldItalic"
+        ],
+        "digit_ratio_text_layer": 0.054
+      },
+      "eval_role": "distractor_only",
+      "index_page_scope": "1-7",
+      "official_ref": "https://jdih.kemkes.go.id/documents/peraturan-menteri-kesehatan-nomor-7-tahun-2021",
+      "selection_note": "Harus dihubungkan ke aturan induk dan seluruh rantai amandemen; bukan dokumen mandiri lengkap.",
+      "pilot_pages": 7
+    },
+    {
+      "doc_id": "permenkes_23_2017_perubahan_kedua_permenkes_71_2013",
+      "file": "Permenkes_23_2017_Perubahan_Kedua_Permenkes_71_2013.pdf",
+      "sha256": "326154937cdd0865842dada94258b9168df842839a7a744f69611ab3e4bdf7fa",
+      "bytes": 315389,
+      "pages": 4,
+      "status_seleksi": "RIWAYAT",
+      "title": "Permenkes 23/2017 perubahan kedua layanan JKN",
+      "legal_or_data_status": "Diubah Permenkes 5/2018 dan 7/2021",
+      "period": null,
+      "doc_type": "peraturan_riwayat",
+      "provenance": {
+        "class": "digital_asli",
+        "image_dominant_ratio_sampled": 0.0,
+        "sampled_pages": 4,
+        "fonts_first10_pages": [
+          "TXHBPL弫BookmanOldStyle"
+        ],
+        "digit_ratio_text_layer": 0.066
+      },
+      "eval_role": "distractor_only",
+      "index_page_scope": "1-4",
+      "official_ref": "https://jdih.kemkes.go.id/documents/peraturan-menteri-kesehatan-nomor-23-tahun-2017",
+      "selection_note": "Khusus rantai perubahan regulasi; hindari jawaban standalone.",
+      "pilot_pages": 4
+    },
+    {
+      "doc_id": "permenkes_71_2013_pelayanan_jkn",
+      "file": "Permenkes_71_2013_Pelayanan_JKN.pdf",
+      "sha256": "4185cd036e0141992aa846d26dd7a993143624357d936fdd9fc0f9caf3e9dc50",
+      "bytes": 624943,
+      "pages": 28,
+      "status_seleksi": "RIWAYAT",
+      "title": "Permenkes 71/2013 aturan induk layanan JKN",
+      "legal_or_data_status": "Berlaku namun diubah beberapa kali",
+      "period": null,
+      "doc_type": "peraturan_riwayat",
+      "provenance": {
+        "class": "digital_asli",
+        "image_dominant_ratio_sampled": 0.0,
+        "sampled_pages": 28,
+        "fonts_first10_pages": [
+          "ArialMT",
+          "BookmanOldStyle",
+          "BookmanOldStyle-Italic",
+          "TimesNewRomanPSMT"
+        ],
+        "digit_ratio_text_layer": 0.02
+      },
+      "eval_role": "distractor_only",
+      "index_page_scope": "1-28",
+      "official_ref": "https://jdih.kemkes.go.id/documents/peraturan-menteri-kesehatan-nomor-71-tahun-2013",
+      "selection_note": "Perlu Permenkes 99/2015 (tidak ada dalam ZIP), 23/2017, 5/2018, 7/2021 untuk konsolidasi.",
+      "pilot_pages": 28
+    },
+    {
+      "doc_id": "perpres_64_2020_perubahan_kedua_jaminan_kesehatan",
+      "file": "Perpres_64_2020_Perubahan_Kedua_Jaminan_Kesehatan.pdf",
+      "sha256": "15df58914b2ca170d4199c7d38bd18e4bfe9729b2ba979e8e2c07e1e4be59ecd",
+      "bytes": 721863,
+      "pages": 12,
+      "status_seleksi": "RIWAYAT",
+      "title": "Perpres 64/2020 perubahan kedua Perpres 82/2018",
+      "legal_or_data_status": "Diubah Perpres 59/2024",
+      "period": null,
+      "doc_type": "peraturan_riwayat",
+      "provenance": {
+        "class": "scan_dengan_OCR_bawaan_tak_kasatmata",
+        "image_dominant_ratio_sampled": 1.0,
+        "sampled_pages": 12,
+        "fonts_first10_pages": [
+          "Helvetica"
+        ],
+        "digit_ratio_text_layer": 0.044
+      },
+      "eval_role": "distractor_only",
+      "index_page_scope": "1-12",
+      "official_ref": "https://peraturan.bpk.go.id/details/285181/perpres-no-59-tahun-2024",
+      "selection_note": "Simpan hanya untuk historis dan rekonstruksi perubahan. Tidak menjadi sumber tunggal aturan kini.",
+      "pilot_pages": 12
+    }
+  ],
+  "index_page_roles_note": "Peran halaman terindeks. Bila `index_page_roles` tak ada: seluruh index_page_scope berperan `evidence_and_anchor` (eval_role=evidence_source) atau `distractor_only` (eval_role=distractor_only). Permenkes 3/2023 hlm. 32-83 (tabel kelompok khusus/ICD/INA-CBG) DIINDEKS sebagai pengecoh dalam-dokumen untuk retrieval, tetapi TIDAK menjadi jangkar pertanyaan sebelum QA tabel selesai. Dokumen `deferred` dan Permenkes 3/2023 hlm. 92-721 TIDAK boleh muncul di indeks sama sekali (dijaga check_chunk_scope)."
+}

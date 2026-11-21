@@ -1,0 +1,152 @@
+{
+  "doc_id": "permenkes_28_2014_pedoman_jkn",
+  "source_pdf_path": "data/raw_pdf/Permenkes_28_2014_Pedoman_JKN.pdf",
+  "source_pdf_sha256": "641e7766d33cbb221e97c8d89f155f6d19aba8d398940cf6896eda0bac23a649",
+  "source_pdf_bytes": 1345953,
+  "local_page_count": 48,
+  "provider": "reducto",
+  "script_version": "2026-11-03.1",
+  "issues": [],
+  "status": "TECH_QA_FLAGS",
+  "reused_existing_raw": true,
+  "request": {
+    "model": "r-1",
+    "settings": {
+      "model": "r-1"
+    },
+    "formatting": null,
+    "enhance": null,
+    "retrieval": null,
+    "note": "Hanya settings.model (dan page_range bila ada) yang dikirim; sisanya default server."
+  },
+  "timing": {
+    "started_at": "2026-11-07T21:16:01+07:00",
+    "completed_at": "2026-11-07T21:18:23+07:00"
+  },
+  "sdk_version": "0.26.0",
+  "job_result_was_url": false,
+  "job": {
+    "job_id": "07690de4-bd65-4d9f-9f58-f3415e5c9f0a",
+    "studio_link": "https://studio.reducto.ai/job/07690de4-bd65-4d9f-9f58-f3415e5c9f0a",
+    "duration_s": 2.7583725452423096,
+    "usage": {
+      "num_pages": 48,
+      "credit_breakdown": null,
+      "credits": null,
+      "non_empty_cell_count": null,
+      "page_billing_breakdown": null,
+      "usage_breakdown": {
+        "parse_model": "R-1",
+        "tier": "Default",
+        "charts": 0,
+        "legacy_parse_credits": 0.0,
+        "ocr_pages": 0,
+        "parse_native_pages": 0,
+        "parse_pages": 48,
+        "prompted_blocks": 0
+      }
+    }
+  },
+  "files": {
+    "raw_json": "data/reducto/raw/permenkes_28_2014_pedoman_jkn__reducto-r-1.json",
+    "raw_json_sha256": "e9804fc2b995090d3884ccbd67b75ca3b5cf0d34d4420720e4e70ec44dd296a9",
+    "markdown": "data/reducto/markdown/permenkes_28_2014_pedoman_jkn__reducto-r-1.md",
+    "markdown_sha256": "405c6554afe29baafb3a706218927378dbcdb13e13495f6448d45862c2884261"
+  },
+  "technical_qa": {
+    "expected_pages": [
+      1,
+      48
+    ],
+    "expected_page_count": 48,
+    "usage_num_pages": 48,
+    "pages_without_blocks": [],
+    "pages_outside_scope": [],
+    "block_count": 593,
+    "block_types": {
+      "Figure": 49,
+      "Title": 7,
+      "Section Header": 70,
+      "List Item": 322,
+      "Header": 47,
+      "Footer": 1,
+      "Key Value": 1,
+      "Text": 94,
+      "Table": 2
+    },
+    "figure_or_signature_blocks": 49,
+    "low_confidence_pages": [],
+    "models_observed": [
+      "r-1"
+    ],
+    "flags": []
+  },
+  "text_layer_check": {
+    "method": "pypdf_text_layer_vs_reducto_blocks",
+    "thresholds": {
+      "low_sim_dice": 0.85,
+      "min_text_layer_words": 5,
+      "unreliable_flag_ratio": 0.5,
+      "min_pages_for_verdict": 3
+    },
+    "page_status_counts": {
+      "OK": 45,
+      "NUM_MISMATCH": 3
+    },
+    "differing_ratio": 0.0625,
+    "reference_reliability": "USABLE_REFERENCE",
+    "pages_to_review": [
+      {
+        "page": 2,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9928,
+        "numbers_only_in_pdf_text": [
+          "11",
+          "20"
+        ],
+        "numbers_only_in_reducto": [
+          "2011"
+        ]
+      },
+      {
+        "page": 3,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9923,
+        "numbers_only_in_pdf_text": [
+          "13",
+          "20"
+        ],
+        "numbers_only_in_reducto": [
+          "2013"
+        ]
+      },
+      {
+        "page": 6,
+        "status": "NUM_MISMATCH",
+        "dice": 0.9552,
+        "numbers_only_in_pdf_text": [
+          "34"
+        ],
+        "numbers_only_in_reducto": [
+          "134"
+        ]
+      }
+    ],
+    "note": "Pendeteksi, bukan bukti kebenaran. Halaman OK tidak menggantikan QA manusia. Jika reference_reliability = UNRELIABLE_REFERENCE/NO_REFERENCE, pemeriksaan ini TIDAK informatif untuk dokumen tsb; verifikasi harus lewat gambar halaman PDF asli."
+  },
+  "technical_qa_flags": [
+    "TEXT_LAYER_NUM_MISMATCH: 3 halaman"
+  ],
+  "human_fidelity_qa": {
+    "status": "PASS",
+    "reviewer": "Fiantyo Galih Pramudya",
+    "reviewed_at": "2026-11-15T06:22:02+00:00",
+    "notes": "60 halaman jangkar dibandingkan markdown Reducto vs gambar PDF asli dengan lembar bantu (bpjs3: 13 hlm; kep1511: 5; pm3: 16; pm28: 17; p59: 9). Tanpa temuan."
+  },
+  "studi1_human_fidelity_qa": {
+    "status": "PASS_WITH_NOTES",
+    "reviewer": "fiantyo galih pramudya",
+    "reviewed_at": "2026-11-10T21:16:06+07:00",
+    "notes": "Transkripsi hasil manusia dari percakapan: pengguna menyatakan 'untuk lainnya sudah cocok' setelah diminta menilai halaman jangkar 31/35/38 dan tambahan 2/3/6, kemudian mengklarifikasi gambar halaman 6: 'paragraf 1 pasal 34, sedangkan paragraf 2 pasal 134'. Angka 34 dan 134 tersebut sesuai teks Reducto pada paragraf masing-masing; ketidakkonsistenan rujukan berada pada sumber sebagaimana dilaporkan reviewer, bukan alasan mengoreksi raw atau evidence. PASS_WITH_NOTES hanya untuk halaman fisik 2/3/6/31/35/38 dan kesetiaan parser, bukan validasi isi hukum sumber. PDF review sebelum revisi (SHA256 dc856c4fa373303343da61c3073320f9474f7cb3a69634597415dab7dcb99d9c) menandai R12 VERIFIED, R11/R13 PERBAIKI karena cakupan fragmen kutipan. R11/R13 diperjelas terpisah sesuai arahan pengguna tanpa mengganti pertanyaan; kutipan revisi tetap menunggu pemeriksaan ulang untuk S08. reviewed_at = waktu transkripsi klarifikasi, bukan waktu persis inspeksi tiap halaman. Raw, technical_qa_flags, dan ledger tidak diubah."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "status": "FROZEN",
+  "freeze_rule": "Bekukan SEBELUM menjalankan Track R pada S14: SHA256 prompt/parameter dan generator.json dicatat di config/generator.lock.json. Protokol dikunci lebih dahulu pada S11 dan tidak disunting saat pembekuan generator. Setelah beku, jangan diubah; perubahan = run baru.",
+  "provider": "xiaomi_mimo",
+  "model": "mimo-v2.6-flash",
+  "base_url": "https://api.xiaomimimo.com/v1",
+  "endpoint": "/chat/completions",
+  "auth_header": "api-key",
+  "api_key_env": "MIMO_API_KEY",
+  "base_url_env": "MIMO_BASE_URL",
+  "model_env": "MIMO_MODEL",
+  "temperature": 0.0,
+  "max_tokens": 1600,
+  "response_format": null,
+  "system_prompt": "Jawab pertanyaan hanya berdasarkan konteks yang diberikan di bawah. Jika konteks tidak memuat jawabannya, katakan bahwa informasinya tidak ada dalam konteks.\n\nKonteks:\n{context}",
+  "user_prompt": "{question}",
+  "context_chunk_format": "[{doc_id} · hlm. {page_start}-{page_end} · {heading_path}]\n{text}",
+  "context_chunk_separator": "\n\n",
+  "prune_context": false,
+  "record_per_call": [
+    "request_json",
+    "response_json_raw",
+    "response.model",
+    "usage",
+    "timestamp_utc",
+    "prompt_sha256",
+    "top_k",
+    "chunk_ids"
+  ],
+  "provenance": "Model id = pilihan pengguna 3 Nov 2026; keberadaan id dan base URL diverifikasi di dokumentasi resmi MiMo (mimo.mi.com), seri V2.5 sudah pensiun. Prompt = permintaan pengguna: hanya konteks. Ditulis baru; tidak bergantung proyek lama.",
+  "unverified": [
+    "bentuk respons nyata mimo-v2.6-flash (reasoning_content ada/tidak, finish_reason)",
+    "apakah mode berpikir bisa dimatikan (tidak ditemukan sakelar resmi)",
+    "jenis kunci pengguna (sk- vs tp-) dan base URL yang sesuai",
+    "batas laju"
+  ],
+  "answer_source": "choices[0].message.content SAJA. reasoning_content (jika ada) hanya disimpan di respons mentah, TIDAK dipakai sebagai jawaban.",
+  "on_empty_answer": "catat ANSWER_EMPTY (jangan ganti dengan reasoning_content); naikkan max_tokens SEBELUM freeze bila uji-asap menunjukkan terpotong",
+  "key_types": {
+    "sk-": "base_url https://api.xiaomimimo.com/v1; header 'api-key' atau 'Authorization: Bearer'",
+    "tp-": "Token Plan: base URL berbeda (lihat konsol MiMo) — cek jenis kunci sebelum smoke test"
+  },
+  "smoke_test": "jalankan 1 pertanyaan (T02) dulu; periksa message.content, reasoning_content, finish_reason, usage, response.model; simpan mentah",
+  "runs": 3,
+  "runs_note": "k=3 run (D19, Studi 2) sesuai protocol.json -> determinism.generator_runs; ketiganya dilabel dan dianalisis (CI bootstrap per pertanyaan). Konteks retrieval dan prompt identik antar-run.",
+  "max_calls_per_question_per_run": 1,
+  "max_tokens_note": "D28 (USULAN, menunggu persetujuan pengguna; kembalikan ke 800 sebelum S14 bila ditolak): pada Studi 1 satu dari 20 respons terpotong (R10: completion_tokens=800, reasoning_tokens=643, finish_reason=length). Model, prompt, dan temperature TIDAK diubah; hash prompt (yang mencakup max_tokens) dengan max_tokens=800 harus sama dengan study1_prompt_sha256; hash Studi 2 berbeda hanya karena max_tokens (diperiksa tes).",
+  "study1_prompt_sha256": "cc92680be8cc020eddcfe97fc732f09d48802c74af3eaa6edcfcfbd930943163"
+}

@@ -1,0 +1,112 @@
+{
+  "doc_id": "permenkes_71_2013_pelayanan_jkn",
+  "source_pdf_path": "data/raw_pdf/Permenkes_71_2013_Pelayanan_JKN.pdf",
+  "source_pdf_sha256": "4185cd036e0141992aa846d26dd7a993143624357d936fdd9fc0f9caf3e9dc50",
+  "source_pdf_bytes": 624943,
+  "local_page_count": 28,
+  "provider": "reducto",
+  "script_version": "2026-11-03.1",
+  "issues": [],
+  "status": "TECH_QA_PASS",
+  "reused_existing_raw": true,
+  "request": {
+    "model": "r-1",
+    "settings": {
+      "model": "r-1"
+    },
+    "formatting": null,
+    "enhance": null,
+    "retrieval": null,
+    "note": "Hanya settings.model (dan page_range bila ada) yang dikirim; sisanya default server."
+  },
+  "timing": {
+    "started_at": "2026-11-07T21:18:24+07:00",
+    "completed_at": "2026-11-07T21:19:27+07:00"
+  },
+  "sdk_version": "0.26.0",
+  "job_result_was_url": false,
+  "job": {
+    "job_id": "e361f3c0-4227-4878-8f0f-edf3059a9df9",
+    "studio_link": "https://studio.reducto.ai/job/e361f3c0-4227-4878-8f0f-edf3059a9df9",
+    "duration_s": 2.2395215034484863,
+    "usage": {
+      "num_pages": 28,
+      "credit_breakdown": null,
+      "credits": null,
+      "non_empty_cell_count": null,
+      "page_billing_breakdown": null,
+      "usage_breakdown": {
+        "parse_model": "R-1",
+        "tier": "Default",
+        "charts": 0,
+        "legacy_parse_credits": 0.0,
+        "ocr_pages": 0,
+        "parse_native_pages": 0,
+        "parse_pages": 28,
+        "prompted_blocks": 0
+      }
+    }
+  },
+  "files": {
+    "raw_json": "data/reducto/raw/permenkes_71_2013_pelayanan_jkn__reducto-r-1.json",
+    "raw_json_sha256": "c6ffec4fd8a19f1a71ec89883e8791623545567fa0322edb224a28e84a645fbb",
+    "markdown": "data/reducto/markdown/permenkes_71_2013_pelayanan_jkn__reducto-r-1.md",
+    "markdown_sha256": "c6f9369d3ccfcd8b3c0622c9f85c0b506d3b9a297f70ea9432708d7d49255496"
+  },
+  "technical_qa": {
+    "expected_pages": [
+      1,
+      28
+    ],
+    "expected_page_count": 28,
+    "usage_num_pages": 28,
+    "pages_without_blocks": [],
+    "pages_outside_scope": [],
+    "block_count": 521,
+    "block_types": {
+      "Figure": 28,
+      "Title": 2,
+      "Key Value": 1,
+      "List Item": 348,
+      "Footer": 9,
+      "Header": 27,
+      "Section Header": 82,
+      "Text": 24
+    },
+    "figure_or_signature_blocks": 28,
+    "low_confidence_pages": [],
+    "models_observed": [
+      "r-1"
+    ],
+    "flags": []
+  },
+  "text_layer_check": {
+    "method": "pypdf_text_layer_vs_reducto_blocks",
+    "thresholds": {
+      "low_sim_dice": 0.85,
+      "min_text_layer_words": 5,
+      "unreliable_flag_ratio": 0.5,
+      "min_pages_for_verdict": 3
+    },
+    "page_status_counts": {
+      "OK": 28
+    },
+    "differing_ratio": 0.0,
+    "reference_reliability": "USABLE_REFERENCE",
+    "pages_to_review": [],
+    "note": "Pendeteksi, bukan bukti kebenaran. Halaman OK tidak menggantikan QA manusia. Jika reference_reliability = UNRELIABLE_REFERENCE/NO_REFERENCE, pemeriksaan ini TIDAK informatif untuk dokumen tsb; verifikasi harus lewat gambar halaman PDF asli."
+  },
+  "technical_qa_flags": [],
+  "human_fidelity_qa": {
+    "status": "NOT_DONE",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  "studi1_human_fidelity_qa": {
+    "status": "NOT_DONE",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  }
+}

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ta-rag-eval"
+version = "0.1.0"
+description = "TA: evaluasi lapisan verifikasi jawaban RAG pada dokumen JKN"
+requires-python = ">=3.10"
+dependencies = ["reductoai>=0.23", "pypdf", "httpx"]
+
+[project.optional-dependencies]
+dev = ["pytest", "reportlab"]
+retrieval = ["sentence-transformers", "faiss-cpu", "numpy"]
+eval = ["numpy", "scipy", "sentence-transformers", "matplotlib", "bert-score"]
+ocr = ["rapidocr-onnxruntime==1.4.4"]  # pemeriksaan silang scan (ta_rag.ocr_check); hanya Python < 3.13
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

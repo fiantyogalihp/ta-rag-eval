@@ -1,0 +1,184 @@
+{
+  "n": 60,
+  "agree": 33,
+  "pct": 55.0,
+  "discrepancies": [
+    {
+      "answer_id": "M2:T56",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "run2:T55",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "M2:T29",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "M1:T26",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "run3:T57",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "M1:T20",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "M2:T26",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "M2:T16",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "run1:T02",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "M2:T22",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "M1:T43",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "run2:T51",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "run3:T71",
+      "label1": "LAYAK",
+      "label2": "TIDAK_LAYAK"
+    },
+    {
+      "answer_id": "run2:T64",
+      "label1": "LAYAK",
+      "label2": "TIDAK_LAYAK"
+    },
+    {
+      "answer_id": "M2:T18",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "run1:T60",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "run1:T06",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "M2:T52",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "M1:T01",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "run1:T51",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "run2:T54",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "run3:T47",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "M2:T03",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "M2:T44",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "M2:T42",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "M2:T59",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    },
+    {
+      "answer_id": "run3:T55",
+      "label1": "TIDAK_LAYAK",
+      "label2": "LAYAK"
+    }
+  ],
+  "kappa": -0.0658,
+  "kappa_note": "dilaporkan hanya sebagai pelengkap persentase kesepakatan; n kecil",
+  "by_stratum": {
+    "natural_answerable": {
+      "n": 39,
+      "agree": 29,
+      "pct": 74.4
+    },
+    "mutation": {
+      "n": 15,
+      "agree": 0,
+      "pct": 0.0
+    },
+    "probe": {
+      "n": 6,
+      "agree": 4,
+      "pct": 66.7
+    }
+  },
+  "natural_only": {
+    "n": 45,
+    "agree": 33,
+    "pct": 73.3,
+    "kappa": -0.08,
+    "kappa_note": "dilaporkan hanya sebagai pelengkap persentase kesepakatan; n kecil"
+  },
+  "min_gap_hours_observed": 47.31,
+  "min_gap_hours_required": 24,
+  "gap_deviation": false,
+  "sheet_saved_at": "2026-11-20T12:29:20+00:00",
+  "imported_at": "2026-11-20T12:53:28+00:00",
+  "sheet_sha256": "ed6752a814c051729e29c40e22e26f8b2be5f135cb681247dcbfc3fa0507c30a",
+  "gap_is_upper_bound": true,
+  "gap_time_basis": "earlier_of_import_and_sheet_save",
+  "composition": {
+    "mutation": 15,
+    "probe": 6,
+    "natural_tidak_layak": 10,
+    "natural_layak": 29
+  },
+  "strata_short": {},
+  "disclosure": "ini intra-rater: mengukur konsistensi diri, bukan kebenaran dan bukan independensi; tidak menghilangkan bias penulis-pertanyaan = pelabel"
+}

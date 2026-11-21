@@ -1,0 +1,242 @@
+{
+  "_comment": "Pra-registrasi protokol evaluasi. DRAFT_UNLOCKED sampai peneliti mengunci SEBELUM melabeli: jalankan `python -m ta_rag.protocol lock` (mencatat SHA256 isi berkas ini). Setelah terkunci, perubahan harus dicatat sebagai amandemen bertanggal, bukan menimpa. Semua angka kuota/seed di sini ditetapkan 2026-11-04 (revisi D9-D16 pada 2026-11-07, juga sebelum ada jawaban MiMo atau label) sebelum ada satu pun jawaban MiMo atau label.",
+  "version": "1.1",
+  "created": "2026-11-04",
+  "status": "DRAFT_UNLOCKED",
+  "claim_prefix": "Di bawah pelabelan validator tunggal (intra-rater agreement {pct}%, n={n}): ",
+  "claim_prefix_applies_to": [
+    "abstrak",
+    "hasil",
+    "kesimpulan",
+    "batasan"
+  ],
+  "claim_prefix_applies_to_metrics": [
+    "CAR",
+    "FAR",
+    "false_rejection",
+    "REVIEW_rate",
+    "REJECT_rate"
+  ],
+  "label_rubric": {
+    "locked_before": "labeling",
+    "unit_of_label": "satu JAWABAN (bukan satu pertanyaan)",
+    "labels": [
+      "LAYAK",
+      "TIDAK_LAYAK"
+    ],
+    "required_facts_per_question": 1,
+    "answerable": {
+      "LAYAK_iff_all": [
+        "i. setiap klaim faktual yang menjawab pertanyaan didukung kutipan verbatim pada halaman jangkar PDF asli",
+        "ii. nilai, satuan, tanggal, dan subjek sama dengan kutipan setelah normalisasi (mis. '6 (enam) bulan' = '6 bulan'; 'Rp8.000,00' = 'Rp 8.000')",
+        "iii. tidak ada negasi/pengecualian pada kalimat sekitar di halaman jangkar yang mengubah makna jawaban, dan jawaban tidak membalik polaritas",
+        "iv. tidak ada klaim status hukum di luar konteks yang diberikan (mis. 'berlaku saat ini', 'telah dicabut', 'tidak mengatur')"
+      ],
+      "extra_facts_rule": "Fakta tambahan yang juga ada di halaman jangkar dan benar TIDAK membuat jawaban TIDAK_LAYAK. Fakta tambahan yang tidak ada di halaman jangkar atau salah membuat TIDAK_LAYAK. Pertanyaan hanya menuntut SATU fakta; jawaban tidak dihukum karena tidak memuat klausa pendamping (contoh R09: klausa 'kurang dari 2 hari = tarif NON PONED' bukan bagian yang ditanyakan).",
+      "false_abstention_rule": "Tahap I (oracle evidence): jawaban 'informasi tidak ada dalam konteks' padahal kutipan ada di konteks = TIDAK_LAYAK (abstain keliru). Tahap II (retrieved context): LAYAK hanya bila retrieval_ok=false DAN jawaban menyatakan tidak ada dalam konteks; bila retrieval_ok=true tetap TIDAK_LAYAK."
+    },
+    "probe_not_in_corpus": {
+      "LAYAK": "jawaban secara eksplisit menyatakan informasi tidak tersedia dalam konteks yang diberikan",
+      "TIDAK_LAYAK": "jawaban mengarang fakta (angka/tanggal/entitas), memakai fakta tetangga sebagai jawaban, atau membuat klaim status hukum ('peraturan ini tidak mengatur', 'tidak berlaku')"
+    },
+    "evidence_ambiguity": "Bila kutipan ternyata tidak cukup untuk memutuskan, catat INSUFFICIENT_EVIDENCE dan keluarkan record dari analisis utama (laporkan jumlahnya); jangan memaksa label."
+  },
+  "track_m": {
+    "locked_before": "labeling",
+    "n_pairs": null,
+    "pool": "jawaban asli MiMo pada pertanyaan berjawaban (kind=answerable) yang berlabel LAYAK oleh validator; probe tidak masuk",
+    "selection_uses": "hanya label manusia dan metadata pertanyaan; TIDAK PERNAH skor evaluator dan TIDAK berdasarkan kemudahan mutasi",
+    "seed": "TA-RAG-TRACKM-v1-20261104",
+    "ordering": "kunci urut = sha256(f'{seed}:{case_id}') heksadesimal naik (tidak bergantung versi Python)",
+    "phases": [
+      "fase 1: dari tiap source_doc_id (urut doc_id) ambil kandidat LAYAK dengan kunci urut terkecil",
+      "fase 2: sisa kandidat LAYAK urut kunci urut naik"
+    ],
+    "take": "setiap kandidat LAYAK dimutasi (satu mutasi per jawaban) atau dilewati dengan alasan tertulis bila mutasi tak dapat diterapkan secara mekanis; tidak ada target 10 (D13)",
+    "shortfall": "n pasangan dilaporkan apa adanya (kandidat dilewati dicatat beserta alasannya); tidak ada penggantian dengan pilihan bebas",
+    "mutation": {
+      "creator": "peneliti (validator), setelah label terkunci dan sebelum evaluator dijalankan; operasi di bawah ditetapkan sebelum melihat jawaban",
+      "changes_per_answer": 1,
+      "contiguity": "perubahan harus satu blok token yang berdekatan (angka beserta kata angka di kurung dihitung satu blok)",
+      "families_by_question_type": {
+        "numeric_duration": [
+          "numeric_value",
+          "unit"
+        ],
+        "numeric_count": [
+          "numeric_value"
+        ],
+        "numeric_range": [
+          "numeric_value"
+        ],
+        "numeric_percent": [
+          "numeric_value"
+        ],
+        "numeric_money": [
+          "numeric_value"
+        ],
+        "numeric_date": [
+          "date"
+        ],
+        "definition": [
+          "negation",
+          "clause_deletion"
+        ]
+      },
+      "operations": {
+        "numeric_value": "angka kunci (angka pertama pada jawaban rujukan; untuk numeric_range angka terakhir) diganti k x nilainya, k = yang pertama dari (2, 3, 5) sehingga nilai baru TIDAK muncul pada angka mana pun di halaman jangkar",
+        "unit": "satuan waktu dialihkan: hari->bulan, minggu->bulan, bulan->hari, tahun->bulan; angka tetap",
+        "date": "tahun pada tanggal digeser +1",
+        "negation": "sisipkan 'tidak' sebelum kata kerja/modal utama, atau balik 'tanpa' <-> 'dengan'",
+        "clause_deletion": "hapus satu klausa kualifikator (mis. 'tanpa ...', 'kecuali ...', 'paling ...')"
+      },
+      "verification": [
+        "otomatis: verify_mutation (berbeda dari asli; satu blok perubahan; untuk numeric_value/date angka baru tidak ada di halaman jangkar)",
+        "manual: peneliti mencatat halaman jangkar yang membuktikan kebalikannya (anchor_page_opposite) dan membuka gambar halaman tersebut",
+        "label mutasi = TIDAK_LAYAK secara konstruksi, origin = mutasi_terkontrol; dihitung hanya di Track M"
+      ],
+      "reporting": "distribusi family per pasangan, daftar pasangan, daftar kandidat yang dilewati beserta alasannya",
+      "family_assignment": "ditetapkan oleh protocol.assign_mutation_families dari urutan lembar (D13); peneliti tidak memilih family"
+    }
+  },
+  "relabel": {
+    "locked_before": "labeling",
+    "unit": "jawaban unik berlabel (20 jawaban asli Track R + jumlah mutasi Track M, maks 16; jawaban asli yang dimutasi adalah record yang sama dengan Track R, tidak dihitung dua kali)",
+    "n_sample": 8,
+    "minimum_n": 6,
+    "strata_min": {
+      "mutation": 2,
+      "probe": 2,
+      "natural_tidak_layak": 2
+    },
+    "remainder_from": "natural_layak (jawaban asli berjawaban berlabel LAYAK)",
+    "if_stratum_short": "ambil semua yang ada, lalu isi dari natural_layak; catat",
+    "ordering": "kunci urut = sha256(f'{seed}:{answer_id}') naik",
+    "seed": "TA-RAG-RELABEL-v1-20261104",
+    "min_gap_hours": 12,
+    "blind_to": [
+      "label pertama",
+      "skor evaluator",
+      "asal jawaban (asli atau mutasi) bila praktis (acak urutan)"
+    ],
+    "report": [
+      "persentase kesepakatan",
+      "daftar selisih (answer_id, label1, label2, alasan)",
+      "kappa HANYA bila terdefinisi (tidak terdefinisi bila pe=1)"
+    ],
+    "disclosure": "ini intra-rater: mengukur konsistensi diri, bukan kebenaran dan bukan independensi; tidak menghilangkan bias penulis-pertanyaan = pelabel"
+  },
+  "second_validator": {
+    "attempt_required": true,
+    "target_records": "5-10 record (usulan: irisan dari sampel relabel)",
+    "who": "orang non-ahli yang dapat membaca peraturan (rekan mahasiswa, staf administrasi JKN)",
+    "if_none": "dokumentasikan upaya di naskah",
+    "attempt_log_fields": [
+      "tanggal",
+      "siapa diminta (peran, tanpa nama bila perlu)",
+      "hasil (bersedia / menolak / tidak menjawab)",
+      "alasan menolak"
+    ],
+    "attempt_log": []
+  },
+  "selection": {
+    "locked_before": "labeling",
+    "alpha": 0.05,
+    "alpha_note": "contoh latihan dari panduan; BUKAN ambang keselamatan",
+    "R1": "di antara kombinasi dalam pool dengan FAR_M <= alpha pada validation (FAR_M terdefinisi): CAR_R tertinggi",
+    "tie_break_chain": [
+      "REVIEW rate Track R lebih rendah",
+      "latency p95 lebih rendah, hanya bila selisih relatif >= 10% (di bawah itu dianggap seri karena derau pengukuran)",
+      "w_semantic lebih kecil",
+      "ACCEPT threshold lebih besar"
+    ],
+    "R2": "bila R1 kosong: NO_ELIGIBLE_PARAMETER (dilaporkan sebagai temuan, tanpa melonggarkan alpha); parameter acuan = FAR terendah, seri -> CAR tertinggi, lalu rantai tie-break di atas",
+    "far_undefined": "bila validation tidak memuat satu pun TIDAK_LAYAK pada Track M: FAR_M tak terdefinisi, tidak ada pemilihan (FAR_UNDEFINED_NO_SELECTION)",
+    "test": "dijalankan SEKALI dengan parameter beku; sensitivity pada test = DIAGNOSTIC_ONLY_NO_RESELECTION",
+    "far_used_for_selection": "FAR Track M pada validation (D10)",
+    "per_configuration": "A: w_s=0; B: w_s=1; C: 0<w_s<1; D: parameter C + hard-fail; D*: R1/R2 atas 30 baris D (D11)"
+  },
+  "intervals": {
+    "proportions": "Clopper-Pearson dua sisi 95% untuk SETIAP rasio (CAR, FAR, REVIEW rate, REJECT rate, false rejection), disertai pembilang/penyebut; sisi yang dipakai ditulis eksplisit",
+    "latency": "bootstrap persentil (>= 1000 resample) untuk p50 dan p95, atau laporkan rentang antar-blok bila bootstrap tidak memungkinkan",
+    "undefined_metric": "tulis 'tidak terdefinisi (n=0)' dan jumlah yang dicari; jangan tulis 0%"
+  },
+  "significance_claims": {
+    "rule": "'lebih aman' / 'lebih akurat' hanya boleh ditulis bila selisih (a) signifikan secara statistik pada uji berpasangan atas input identik (McNemar exact untuk metrik biner berpasangan; selisih proporsi dengan CI) DAN (b) bermakna secara praktis (selisih minimal ditetapkan peneliti sebelum hasil: >= 10 poin persentase) DAN (c) CI selisih tidak memuat 0",
+    "default_wording": "tidak ada bukti perbedaan pada data pilot ini; CI lebar"
+  },
+  "determinism": {
+    "evaluator": "deterministik: tidak ada pengacakan; urutan tie-break skor = skor menurun lalu chunk_id naik; embedding paraphrase-multilingual-MiniLM-L12-v2 pada CPU; versi paket dan hash model dicatat; selisih floating-point antar perangkat keras dilaporkan bila ditemukan",
+    "retrieval": "BM25 lokal + produk dalam eksak numpy atas embedding ternormalisasi (setara FAISS IndexFlatIP flat/eksak) + RRF k=60; urutan seri = skor menurun lalu chunk_id naik; top-k = 4 dikunci",
+    "generator": "TIDAK dijamin deterministik walau temperature=0 (layanan SaaS; tidak ada jaminan seed). Pada pilot ini hanya run 1 dianalisis (k=1, D15); variasi antar-run tidak diukur. Catatan panduan 6(a) tentang k>=3 tidak dipenuhi dan dilaporkan sebagai keterbatasan; lihat generator_runs.",
+    "generator_runs": {
+      "k": 1,
+      "primary_run": 1,
+      "released_runs": "run 2-3 dilepas sadar (D15, 2026-11-07): non-determinisme generator SaaS tidak diukur; ditulis sebagai keterbatasan. Catatan panduan 6(a) (k>=3) tidak dipenuhi dan ini dilaporkan.",
+      "same_inputs": "satu run primer pada pertanyaan dan konteks hasil retrieval tetap; model/prompt/parameter dibekukan sebelum capture, satu panggilan per pertanyaan, respons mentah disimpan dan di-hash. Semua konfigurasi evaluator memakai jawaban beku yang sama; tidak ada perbandingan antar-run pada pilot ini",
+      "roles": "run 1 = satu-satunya run: pemilihan parameter, Track M, relabel, test sekali",
+      "reporting": "metrik dari run 1 saja; satu panggilan per pertanyaan; respons mentah disimpan dan di-hash"
+    }
+  },
+  "baselines": {
+    "A_lexical_only": "H = L (F1 himpunan token jawaban vs evidence), ACCEPT >= t_a, REVIEW >= t_r, tanpa hard-fail; t_a dipilih dengan aturan selection yang sama pada validation dari baris w_s=0 (D11); REVIEW tetap 0,50; rumus dan normalisasi tokenisasi tertulis di naskah",
+    "B_semantic_only": "H = S = (cos+1)/2 dengan paraphrase-multilingual-MiniLM-L12-v2, ambang dipilih dengan aturan yang sama dari baris w_s=1 (D11)",
+    "C_hybrid": "H = (1-w_s)*L + w_s*S dengan 0<w_s<1, tanpa hard-fail; (w_s, ambang) dipilih pada validation (D11)",
+    "D_hybrid_hardfail": "C + hard-fail (angka NILAI jawaban tak ada di evidence/pertanyaan -> REJECT; sitasi diabaikan, D12; mismatch polaritas negasi dengan F1 >= 0,70 -> REVIEW)",
+    "out_of_scope": "baseline LLM-as-judge tidak dijalankan pada pilot ini (di luar cakupan dan anggaran waktu); dicantumkan sebagai pekerjaan lanjutan, bukan dibandingkan"
+  },
+  "pre_evaluator_summary": {
+    "deliver_before": "evaluator dijalankan",
+    "contents": [
+      "distribusi label Track R: n LAYAK / n TIDAK_LAYAK per question_type (termasuk probe)",
+      "daftar seluruh pasangan Track M yang berhasil dibuat dari kandidat LAYAK (maks 16, D13): case_id, family, halaman jangkar yang membuktikan kebalikan, kandidat yang dilewati",
+      "hasil relabel intra-rater: persentase kesepakatan, daftar selisih, kappa bila terdefinisi",
+      "log upaya validator kedua"
+    ]
+  },
+  "split": {
+    "seed": "TA-RAG-SPLIT-v1-20261104",
+    "validation_fraction": 0.7,
+    "unit": "komponen terhubung group_id U evidence_group; tidak terstratifikasi menurut label (periksa split_report; test tanpa TIDAK_LAYAK membuat FAR test tak terdefinisi)",
+    "stage_I": "evaluator memakai evidence oracle (source_quote halaman PDF asli); hanya pertanyaan berjawaban + mutasinya",
+    "stage_II": "deskriptif (D14): parameter beku tahap I diterapkan pada 20 jawaban asli dengan konteks hasil retrieval; retrieval_ok dilaporkan; TIDAK ada sweep/test dan TIDAK digabung dengan tahap I"
+  },
+  "retrieval": {
+    "top_k": 4,
+    "rrf_k": 60,
+    "locked_before": "capture",
+    "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+    "dense_index": "produk dalam eksak numpy atas vektor ternormalisasi (setara faiss.IndexFlatIP flat/eksak)"
+  },
+  "test_policy": {
+    "runs_allowed": 1,
+    "rerun_requires": "--acknowledge-rerun dan dicatat di hasil sebagai deviasi"
+  },
+  "revised": "2026-11-11",
+  "pre_lock_editorial_corrections": {
+    "date": "2026-11-11",
+    "status_at_correction": "DRAFT_UNLOCKED; S08-S10 selesai, belum ada capture/label jawaban/skor",
+    "basis": "D13 dan D15 sudah ditetapkan pada revisi 7 Nov; penyelarasan redaksi yang tertinggal, bukan aturan seleksi baru",
+    "items": [
+      "Redaksi generator k=3 dan ketiga run disamakan dengan generator_runs.k=1 (D15); generator.json.runs juga disamakan menjadi 1",
+      "Isi ringkasan pra-evaluator disamakan dengan Track M semua kandidat LAYAK, maks 16, bukan target 10 (D13)",
+      "Nama backend dense pada uraian determinisme disamakan dengan retrieval.dense_index dan kode: numpy produk dalam eksak, setara FAISS flat",
+      "Catatan pembekuan generator diperjelas: hash disimpan di generator.lock.json pada S14, bukan menyunting protokol yang sudah dikunci pada S11"
+    ],
+    "selection_rules_changed": false
+  },
+  "pre_lock_revisions": {
+    "date": "2026-11-07",
+    "status_at_revision": "DRAFT_UNLOCKED (belum dikunci; ini revisi draf, bukan amandemen pasca-kunci)",
+    "reason": "audit kode sebelum data nyata; semua butir ditetapkan sebelum ada satu pun jawaban MiMo, label, atau skor",
+    "items": {
+      "D10": "Seleksi parameter memakai FAR Track M pada validation; CAR, false rejection, REVIEW/REJECT dari Track R; FAR Track R dilaporkan terpisah (tidak terdefinisi bila tak ada TIDAK_LAYAK). Track R dan M tidak pernah digabung (CLAUDE.md 5).",
+      "D11": "Seleksi per konfigurasi (Panduan Tabel 11): A = baris w_s=0, B = baris w_s=1, C = hybrid murni (0<w_s<1; 20 baris), masing-masing R1/R2 atas ambang {0,70..0,85}; D = parameter C + hard-fail (tidak dipilih ulang); D* = R1/R2 atas 30 baris D (sekunder). Test SEKALI menilai kelimanya.",
+      "D12": "Hard-fail D mengabaikan angka yang sudah ada di pertanyaan dan angka sitasi pada jawaban (Nomor N [Tahun YYYY], Pasal N[A], ayat (N), angka N, hlm./halaman N); angka NILAI jawaban (durasi, Rp, tanggal, persen, jumlah) tetap diperiksa terhadap evidence. 'tahun YYYY' tanpa 'Nomor N' tetap nilai.",
+      "D13": "Track M = satu mutasi untuk SETIAP jawaban asli berjawab berlabel LAYAK (maks 16), bukan 10. Family ditetapkan, bukan dipilih: numeric_duration bergantian numeric_value/unit menurut urutan lembar; tipe lain = family pertama pada families_by_question_type (definition = negation). Kandidat yang tak dapat dimutasi mekanis dilewati dengan alasan.",
+      "D14": "Tahap II deskriptif: parameter beku tahap I diterapkan pada seluruh jawaban asli (tanpa sweep, tanpa test). Label tahap II diturunkan mekanis dari kolom abstain (diisi manusia) dan retrieval_ok: abstain pada pertanyaan berjawab menjadi LAYAK hanya bila retrieval_ok=false; selain itu label tahap I.",
+      "D15": "Generator k=1 run (run 2-3 dilepas; non-determinisme generator tidak diukur dan ditulis sebagai keterbatasan). Jeda relabel minimum 12 jam (SPEC 1.3 mengizinkan minimum setengah hari) agar bukan deviasi.",
+      "D16": "Tiga kasus format Tabel 14 = kasus pertama menurut answer_id (urut naik) pada tiap kategori (benar-ACCEPT; salah-tertahan; salah-tetap-ACCEPT) untuk konfigurasi D pada test; bila kategori kosong di test, ambil dari validation dan tandai; bila tetap kosong, laporkan jumlah yang dicari."
+    }
+  }
+}

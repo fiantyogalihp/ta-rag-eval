@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halaman relabel</title>
+<style>
+:root {
+  --bg: #f6f7f9; --card: #ffffff; --fg: #1b1f24; --muted: #5a626d; --border: #c9cfd8;
+  --accent: #1f5fbf; --accent-fg: #ffffff; --warn-bg: #fff4d6; --warn-fg: #5c3d00; --err: #a4161a;
+  --ref: #1f5fbf; --num-bg: #ffe9a8; --kw-bg: #f3d3ee;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171b; --card: #1d2228; --fg: #e8ebef; --muted: #a2abb7; --border: #3a424c;
+    --accent: #6ea8ff; --accent-fg: #0c1a30; --warn-bg: #3a2f10; --warn-fg: #ffdf91; --err: #ff8a8d;
+    --ref: #8fbcff; --num-bg: #5a4708; --kw-bg: #5a2b55;
+  }
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, sans-serif; }
+header, main { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 12px; padding-bottom: 4px; }
+.top { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; }
+#pos { font-size: 1.25rem; }
+.chip { border: 1px solid var(--border); border-radius: 999px; padding: 0 10px; font-size: .875rem; }
+#progress, #save { color: var(--muted); font-size: .9rem; }
+.instr { margin: 6px 0; font-weight: 600; }
+#banner { background: var(--warn-bg); color: var(--warn-fg); border: 1px solid var(--warn-fg); border-radius: 6px; padding: 8px 12px; margin: 8px 0; }
+section { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; margin: 12px 0; min-width: 0; }
+h2 { margin: 0 0 6px; font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.txt { white-space: pre-wrap; overflow-wrap: anywhere; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
+@media (max-width: 900px) { .cols { grid-template-columns: 1fr; } }
+mark { color: inherit; border-radius: 3px; padding: 0 1px; }
+mark.ref { background: none; color: var(--ref); text-decoration: underline; text-underline-offset: 2px; }
+mark.num { background: var(--num-bg); font-weight: 700; }
+mark.kw { background: var(--kw-bg); font-style: italic; }
+#rubric { margin: 0; padding-left: 20px; }
+.fig { overflow: auto; max-width: 100%; border: 1px solid var(--border); border-radius: 6px; background: #fff; }
+.fig img { display: block; cursor: zoom-in; }
+.fig img.fit { width: 100%; height: auto; }
+.fig img.full { max-width: none; cursor: zoom-out; }
+figcaption { color: var(--muted); font-size: .9rem; margin-top: 4px; }
+.labels { display: flex; flex-wrap: wrap; gap: 8px; }
+button { font: inherit; min-height: 44px; padding: 6px 14px; border: 1px solid var(--border); border-radius: 6px; background: var(--card); color: var(--fg); cursor: pointer; }
+button[aria-pressed="true"] { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); font-weight: 700; }
+button:disabled { opacity: .5; cursor: default; }
+textarea { width: 100%; min-height: 72px; margin: 8px 0; padding: 8px; font: inherit; background: var(--bg); color: var(--fg); border: 1px solid var(--border); border-radius: 6px; resize: vertical; }
+.nav { display: flex; gap: 8px; flex-wrap: wrap; }
+#err { color: var(--err); font-weight: 600; min-height: 1.5em; margin: 4px 0; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.hint { color: var(--muted); font-size: .875rem; margin: 6px 0 0; }
+footer { max-width: 1200px; margin: 0 auto; padding: 0 16px 32px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <strong id="pos"></strong><span id="kind" class="chip"></span><span id="progress"></span><span id="save" aria-live="polite"></span>
+  </div>
+  <p class="instr">Nilai tiap jawaban dengan rubrik di bawah. Jangan memakai alat AI.</p>
+  <div id="banner" role="alert" hidden></div>
+</header>
+<main>
+  <section><h2>Pertanyaan</h2><div id="q" class="txt"></div></section>
+  <div class="cols">
+    <section><h2>Jawaban</h2><div id="a" class="txt"></div></section>
+    <section><h2>Kutipan jangkar</h2><div id="sq" class="txt"></div></section>
+  </div>
+  <section><h2>Rubrik</h2><ul id="rubric"></ul></section>
+  <section id="pagebox">
+    <h2>Halaman sumber</h2>
+    <p id="nopage" class="hint" hidden>Butir ini tidak punya halaman jangkar (probe): tidak ada kutipan yang harus ditemukan.</p>
+    <figure id="figure" style="margin:0" hidden>
+      <div class="fig"><img id="pg" class="fit" alt="Halaman PDF sumber" tabindex="0" role="button" title="Klik untuk beralih antara pas-lebar dan ukuran penuh"></div>
+      <figcaption id="cap"></figcaption>
+    </figure>
+  </section>
+  <section>
+    <h2>Label Anda</h2>
+    <div class="labels" id="labels"></div>
+    <label for="reason" class="hint">Alasan (opsional)</label>
+    <textarea id="reason"></textarea>
+    <div id="err" role="alert"></div>
+    <div class="nav">
+      <button type="button" id="prev">&larr; Sebelumnya</button>
+      <button type="button" id="next">Berikutnya &rarr;</button>
+    </div>
+    <p class="hint">Pintasan: 1, 2, 3 memilih label; panah kiri dan kanan berpindah butir (tidak aktif saat mengetik di kotak alasan).</p>
+  </section>
+</main>
+<footer>
+  <section>
+    <h2>Ekspor</h2>
+    <button type="button" id="export">Ekspor CSV</button>
+    <div id="miss" class="txt hint" aria-live="polite"></div>
+  </section>
+</footer>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+__LIB__
+</script>
+<script>
+"use strict";
+const DATA = JSON.parse(document.getElementById("data").textContent);
+const rows = DATA.rows, N = rows.length;
+// not_before_ms ikut kunci: draf dari bangunan tanpa/ dengan batas waktu lain tidak pernah dipulihkan.
+const STORE = "relabel:" + DATA.sheet_sha256 + ":" + DATA.download_name + ":" + (DATA.not_before_ms ?? "none");
+const gated = () => DATA.not_before_ms !== null && DATA.not_before_ms !== undefined && Date.now() < DATA.not_before_ms;
+const $ = id => document.getElementById(id);
+let state = {}, idx = 0, shownKey = null;
+// Sebelum batas waktu tidak ada label yang boleh ada: lewati pemulihan sepenuhnya.
+if (!gated()) { try { state = restoreState(localStorage.getItem(STORE), rows); } catch (_) { state = {}; } }
+// Mulai di butir pertama yang belum berlabel (urutan lembar), bukan butir yang disarankan.
+{ const m = missing(rows, state); if (m.length && m.length < N) idx = rows.findIndex(r => r.item_id === m[0]); }
+
+function save() {
+  try {
+    localStorage.setItem(STORE, JSON.stringify(state));
+    $("save").textContent = "Tersimpan otomatis " + new Date().toLocaleTimeString("id-ID");
+  } catch (_) {
+    $("save").textContent = "Simpan otomatis tidak tersedia: ekspor CSV sebelum menutup halaman.";
+  }
+}
+
+function banner() {
+  const on = gated();
+  $("banner").hidden = !on;
+  $("export").disabled = on;
+  const txt = on ? "Relabel baru boleh dimulai " + DATA.not_before_text + " (jeda 24 jam, protocol.json relabel.min_gap_hours)." : "";
+  if (on && $("banner").textContent !== txt) $("banner").textContent = txt;  // tulis hanya bila berubah: role=alert tidak diumumkan ulang
+}
+
+function render() {
+  const r = rows[idx], s = state[r.item_id] || {};
+  $("pos").textContent = r.item_id + " · " + (idx + 1) + "/" + N;
+  $("kind").textContent = r.kind === "answerable" ? "berjawab" : r.kind === "not_in_corpus" ? "probe" : r.kind;
+  $("progress").textContent = "terisi " + (N - missing(rows, state).length) + "/" + N;
+  $("q").textContent = r.question;
+  $("a").innerHTML = mark(r.answer);
+  $("sq").innerHTML = mark(r.source_quote);
+  $("rubric").replaceChildren(...String(r.rubric).split(" | ").map(t => { const li = document.createElement("li"); li.textContent = t; return li; }));
+  const key = DATA.page_of[r.case_id];
+  $("figure").hidden = !key;
+  $("nopage").hidden = !!key;
+  if (key) {
+    if (key !== shownKey) { $("pg").src = DATA.images[key]; shownKey = key; }  // jangan pasang ulang data URI besar pada tiap ketikan
+    const at = key.lastIndexOf("#");
+    $("cap").textContent = key.slice(0, at) + ", hlm. " + key.slice(at + 1);
+  }
+  [...$("labels").children].forEach(b => b.setAttribute("aria-pressed", String(b.dataset.label === s.label_baru)));
+  const reason = s.alasan_bila_berbeda || "";
+  if ($("reason").value !== reason) $("reason").value = reason;  // setelah galat, kotak kembali ke nilai yang benar-benar tersimpan
+  $("prev").disabled = idx === 0;
+  $("next").disabled = idx === N - 1;
+  banner();
+}
+
+// Setiap perubahan memeriksa waktu saat aksi (bukan saat halaman dimuat); galat gerbang ditampilkan.
+function apply(field, value) {
+  try {
+    state = setField(state, rows[idx].item_id, field, value, Date.now(), DATA.not_before_ms);
+    $("err").textContent = "";
+    save();
+  } catch (e) {
+    $("err").textContent = e.message;
+  }
+  render();
+}
+
+function go(i) { idx = Math.min(N - 1, Math.max(0, i)); $("err").textContent = ""; render(); window.scrollTo(0, 0); }
+
+LABELS.forEach((l, i) => {
+  const b = document.createElement("button");
+  b.type = "button"; b.dataset.label = l; b.textContent = (i + 1) + " · " + l;
+  b.addEventListener("click", () => apply("label_baru", l));
+  $("labels").appendChild(b);
+});
+$("reason").addEventListener("input", e => apply("alasan_bila_berbeda", e.target.value));
+$("prev").addEventListener("click", () => go(idx - 1));
+$("next").addEventListener("click", () => go(idx + 1));
+const toggleZoom = () => { const p = $("pg"); const full = p.classList.toggle("full"); p.classList.toggle("fit", !full); };
+$("pg").addEventListener("click", toggleZoom);
+$("pg").addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggleZoom(); } });
+
+document.addEventListener("keydown", e => {
+  if (e.ctrlKey || e.altKey || e.metaKey) return;  // Alt+Kiri = mundur peramban, Ctrl+1 = ganti tab
+  const a = keyAction(e.key, e.target.tagName);
+  if (!a) return;
+  e.preventDefault();
+  if (a.label) apply("label_baru", a.label); else if (a.move) go(idx + a.move);
+});
+
+$("export").addEventListener("click", () => {
+  const box = $("miss"), m = missing(rows, state);
+  box.replaceChildren();
+  if (gated()) { box.textContent = "Ekspor dikunci sampai batas waktu relabel tercapai."; return; }
+  if (m.length) {
+    box.append("Belum diberi label (" + m.length + "): ");
+    m.forEach(id => {
+      const b = document.createElement("button");
+      b.type = "button"; b.textContent = id;
+      b.addEventListener("click", () => go(rows.findIndex(r => r.item_id === id)));
+      box.append(b, " ");
+    });
+    return;
+  }
+  const url = URL.createObjectURL(new Blob([toCSV(DATA.columns, fillRows(rows, state))], { type: "text/csv;charset=utf-8" }));
+  const a = document.createElement("a");
+  a.href = url; a.download = DATA.download_name;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  box.textContent = "CSV diunduh sebagai " + DATA.download_name + ".";
+});
+
+setInterval(banner, 15000);
+render();
+</script>
+</body>
+</html>

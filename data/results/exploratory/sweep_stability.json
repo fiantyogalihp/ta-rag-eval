@@ -1,0 +1,262 @@
+{
+  "stability": {
+    "status": "EXPLORATORY_POST_TEST_BOOTSTRAP_OF_VALIDATION",
+    "n_boot": 1000,
+    "seed": 20261104,
+    "alpha": 0.05,
+    "n_units": 31,
+    "configs": {
+      "A": {
+        "status_share": {
+          "NO_ELIGIBLE_PARAMETER": 0.592,
+          "SELECTED": 0.408
+        },
+        "chosen_share": {
+          "C:w0.0:t0.85": 0.808,
+          "C:w0.0:t0.8": 0.149,
+          "C:w0.0:t0.75": 0.017,
+          "C:w0.0:t0.7": 0.014,
+          "C:w0.0:t0.78": 0.012
+        }
+      },
+      "B": {
+        "status_share": {
+          "NO_ELIGIBLE_PARAMETER": 1.0
+        },
+        "chosen_share": {
+          "C:w1.0:t0.85": 0.866,
+          "C:w1.0:t0.7": 0.131,
+          "C:w1.0:t0.75": 0.003
+        }
+      },
+      "C": {
+        "status_share": {
+          "NO_ELIGIBLE_PARAMETER": 0.723,
+          "SELECTED": 0.277
+        },
+        "chosen_share": {
+          "C:w0.25:t0.85": 0.615,
+          "C:w0.5:t0.85": 0.229,
+          "C:w0.25:t0.78": 0.109,
+          "C:w0.25:t0.8": 0.014,
+          "C:w0.25:t0.75": 0.014,
+          "C:w0.75:t0.85": 0.013,
+          "C:w0.6:t0.8": 0.005,
+          "C:w0.25:t0.7": 0.001
+        }
+      },
+      "D": {
+        "status_share": {
+          "NO_ELIGIBLE_PARAMETER": 0.723,
+          "SELECTED": 0.277
+        },
+        "chosen_share": {
+          "D:w0.25:t0.85": 0.615,
+          "D:w0.5:t0.85": 0.229,
+          "D:w0.25:t0.78": 0.109,
+          "D:w0.25:t0.8": 0.014,
+          "D:w0.25:t0.75": 0.014,
+          "D:w0.75:t0.85": 0.013,
+          "D:w0.6:t0.8": 0.005,
+          "D:w0.25:t0.7": 0.001
+        }
+      },
+      "E": {
+        "status_share": {
+          "NO_ELIGIBLE_PARAMETER": 0.723,
+          "SELECTED": 0.277
+        },
+        "chosen_share": {
+          "E:w0.25:t0.85": 0.615,
+          "E:w0.5:t0.85": 0.229,
+          "E:w0.25:t0.78": 0.109,
+          "E:w0.25:t0.8": 0.014,
+          "E:w0.25:t0.75": 0.014,
+          "E:w0.75:t0.85": 0.013,
+          "E:w0.6:t0.8": 0.005,
+          "E:w0.25:t0.7": 0.001
+        }
+      },
+      "F": {
+        "status_share": {
+          "SELECTED": 1.0
+        },
+        "chosen_share": {
+          "F:t0.95": 0.614,
+          "F:t0.88": 0.191,
+          "F:t0.89": 0.11,
+          "F:t0.84": 0.041,
+          "F:t0.83": 0.021,
+          "F:t0.85": 0.016,
+          "F:t0.82": 0.005,
+          "F:t0.81": 0.001,
+          "F:t0.86": 0.001
+        }
+      },
+      "D*": {
+        "status_share": {
+          "SELECTED": 1.0
+        },
+        "chosen_share": {
+          "D:w0.0:t0.8": 0.28,
+          "D:w0.75:t0.85": 0.207,
+          "D:w0.25:t0.78": 0.202,
+          "D:w0.0:t0.75": 0.118,
+          "D:w0.6:t0.8": 0.099,
+          "D:w0.25:t0.7": 0.063,
+          "D:w0.5:t0.8": 0.017,
+          "D:w0.6:t0.7": 0.004,
+          "D:w0.75:t0.8": 0.003,
+          "D:w1.0:t0.7": 0.002,
+          "D:w0.0:t0.85": 0.002,
+          "D:w0.5:t0.7": 0.001,
+          "D:w1.0:t0.85": 0.001,
+          "D:w0.5:t0.75": 0.001
+        }
+      }
+    }
+  },
+  "alpha_sensitivity": {
+    "0.05": {
+      "A": {
+        "status": "NO_ELIGIBLE_PARAMETER",
+        "chosen": "C:w0.0:t0.85",
+        "car_R": "4/57",
+        "far_M": "2/30"
+      },
+      "B": {
+        "status": "NO_ELIGIBLE_PARAMETER",
+        "chosen": "C:w1.0:t0.85",
+        "car_R": "55/57",
+        "far_M": "27/30"
+      },
+      "C": {
+        "status": "NO_ELIGIBLE_PARAMETER",
+        "chosen": "C:w0.25:t0.85",
+        "car_R": "5/57",
+        "far_M": "3/30"
+      },
+      "D": {
+        "status": "NO_ELIGIBLE_PARAMETER",
+        "chosen": "D:w0.25:t0.85",
+        "car_R": "5/57",
+        "far_M": "0/30"
+      },
+      "E": {
+        "status": "NO_ELIGIBLE_PARAMETER",
+        "chosen": "E:w0.25:t0.85",
+        "car_R": "5/57",
+        "far_M": "0/30"
+      },
+      "F": {
+        "status": "SELECTED",
+        "chosen": "F:t0.95",
+        "car_R": "0/57",
+        "far_M": "0/30"
+      },
+      "D*": {
+        "status": "SELECTED",
+        "chosen": "D:w0.25:t0.78",
+        "car_R": "16/57",
+        "far_M": "1/30"
+      }
+    },
+    "0.1": {
+      "A": {
+        "status": "SELECTED",
+        "chosen": "C:w0.0:t0.85",
+        "car_R": "4/57",
+        "far_M": "2/30"
+      },
+      "B": {
+        "status": "NO_ELIGIBLE_PARAMETER",
+        "chosen": "C:w1.0:t0.85",
+        "car_R": "55/57",
+        "far_M": "27/30"
+      },
+      "C": {
+        "status": "SELECTED",
+        "chosen": "C:w0.25:t0.85",
+        "car_R": "5/57",
+        "far_M": "3/30"
+      },
+      "D": {
+        "status": "SELECTED",
+        "chosen": "D:w0.25:t0.85",
+        "car_R": "5/57",
+        "far_M": "0/30"
+      },
+      "E": {
+        "status": "SELECTED",
+        "chosen": "E:w0.25:t0.85",
+        "car_R": "5/57",
+        "far_M": "0/30"
+      },
+      "F": {
+        "status": "SELECTED",
+        "chosen": "F:t0.88",
+        "car_R": "7/57",
+        "far_M": "3/30"
+      },
+      "D*": {
+        "status": "SELECTED",
+        "chosen": "D:w0.6:t0.8",
+        "car_R": "28/57",
+        "far_M": "3/30"
+      }
+    },
+    "0.2": {
+      "A": {
+        "status": "SELECTED",
+        "chosen": "C:w0.0:t0.78",
+        "car_R": "11/57",
+        "far_M": "5/30"
+      },
+      "B": {
+        "status": "NO_ELIGIBLE_PARAMETER",
+        "chosen": "C:w1.0:t0.85",
+        "car_R": "55/57",
+        "far_M": "27/30"
+      },
+      "C": {
+        "status": "SELECTED",
+        "chosen": "C:w0.25:t0.78",
+        "car_R": "19/57",
+        "far_M": "6/30"
+      },
+      "D": {
+        "status": "SELECTED",
+        "chosen": "D:w0.25:t0.78",
+        "car_R": "16/57",
+        "far_M": "1/30"
+      },
+      "E": {
+        "status": "SELECTED",
+        "chosen": "E:w0.25:t0.78",
+        "car_R": "16/57",
+        "far_M": "0/30"
+      },
+      "F": {
+        "status": "SELECTED",
+        "chosen": "F:t0.84",
+        "car_R": "16/57",
+        "far_M": "5/30"
+      },
+      "D*": {
+        "status": "SELECTED",
+        "chosen": "D:w0.6:t0.7",
+        "car_R": "35/57",
+        "far_M": "6/30"
+      }
+    }
+  },
+  "locked_selection_reproduced": {
+    "A": true,
+    "B": true,
+    "C": true,
+    "D": true,
+    "E": true,
+    "F": true,
+    "D*": true
+  }
+}

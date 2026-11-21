@@ -1,0 +1,122 @@
+{
+  "configs": {
+    "A": {
+      "selection": {
+        "status": "NO_ELIGIBLE_PARAMETER",
+        "rule": "R2",
+        "chosen": "C:w0.0:t0.85"
+      },
+      "params": {
+        "label": "A",
+        "config": "C",
+        "w_s": 0.0,
+        "accept": 0.85,
+        "hard_fail": false
+      }
+    },
+    "B": {
+      "selection": {
+        "status": "NO_ELIGIBLE_PARAMETER",
+        "rule": "R2",
+        "chosen": "C:w1.0:t0.85"
+      },
+      "params": {
+        "label": "B",
+        "config": "C",
+        "w_s": 1.0,
+        "accept": 0.85,
+        "hard_fail": false
+      }
+    },
+    "C": {
+      "selection": {
+        "status": "NO_ELIGIBLE_PARAMETER",
+        "rule": "R2",
+        "chosen": "C:w0.25:t0.85"
+      },
+      "params": {
+        "label": "C",
+        "config": "C",
+        "w_s": 0.25,
+        "accept": 0.85,
+        "hard_fail": false
+      }
+    },
+    "D": {
+      "selection": {
+        "status": "NO_ELIGIBLE_PARAMETER",
+        "rule": "D=C+hard-fail",
+        "chosen": "D:w0.25:t0.85"
+      },
+      "params": {
+        "label": "D",
+        "config": "D",
+        "w_s": 0.25,
+        "accept": 0.85,
+        "hard_fail": true
+      }
+    },
+    "E": {
+      "selection": {
+        "status": "NO_ELIGIBLE_PARAMETER",
+        "rule": "E=C+hard-fail+satuan",
+        "chosen": "E:w0.25:t0.85"
+      },
+      "params": {
+        "label": "E",
+        "config": "E",
+        "w_s": 0.25,
+        "accept": 0.85,
+        "hard_fail": true,
+        "unit_fail": true
+      }
+    },
+    "F": {
+      "selection": {
+        "status": "SELECTED",
+        "rule": "R1",
+        "chosen": "F:t0.95",
+        "warning": "CAR_ZERO_DEGENERATE: parameter terpilih tidak pernah ACCEPT jawaban LAYAK"
+      },
+      "params": {
+        "label": "F",
+        "config": "F",
+        "w_s": 0.0,
+        "accept": 0.95,
+        "hard_fail": false
+      }
+    },
+    "D*": {
+      "selection": {
+        "status": "SELECTED",
+        "rule": "R1",
+        "chosen": "D:w0.25:t0.78"
+      },
+      "params": {
+        "label": "D*",
+        "config": "D",
+        "w_s": 0.25,
+        "accept": 0.78,
+        "hard_fail": true
+      }
+    }
+  },
+  "alpha": 0.05,
+  "selection_far": "FAR Track M pada validation (D10)",
+  "split_report": {
+    "validation": {
+      "n": 123,
+      "LAYAK": 57,
+      "TIDAK_LAYAK": 66,
+      "warning": null
+    },
+    "test": {
+      "n": 121,
+      "LAYAK": 57,
+      "TIDAK_LAYAK": 64,
+      "warning": null
+    }
+  },
+  "splits_sha256": "693d01321158f8006081a95144fbf390b9d7ddf89e42120a9c29a6dc853b449f",
+  "note": "dipilih HANYA dari validation; test belum disentuh"
+}
